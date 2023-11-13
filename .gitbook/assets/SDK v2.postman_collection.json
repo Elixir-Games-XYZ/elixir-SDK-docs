@@ -1,0 +1,636 @@
+{
+	"info": {
+		"_postman_id": "b1600021-6ae9-4849-88fd-c14c9649ecd8",
+		"name": "SDK v2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Dev - Gen Reikey",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "publicKey_4b7cdb89a3d9b8834708c37522f32fe2_9bb91d77cd25e89b55eba8e95fedd05ce95dd91379ae8ac8d21200f057a92721a0cc543f254b11fe7fba106eb296bca9d4ca534face03ff6e812c54b2578d092e507d769b8c6c92670f4e2c3c116e19baf06271435a57b5f5bedeaed40524cceecf4ef251853c4d1cec2d99fb77e2e8a722a4b5be531723b5971475ddca0c3d78df40963c38120ed3f9e3ea2ac2da67f9bbf27f9d7dc089cbc8aad6f586bc18de2b0e9271326a3e922902c2f33a95b12d3b492dd0a75956908537cf89677f81a429cd6a703c08ac01079a8fd9b4b2eee585dad8d777bfadfed9178bc958d7b89ec2ad84402ad6b359a3ed66473609e74848437c9a1a0b4001faa64ff770856a9312174ef0105c5e71e29f38cab63ecfa03c108fd920eb58b14c24ceecfb57fba4268024c33829285d2a4cfd0890384065ba01caec0712581825fcad0ca0fe3edf9ca495c870091518ea339936736d8f2d4c5be9352df4bbf6ffb9ae3e3eff1672c3fb45e56b2c236a05455069d3a5b1a8107fd372ebacc11c23dab4ca707a9309cbd3797016357fdd5fd4a6474e126280ddc17ce99b964bf7fb01ded41ea9380e188054c90cdf2906da5f1d70639daf5d03d6a37f3870e7b5dc27bf70c392520fcb55a952590effb7257f7f61b72de76ca80d4cf0052475e6a107b9e777f3eed11cbd5b0e6fce31c1d22153cb87505478d7251b94b2fd4ed4721dec77a89194bd6a08b4c2dc8acf791c379850881012dd0c2bcb954831cdeb70b7caae335a5684ace173e693ac67a7289c20047311c235ba32e948d124c245baed3d9e11733df",
+								"type": "default"
+							},
+							{
+								"key": "x-api-key",
+								"value": "9a85b343-71b9-49ac-b696-3d649c3eac0b.aea1f008-c8a6-4041-bd2d-95a7c4735d36.0d3a01eb-73dd-4f7b-a81f-91aa0e7420c6.production",
+								"type": "default",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"playerId\": \"aea1f008-c8a6-4041-bd2d-95a7c4735d36\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://0.0.0.0:4100/sdk/auth/v2/dev/reikey",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "4100",
+							"path": [
+								"sdk",
+								"auth",
+								"v2",
+								"dev",
+								"reikey"
+							],
+							"query": [
+								{
+									"key": "x-api-key",
+									"value": "asdas",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get User By Reikey",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "publicKey_4b7cdb89a3d9b8834708c37522f32fe2_9bb91d77cd25e89b55eba8e95fedd05ce95dd91379ae8ac8d21200f057a92721a0cc543f254b11fe7fba106eb296bca9d4ca534face03ff6e812c54b2578d092e507d769b8c6c92670f4e2c3c116e19baf06271435a57b5f5bedeaed40524cceecf4ef251853c4d1cec2d99fb77e2e8a722a4b5be531723b5971475ddca0c3d78df40963c38120ed3f9e3ea2ac2da67f9bbf27f9d7dc089cbc8aad6f586bc18de2b0e9271326a3e922902c2f33a95b12d3b492dd0a75956908537cf89677f81a429cd6a703c08ac01079a8fd9b4b2eee585dad8d777bfadfed9178bc958d7b89ec2ad84402ad6b359a3ed66473609e74848437c9a1a0b4001faa64ff770856a9312174ef0105c5e71e29f38cab63ecfa03c108fd920eb58b14c24ceecfb57fba4268024c33829285d2a4cfd0890384065ba01caec0712581825fcad0ca0fe3edf9ca495c870091518ea339936736d8f2d4c5be9352df4bbf6ffb9ae3e3eff1672c3fb45e56b2c236a05455069d3a5b1a8107fd372ebacc11c23dab4ca707a9309cbd3797016357fdd5fd4a6474e126280ddc17ce99b964bf7fb01ded41ea9380e188054c90cdf2906da5f1d70639daf5d03d6a37f3870e7b5dc27bf70c392520fcb55a952590effb7257f7f61b72de76ca80d4cf0052475e6a107b9e777f3eed11cbd5b0e6fce31c1d22153cb87505478d7251b94b2fd4ed4721dec77a89194bd6a08b4c2dc8acf791c379850881012dd0c2bcb954831cdeb70b7caae335a5684ace173e693ac67a7289c20047311c235ba32e948d124c245baed3d9e11733df",
+								"type": "default"
+							},
+							{
+								"key": "x-api-key",
+								"value": "9a85b343-71b9-49ac-b696-3d649c3eac0b.aea1f008-c8a6-4041-bd2d-95a7c4735d36.0d3a01eb-73dd-4f7b-a81f-91aa0e7420c6.production",
+								"type": "default",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost:4002/sdk/auth/v2/session/reikey/423e7398-d825-40c9-80c8-8176abf143f3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4002",
+							"path": [
+								"sdk",
+								"auth",
+								"v2",
+								"session",
+								"reikey",
+								"423e7398-d825-40c9-80c8-8176abf143f3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Refresh Token",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "publicKey_4b7cdb89a3d9b8834708c37522f32fe2_9bb91d77cd25e89b55eba8e95fedd05ce95dd91379ae8ac8d21200f057a92721a0cc543f254b11fe7fba106eb296bca9d4ca534face03ff6e812c54b2578d092e507d769b8c6c92670f4e2c3c116e19baf06271435a57b5f5bedeaed40524cceecf4ef251853c4d1cec2d99fb77e2e8a722a4b5be531723b5971475ddca0c3d78df40963c38120ed3f9e3ea2ac2da67f9bbf27f9d7dc089cbc8aad6f586bc18de2b0e9271326a3e922902c2f33a95b12d3b492dd0a75956908537cf89677f81a429cd6a703c08ac01079a8fd9b4b2eee585dad8d777bfadfed9178bc958d7b89ec2ad84402ad6b359a3ed66473609e74848437c9a1a0b4001faa64ff770856a9312174ef0105c5e71e29f38cab63ecfa03c108fd920eb58b14c24ceecfb57fba4268024c33829285d2a4cfd0890384065ba01caec0712581825fcad0ca0fe3edf9ca495c870091518ea339936736d8f2d4c5be9352df4bbf6ffb9ae3e3eff1672c3fb45e56b2c236a05455069d3a5b1a8107fd372ebacc11c23dab4ca707a9309cbd3797016357fdd5fd4a6474e126280ddc17ce99b964bf7fb01ded41ea9380e188054c90cdf2906da5f1d70639daf5d03d6a37f3870e7b5dc27bf70c392520fcb55a952590effb7257f7f61b72de76ca80d4cf0052475e6a107b9e777f3eed11cbd5b0e6fce31c1d22153cb87505478d7251b94b2fd4ed4721dec77a89194bd6a08b4c2dc8acf791c379850881012dd0c2bcb954831cdeb70b7caae335a5684ace173e693ac67a7289c20047311c235ba32e948d124c245baed3d9e11733df",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"refreshToken\": \"f6e231ae-3a20-490a-b4fa-5a3b12c99aed\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4002/sdk/auth/v2/session/refresh",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4002",
+							"path": [
+								"sdk",
+								"auth",
+								"v2",
+								"session",
+								"refresh"
+							],
+							"query": [
+								{
+									"key": "x-api-key",
+									"value": "eec099f3-ec55-4d63-922c-5c0410cce8e0.aea1f008-c8a6-4041-bd2d-95a7c4735d36.0d3a01eb-73dd-4f7b-a81f-91aa0e7420c6.development",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Close Reikey",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiJhZWExZjAwOC1jOGE2LTQwNDEtYmQyZC05NWE3YzQ3MzVkMzYiLCJlbWFpbCI6InJlZ2FAc2F0b3NoaXMuZ2FtZXMiLCJyb2xlcyI6WyJhZG1pbiJdLCJhdWQiOiJnYW1lOmRldmVsb3BtZW50IiwiaXNzIjoiMGQzYTAxZWItNzNkZC00ZjdiLWE4MWYtOTFhYTBlNzQyMGM2IiwiaWF0IjoxNjcxNzUzNTQzLCJleHAiOjE3MDMzMTExNDN9.-fDuEmUManRgx_v1SLTEj75GecE-EAVSZKA8UtEXZyHQgks_pl2oQx85P6i-PhmE8mbvkUEmehIq7pSbo6eL_A",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "publicKey_4b7cdb89a3d9b8834708c37522f32fe2_9bb91d77cd25e89b55eba8e95fedd05ce95dd91379ae8ac8d21200f057a92721a0cc543f254b11fe7fba106eb296bca9d4ca534face03ff6e812c54b2578d092e507d769b8c6c92670f4e2c3c116e19baf06271435a57b5f5bedeaed40524cceecf4ef251853c4d1cec2d99fb77e2e8a722a4b5be531723b5971475ddca0c3d78df40963c38120ed3f9e3ea2ac2da67f9bbf27f9d7dc089cbc8aad6f586bc18de2b0e9271326a3e922902c2f33a95b12d3b492dd0a75956908537cf89677f81a429cd6a703c08ac01079a8fd9b4b2eee585dad8d777bfadfed9178bc958d7b89ec2ad84402ad6b359a3ed66473609e74848437c9a1a0b4001faa64ff770856a9312174ef0105c5e71e29f38cab63ecfa03c108fd920eb58b14c24ceecfb57fba4268024c33829285d2a4cfd0890384065ba01caec0712581825fcad0ca0fe3edf9ca495c870091518ea339936736d8f2d4c5be9352df4bbf6ffb9ae3e3eff1672c3fb45e56b2c236a05455069d3a5b1a8107fd372ebacc11c23dab4ca707a9309cbd3797016357fdd5fd4a6474e126280ddc17ce99b964bf7fb01ded41ea9380e188054c90cdf2906da5f1d70639daf5d03d6a37f3870e7b5dc27bf70c392520fcb55a952590effb7257f7f61b72de76ca80d4cf0052475e6a107b9e777f3eed11cbd5b0e6fce31c1d22153cb87505478d7251b94b2fd4ed4721dec77a89194bd6a08b4c2dc8acf791c379850881012dd0c2bcb954831cdeb70b7caae335a5684ace173e693ac67a7289c20047311c235ba32e948d124c245baed3d9e11733df",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:4002/sdk/auth/v2/session/closerei/423e7398-d825-40c9-80c8-8176abf143f3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4002",
+							"path": [
+								"sdk",
+								"auth",
+								"v2",
+								"session",
+								"closerei",
+								"423e7398-d825-40c9-80c8-8176abf143f3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Otp Login Req",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "publicKey_4b7cdb89a3d9b8834708c37522f32fe2_9bb91d77cd25e89b55eba8e95fedd05ce95dd91379ae8ac8d21200f057a92721a0cc543f254b11fe7fba106eb296bca9d4ca534face03ff6e812c54b2578d092e507d769b8c6c92670f4e2c3c116e19baf06271435a57b5f5bedeaed40524cceecf4ef251853c4d1cec2d99fb77e2e8a722a4b5be531723b5971475ddca0c3d78df40963c38120ed3f9e3ea2ac2da67f9bbf27f9d7dc089cbc8aad6f586bc18de2b0e9271326a3e922902c2f33a95b12d3b492dd0a75956908537cf89677f81a429cd6a703c08ac01079a8fd9b4b2eee585dad8d777bfadfed9178bc958d7b89ec2ad84402ad6b359a3ed66473609e74848437c9a1a0b4001faa64ff770856a9312174ef0105c5e71e29f38cab63ecfa03c108fd920eb58b14c24ceecfb57fba4268024c33829285d2a4cfd0890384065ba01caec0712581825fcad0ca0fe3edf9ca495c870091518ea339936736d8f2d4c5be9352df4bbf6ffb9ae3e3eff1672c3fb45e56b2c236a05455069d3a5b1a8107fd372ebacc11c23dab4ca707a9309cbd3797016357fdd5fd4a6474e126280ddc17ce99b964bf7fb01ded41ea9380e188054c90cdf2906da5f1d70639daf5d03d6a37f3870e7b5dc27bf70c392520fcb55a952590effb7257f7f61b72de76ca80d4cf0052475e6a107b9e777f3eed11cbd5b0e6fce31c1d22153cb87505478d7251b94b2fd4ed4721dec77a89194bd6a08b4c2dc8acf791c379850881012dd0c2bcb954831cdeb70b7caae335a5684ace173e693ac67a7289c20047311c235ba32e948d124c245baed3d9e11733df",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\":\"arnaldo@satoshis.games\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4002/sdk/auth/v2/signin/otp-login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4002",
+							"path": [
+								"sdk",
+								"auth",
+								"v2",
+								"signin",
+								"otp-login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "OTP login verify",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "publicKey_292c8af42fcd9e2ebf893f389b2699f0_7c4f10db5bbc7ad3c96fbd04c62fa93912c0fdeff3a7ab9f6d572c105a1d21b6ac1656e0e37ede42212cfc0a1063cca25e3e51c62e9fb0e60a63f2367004b9a62021b25827c312051e4d58afa33469bc7a349b88d27e62063b1edf124c92ab457b387653e6b35fcfd0bce0e73bab5ad836806feeb764906cc1fe7c6ad6af18c23f00272c12b7811fa6912330915b2e3d0d173a5d7fd2c7020ccec5d6d95cb4ed3d13fe2f9e3a3e0067f4a6ff0ce402ea68be046c847443b2acd9e303b3db91f9cd4a01ba9f2e4a884b3f9b0a0804dc4b9f996266abc04d04f754edc6406279aabb569f1377ad9ee6d0dec4f56bbf7bf0493d9e1b84a44c4d89b46bc3f279ab72b790b08de42aca3ad9df143038abd66fece2a61988fee5dcd4f7c085e55369a0f140117e47ce0f001d5817f86f662d700b6bb34afc16d8cac5611306e8e5b837eae8b5f86b43471608e416e428c83188527a6c41ffe2395158921761c029dbe134f824d0600d8b83e4e3b213091ec332684b27b752925e2fe7005ea14b33abe55d155d818806ba711c8119ec9925dc57245e15ca3fb701bb6601f38da74cb0465bbf10b413ced9ef512eaef1d335447fa226907c84c7de414670c0d6b38ebfebf4d549f0c8455d279205888a7006e4b9ecfbc181597dce93ef57b02bd59d6f26724a721f2cff6342b3c9d189ff32d984480e59dba3f71ad0bd9482b64d9ff7584b7bd634432572f2770b53ef38c84f8faaa62ef9ab580fae9af80c3c4a3c63182466b3cde50400e4c7a05962f64c4419833a3c68c0c5a1717ac2f96ee08e6843",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"transactionId\": \"OTP:6b809342-ccec-40bf-be6a-9d013639b2c0\",\n        \"code\": \"00000\"\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4002/sdk/auth/v2/signin/otp-verify",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4002",
+							"path": [
+								"sdk",
+								"auth",
+								"v2",
+								"signin",
+								"otp-verify"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "QR verify",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "publicKey_4b7cdb89a3d9b8834708c37522f32fe2_9bb91d77cd25e89b55eba8e95fedd05ce95dd91379ae8ac8d21200f057a92721a0cc543f254b11fe7fba106eb296bca9d4ca534face03ff6e812c54b2578d092e507d769b8c6c92670f4e2c3c116e19baf06271435a57b5f5bedeaed40524cceecf4ef251853c4d1cec2d99fb77e2e8a722a4b5be531723b5971475ddca0c3d78df40963c38120ed3f9e3ea2ac2da67f9bbf27f9d7dc089cbc8aad6f586bc18de2b0e9271326a3e922902c2f33a95b12d3b492dd0a75956908537cf89677f81a429cd6a703c08ac01079a8fd9b4b2eee585dad8d777bfadfed9178bc958d7b89ec2ad84402ad6b359a3ed66473609e74848437c9a1a0b4001faa64ff770856a9312174ef0105c5e71e29f38cab63ecfa03c108fd920eb58b14c24ceecfb57fba4268024c33829285d2a4cfd0890384065ba01caec0712581825fcad0ca0fe3edf9ca495c870091518ea339936736d8f2d4c5be9352df4bbf6ffb9ae3e3eff1672c3fb45e56b2c236a05455069d3a5b1a8107fd372ebacc11c23dab4ca707a9309cbd3797016357fdd5fd4a6474e126280ddc17ce99b964bf7fb01ded41ea9380e188054c90cdf2906da5f1d70639daf5d03d6a37f3870e7b5dc27bf70c392520fcb55a952590effb7257f7f61b72de76ca80d4cf0052475e6a107b9e777f3eed11cbd5b0e6fce31c1d22153cb87505478d7251b94b2fd4ed4721dec77a89194bd6a08b4c2dc8acf791c379850881012dd0c2bcb954831cdeb70b7caae335a5684ace173e693ac67a7289c20047311c235ba32e948d124c245baed3d9e11733df",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"qrValue\":\"REIKEY:5a071704-3afd-4fbb-8521-b64aec1402d3\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4002/sdk/auth/v2/signin/qr-verify",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4002",
+							"path": [
+								"sdk",
+								"auth",
+								"v2",
+								"signin",
+								"qr-verify"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Sign out",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiIwOTE0MmRjNy0yODNkLTQwMGEtYjA3My05YTIwOTU1Y2I5MmQiLCJlbWFpbCI6ImJvcmxhZG9Ac2F0b3NoaXMuZ2FtZXMiLCJyb2xlcyI6WyJhZG1pbiJdLCJhdWQiOiJnYW1lOmRldmVsb3BtZW50IiwiaXNzIjoiMGQzYTAxZWItNzNkZC00ZjdiLWE4MWYtOTFhYTBlNzQyMGM2IiwiaWF0IjoxNjcxNzUxODQ1LCJleHAiOjE3MDMzMDk0NDV9.MkQFzRI3FqpYAN7Nx9IfHFbClCNPFzDeUZX4RBj86Fvz_Hzqb2LJxBNSEA2QJo0Hfs45BbTuPTK6wRL6WjaYBQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "publicKey_4b7cdb89a3d9b8834708c37522f32fe2_9bb91d77cd25e89b55eba8e95fedd05ce95dd91379ae8ac8d21200f057a92721a0cc543f254b11fe7fba106eb296bca9d4ca534face03ff6e812c54b2578d092e507d769b8c6c92670f4e2c3c116e19baf06271435a57b5f5bedeaed40524cceecf4ef251853c4d1cec2d99fb77e2e8a722a4b5be531723b5971475ddca0c3d78df40963c38120ed3f9e3ea2ac2da67f9bbf27f9d7dc089cbc8aad6f586bc18de2b0e9271326a3e922902c2f33a95b12d3b492dd0a75956908537cf89677f81a429cd6a703c08ac01079a8fd9b4b2eee585dad8d777bfadfed9178bc958d7b89ec2ad84402ad6b359a3ed66473609e74848437c9a1a0b4001faa64ff770856a9312174ef0105c5e71e29f38cab63ecfa03c108fd920eb58b14c24ceecfb57fba4268024c33829285d2a4cfd0890384065ba01caec0712581825fcad0ca0fe3edf9ca495c870091518ea339936736d8f2d4c5be9352df4bbf6ffb9ae3e3eff1672c3fb45e56b2c236a05455069d3a5b1a8107fd372ebacc11c23dab4ca707a9309cbd3797016357fdd5fd4a6474e126280ddc17ce99b964bf7fb01ded41ea9380e188054c90cdf2906da5f1d70639daf5d03d6a37f3870e7b5dc27bf70c392520fcb55a952590effb7257f7f61b72de76ca80d4cf0052475e6a107b9e777f3eed11cbd5b0e6fce31c1d22153cb87505478d7251b94b2fd4ed4721dec77a89194bd6a08b4c2dc8acf791c379850881012dd0c2bcb954831cdeb70b7caae335a5684ace173e693ac67a7289c20047311c235ba32e948d124c245baed3d9e11733df",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"refreshToken\": \"f6e231ae-3a20-490a-b4fa-5a3b12c99aed\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4002/sdk/auth/v2/session/signout",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4002",
+							"path": [
+								"sdk",
+								"auth",
+								"v2",
+								"session",
+								"signout"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Elixir",
+			"item": [
+				{
+					"name": "Get UserInfo",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ZDNjZWQyOS1mOGI1LTQ2ZDctYjI4ZC1mOGJlNDU5Yzc0NWQiLCJlbWFpbCI6ImFybmFsZG9Ac2F0b3NoaXMuZ2FtZXMiLCJyb2xlcyI6WyJHQU1FUiJdLCJhdWQiOiJnYW1lOnByb2R1Y3Rpb24iLCJpc3MiOiIwZDNhMDFlYi03M2RkLTRmN2ItYTgxZi05MWFhMGU3NDIwYzYiLCJpYXQiOjE2NzE3NTIzNDMsImV4cCI6MTcwMzMwOTk0M30.EcRBCx3zgysk_ieJC-kp0TajlbNJWuA3IWw8Lh9G0SyVocXcQP9tYFu0ES-QHpLaxOrNXHMVPXZATBKIf73YWA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "publicKey_292c8af42fcd9e2ebf893f389b2699f0_7c4f10db5bbc7ad3c96fbd04c62fa93912c0fdeff3a7ab9f6d572c105a1d21b6ac1656e0e37ede42212cfc0a1063cca25e3e51c62e9fb0e60a63f2367004b9a62021b25827c312051e4d58afa33469bc7a349b88d27e62063b1edf124c92ab457b387653e6b35fcfd0bce0e73bab5ad836806feeb764906cc1fe7c6ad6af18c23f00272c12b7811fa6912330915b2e3d0d173a5d7fd2c7020ccec5d6d95cb4ed3d13fe2f9e3a3e0067f4a6ff0ce402ea68be046c847443b2acd9e303b3db91f9cd4a01ba9f2e4a884b3f9b0a0804dc4b9f996266abc04d04f754edc6406279aabb569f1377ad9ee6d0dec4f56bbf7bf0493d9e1b84a44c4d89b46bc3f279ab72b790b08de42aca3ad9df143038abd66fece2a61988fee5dcd4f7c085e55369a0f140117e47ce0f001d5817f86f662d700b6bb34afc16d8cac5611306e8e5b837eae8b5f86b43471608e416e428c83188527a6c41ffe2395158921761c029dbe134f824d0600d8b83e4e3b213091ec332684b27b752925e2fe7005ea14b33abe55d155d818806ba711c8119ec9925dc57245e15ca3fb701bb6601f38da74cb0465bbf10b413ced9ef512eaef1d335447fa226907c84c7de414670c0d6b38ebfebf4d549f0c8455d279205888a7006e4b9ecfbc181597dce93ef57b02bd59d6f26724a721f2cff6342b3c9d189ff32d984480e59dba3f71ad0bd9482b64d9ff7584b7bd634432572f2770b53ef38c84f8faaa62ef9ab580fae9af80c3c4a3c63182466b3cde50400e4c7a05962f64c4419833a3c68c0c5a1717ac2f96ee08e684",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:4101/sdk/v2/userinfo/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4101",
+							"path": [
+								"sdk",
+								"v2",
+								"userinfo",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get User NFTs",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiJhZWExZjAwOC1jOGE2LTQwNDEtYmQyZC05NWE3YzQ3MzVkMzYiLCJlbWFpbCI6InJlZ2FAc2F0b3NoaXMuZ2FtZXMiLCJyb2xlcyI6WyJhZG1pbiJdLCJhdWQiOiJnYW1lOmRldmVsb3BtZW50IiwiaXNzIjoiMGQzYTAxZWItNzNkZC00ZjdiLWE4MWYtOTFhYTBlNzQyMGM2IiwiaWF0IjoxNjcxNzUxNjMwLCJleHAiOjE3MDMzMDkyMzB9.djn-U6BNiDGw82qeZ1ixXJ2uuHj6Y1ys5sz5lnX7IdJKF4NMRQV-I99bn5KZQcBGlXwzPr8fEC1cxazDlwP_EA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "publicKey_b7cdb89a3d9b8834708c37522f32fe2_9bb91d77cd25e89b55eba8e95fedd05ce95dd91379ae8ac8d21200f057a92721a0cc543f254b11fe7fba106eb296bca9d4ca534face03ff6e812c54b2578d092e507d769b8c6c92670f4e2c3c116e19baf06271435a57b5f5bedeaed40524cceecf4ef251853c4d1cec2d99fb77e2e8a722a4b5be531723b5971475ddca0c3d78df40963c38120ed3f9e3ea2ac2da67f9bbf27f9d7dc089cbc8aad6f586bc18de2b0e9271326a3e922902c2f33a95b12d3b492dd0a75956908537cf89677f81a429cd6a703c08ac01079a8fd9b4b2eee585dad8d777bfadfed9178bc958d7b89ec2ad84402ad6b359a3ed66473609e74848437c9a1a0b4001faa64ff770856a9312174ef0105c5e71e29f38cab63ecfa03c108fd920eb58b14c24ceecfb57fba4268024c33829285d2a4cfd0890384065ba01caec0712581825fcad0ca0fe3edf9ca495c870091518ea339936736d8f2d4c5be9352df4bbf6ffb9ae3e3eff1672c3fb45e56b2c236a05455069d3a5b1a8107fd372ebacc11c23dab4ca707a9309cbd3797016357fdd5fd4a6474e126280ddc17ce99b964bf7fb01ded41ea9380e188054c90cdf2906da5f1d70639daf5d03d6a37f3870e7b5dc27bf70c392520fcb55a952590effb7257f7f61b72de76ca80d4cf0052475e6a107b9e777f3eed11cbd5b0e6fce31c1d22153cb87505478d7251b94b2fd4ed4721dec77a89194bd6a08b4c2dc8acf791c379850881012dd0c2bcb954831cdeb70b7caae335a5684ace173e693ac67a7289c20047311c235ba32e948d124c245baed3d9e11733df",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "http://0.0.0.0:4101/sdk/v2/nfts/user",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "4101",
+							"path": [
+								"sdk",
+								"v2",
+								"nfts",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Game Tournaments",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "publicKey_4b7cdb89a3d9b8834708c37522f32fe2_9bb91d77cd25e89b55eba8e95fedd05ce95dd91379ae8ac8d21200f057a92721a0cc543f254b11fe7fba106eb296bca9d4ca534face03ff6e812c54b2578d092e507d769b8c6c92670f4e2c3c116e19baf06271435a57b5f5bedeaed40524cceecf4ef251853c4d1cec2d99fb77e2e8a722a4b5be531723b5971475ddca0c3d78df40963c38120ed3f9e3ea2ac2da67f9bbf27f9d7dc089cbc8aad6f586bc18de2b0e9271326a3e922902c2f33a95b12d3b492dd0a75956908537cf89677f81a429cd6a703c08ac01079a8fd9b4b2eee585dad8d777bfadfed9178bc958d7b89ec2ad84402ad6b359a3ed66473609e74848437c9a1a0b4001faa64ff770856a9312174ef0105c5e71e29f38cab63ecfa03c108fd920eb58b14c24ceecfb57fba4268024c33829285d2a4cfd0890384065ba01caec0712581825fcad0ca0fe3edf9ca495c870091518ea339936736d8f2d4c5be9352df4bbf6ffb9ae3e3eff1672c3fb45e56b2c236a05455069d3a5b1a8107fd372ebacc11c23dab4ca707a9309cbd3797016357fdd5fd4a6474e126280ddc17ce99b964bf7fb01ded41ea9380e188054c90cdf2906da5f1d70639daf5d03d6a37f3870e7b5dc27bf70c392520fcb55a952590effb7257f7f61b72de76ca80d4cf0052475e6a107b9e777f3eed11cbd5b0e6fce31c1d22153cb87505478d7251b94b2fd4ed4721dec77a89194bd6a08b4c2dc8acf791c379850881012dd0c2bcb954831cdeb70b7caae335a5684ace173e693ac67a7289c20047311c235ba32e948d124c245baed3d9e11733df",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:4101/sdk/v2/tournaments/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4101",
+							"path": [
+								"sdk",
+								"v2",
+								"tournaments",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Tournaments Scores",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "publicKey_4b7cdb89a3d9b8834708c37522f32fe2_9bb91d77cd25e89b55eba8e95fedd05ce95dd91379ae8ac8d21200f057a92721a0cc543f254b11fe7fba106eb296bca9d4ca534face03ff6e812c54b2578d092e507d769b8c6c92670f4e2c3c116e19baf06271435a57b5f5bedeaed40524cceecf4ef251853c4d1cec2d99fb77e2e8a722a4b5be531723b5971475ddca0c3d78df40963c38120ed3f9e3ea2ac2da67f9bbf27f9d7dc089cbc8aad6f586bc18de2b0e9271326a3e922902c2f33a95b12d3b492dd0a75956908537cf89677f81a429cd6a703c08ac01079a8fd9b4b2eee585dad8d777bfadfed9178bc958d7b89ec2ad84402ad6b359a3ed66473609e74848437c9a1a0b4001faa64ff770856a9312174ef0105c5e71e29f38cab63ecfa03c108fd920eb58b14c24ceecfb57fba4268024c33829285d2a4cfd0890384065ba01caec0712581825fcad0ca0fe3edf9ca495c870091518ea339936736d8f2d4c5be9352df4bbf6ffb9ae3e3eff1672c3fb45e56b2c236a05455069d3a5b1a8107fd372ebacc11c23dab4ca707a9309cbd3797016357fdd5fd4a6474e126280ddc17ce99b964bf7fb01ded41ea9380e188054c90cdf2906da5f1d70639daf5d03d6a37f3870e7b5dc27bf70c392520fcb55a952590effb7257f7f61b72de76ca80d4cf0052475e6a107b9e777f3eed11cbd5b0e6fce31c1d22153cb87505478d7251b94b2fd4ed4721dec77a89194bd6a08b4c2dc8acf791c379850881012dd0c2bcb954831cdeb70b7caae335a5684ace173e693ac67a7289c20047311c235ba32e948d124c245baed3d9e11733df",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:4101/sdk/v2/tournaments/ad092f92-ce73-49df-a59f-1b423ad57463/scores",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4101",
+							"path": [
+								"sdk",
+								"v2",
+								"tournaments",
+								"ad092f92-ce73-49df-a59f-1b423ad57463",
+								"scores"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Submit Score",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "publicKey_4b7cdb89a3d9b8834708c37522f32fe2_9bb91d77cd25e89b55eba8e95fedd05ce95dd91379ae8ac8d21200f057a92721a0cc543f254b11fe7fba106eb296bca9d4ca534face03ff6e812c54b2578d092e507d769b8c6c92670f4e2c3c116e19baf06271435a57b5f5bedeaed40524cceecf4ef251853c4d1cec2d99fb77e2e8a722a4b5be531723b5971475ddca0c3d78df40963c38120ed3f9e3ea2ac2da67f9bbf27f9d7dc089cbc8aad6f586bc18de2b0e9271326a3e922902c2f33a95b12d3b492dd0a75956908537cf89677f81a429cd6a703c08ac01079a8fd9b4b2eee585dad8d777bfadfed9178bc958d7b89ec2ad84402ad6b359a3ed66473609e74848437c9a1a0b4001faa64ff770856a9312174ef0105c5e71e29f38cab63ecfa03c108fd920eb58b14c24ceecfb57fba4268024c33829285d2a4cfd0890384065ba01caec0712581825fcad0ca0fe3edf9ca495c870091518ea339936736d8f2d4c5be9352df4bbf6ffb9ae3e3eff1672c3fb45e56b2c236a05455069d3a5b1a8107fd372ebacc11c23dab4ca707a9309cbd3797016357fdd5fd4a6474e126280ddc17ce99b964bf7fb01ded41ea9380e188054c90cdf2906da5f1d70639daf5d03d6a37f3870e7b5dc27bf70c392520fcb55a952590effb7257f7f61b72de76ca80d4cf0052475e6a107b9e777f3eed11cbd5b0e6fce31c1d22153cb87505478d7251b94b2fd4ed4721dec77a89194bd6a08b4c2dc8acf791c379850881012dd0c2bcb954831cdeb70b7caae335a5684ace173e693ac67a7289c20047311c235ba32e948d124c245baed3d9e11733df",
+								"type": "default"
+							},
+							{
+								"key": "x-api-signature",
+								"value": "a05928757d9e66251599c6f35224932b697f042713615e03c1a20a2badf5ffc1b7810a1065132c8f6a414507c879ccac812b8987f3434f15f288c33b8c8cf7cd99eba0ccb887f0cb6aef882a1c7a47f26c31e264f44564459319082a353a35727d746d8ac0cc5af40e54554b35b62c039be83840be27dbf495f47fa2093f11ac44666fe1b6099b5cb46ff843cb933f882e30eb19b8b88a02959ce4bf8ebbd86b5fae3b54b5c0861391ed7788b5387daad6d24f3c92c264b608245b48ace7eee089f203af0cb4ec93d970ff0e5912d63563531fce1b8a2d48eb12b849104695ecbea9fa96474ee659ee04c781a472d7060beef8cd845ed94b54b33401a0d65045",
+								"type": "default"
+							},
+							{
+								"key": "x-api-token",
+								"value": "1671065165591",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \n            \"userId\": \"rega\",\n            \"externalUserId\": \"elmaster\",\n            \"scores\": [{\n                \"scoreType\": \"kills\",\n                \"value\": 5}\n            ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4101/sdk/v2/tournaments/ad092f92-ce73-49df-a59f-1b423ad57463/submit",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4101",
+							"path": [
+								"sdk",
+								"v2",
+								"tournaments",
+								"ad092f92-ce73-49df-a59f-1b423ad57463",
+								"submit"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Verify Signature",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "publicKey_292c8af42fcd9e2ebf893f389b2699f0_7c4f10db5bbc7ad3c96fbd04c62fa93912c0fdeff3a7ab9f6d572c105a1d21b6ac1656e0e37ede42212cfc0a1063cca25e3e51c62e9fb0e60a63f2367004b9a62021b25827c312051e4d58afa33469bc7a349b88d27e62063b1edf124c92ab457b387653e6b35fcfd0bce0e73bab5ad836806feeb764906cc1fe7c6ad6af18c23f00272c12b7811fa6912330915b2e3d0d173a5d7fd2c7020ccec5d6d95cb4ed3d13fe2f9e3a3e0067f4a6ff0ce402ea68be046c847443b2acd9e303b3db91f9cd4a01ba9f2e4a884b3f9b0a0804dc4b9f996266abc04d04f754edc6406279aabb569f1377ad9ee6d0dec4f56bbf7bf0493d9e1b84a44c4d89b46bc3f279ab72b790b08de42aca3ad9df143038abd66fece2a61988fee5dcd4f7c085e55369a0f140117e47ce0f001d5817f86f662d700b6bb34afc16d8cac5611306e8e5b837eae8b5f86b43471608e416e428c83188527a6c41ffe2395158921761c029dbe134f824d0600d8b83e4e3b213091ec332684b27b752925e2fe7005ea14b33abe55d155d818806ba711c8119ec9925dc57245e15ca3fb701bb6601f38da74cb0465bbf10b413ced9ef512eaef1d335447fa226907c84c7de414670c0d6b38ebfebf4d549f0c8455d279205888a7006e4b9ecfbc181597dce93ef57b02bd59d6f26724a721f2cff6342b3c9d189ff32d984480e59dba3f71ad0bd9482b64d9ff7584b7bd634432572f2770b53ef38c84f8faaa62ef9ab580fae9af80c3c4a3c63182466b3cde50400e4c7a05962f64c4419833a3c68c0c5a1717ac2f96ee08e6843",
+								"type": "default"
+							},
+							{
+								"key": "x-api-signature",
+								"value": "24507b9715748a494bcb5df8c7f824fdc4b31307e8e1668e70b46d82f4b4ec3e2a4bbb8ccc1d45cdd585da101826ad3ebe768b24cc2a56f4481f41570b1f42de217004915c7864e92a4880cace060d6fc6ea4c51983cbd24df76f8aaee9a13f2d53282e7cb0027aaf84e9f3e5546e3e4d808c0d5b7d2c345cd032a5621796f9ce3b67b7982d248ab869d07e3fd74a2ac262478ebf39ee10adc3257359aca823a75e50040f8837d7279600deb6ebc9b3ad1312c6f41f737b2ad05e381d624e04987167bdaed629b5ab74c668960fcee01a3c3eef3e3b8c44c51c1d487ff366b5f708fa42749bfedcec69d77ec7e8e5e27e25d6463c689be5d0d96f4cb5afe5333",
+								"type": "default"
+							},
+							{
+								"key": "x-api-token",
+								"value": "1671752614582",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"value\": 10\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4101/sdk/v2/signature/verify",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4101",
+							"path": [
+								"sdk",
+								"v2",
+								"signature",
+								"verify"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Signature",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "publicKey_292c8af42fcd9e2ebf893f389b2699f0_7c4f10db5bbc7ad3c96fbd04c62fa93912c0fdeff3a7ab9f6d572c105a1d21b6ac1656e0e37ede42212cfc0a1063cca25e3e51c62e9fb0e60a63f2367004b9a62021b25827c312051e4d58afa33469bc7a349b88d27e62063b1edf124c92ab457b387653e6b35fcfd0bce0e73bab5ad836806feeb764906cc1fe7c6ad6af18c23f00272c12b7811fa6912330915b2e3d0d173a5d7fd2c7020ccec5d6d95cb4ed3d13fe2f9e3a3e0067f4a6ff0ce402ea68be046c847443b2acd9e303b3db91f9cd4a01ba9f2e4a884b3f9b0a0804dc4b9f996266abc04d04f754edc6406279aabb569f1377ad9ee6d0dec4f56bbf7bf0493d9e1b84a44c4d89b46bc3f279ab72b790b08de42aca3ad9df143038abd66fece2a61988fee5dcd4f7c085e55369a0f140117e47ce0f001d5817f86f662d700b6bb34afc16d8cac5611306e8e5b837eae8b5f86b43471608e416e428c83188527a6c41ffe2395158921761c029dbe134f824d0600d8b83e4e3b213091ec332684b27b752925e2fe7005ea14b33abe55d155d818806ba711c8119ec9925dc57245e15ca3fb701bb6601f38da74cb0465bbf10b413ced9ef512eaef1d335447fa226907c84c7de414670c0d6b38ebfebf4d549f0c8455d279205888a7006e4b9ecfbc181597dce93ef57b02bd59d6f26724a721f2cff6342b3c9d189ff32d984480e59dba3f71ad0bd9482b64d9ff7584b7bd634432572f2770b53ef38c84f8faaa62ef9ab580fae9af80c3c4a3c63182466b3cde50400e4c7a05962f64c4419833a3c68c0c5a1717ac2f96ee08e6843",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"privateKey\": \"-----BEGIN PRIVATE KEY-----\\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDLPaZwaSOAeewY\\nEFvX4vDCEppNjVSuS1H5ZqVsjt1knRDNsgwaTD7hLb+nP00cd4e4sPNToQrajYlt\\nOw2Q1v6jfIQi2w2Hcy9brZXso87Erl0QPou2RcHvTyt2SjQPtJO6ik3oedwDy65a\\n633Yc11PmKUCg02inRubkrwVfC9Zugn4LOyeZ84+PtCUKSolvuetpyWJ0zYJdHlt\\nZsi3lYn1qqDwsjA8N22lC/5Q2bpttvmjK127sovR5Q6GfHYgdcyuyV7YJdaAWe7C\\n8zmYocF15ZiKkvXgasIc8RTWbW6++sAXyqxAxTHI7FbFieNud0hpgAdDgyPzC5DT\\n6qX9sb+1AgMBAAECggEAFjPodFxQCA+JtsFGv0loAtOUbsdzSk0pKeVIShk7X2v3\\nM3lxcAgHUIM2bjdwnZ0DQy51jpvHu0N+EWRDoaCTFdoa91HV4we20z2d5MmqY3sm\\n6Ijkq2dofdO4zEXj9RlFkDnes/hoDDQamo0iZNyJg5IJ6MHeX9bo9rBrgq9b3uHN\\npE9bis6A3atAGML9qr/tVsLXtyIH5rUvabr/AC5hAbA1FSIHtAp8TTIhn8Pf9wjT\\ng5KiUlWR/7+9nN1ZxbpKisA/WrBp4i3B87yij7Yr8J95iY7jf1YQQZG4SoxKHPCl\\n2ColwWF3MXQrvTLV3VswMG3IBN+jTnbszG7NvNb6YQKBgQDuu2nOXYUQEH4MXlBx\\nA9Bnn4IBs2fr9zhulLvYWGY/sahB1PcdNkiheOv7jjzRyNsF2qpp3Nk/Zlni9JRU\\nl5XR64oZbxpOCBvI5GehZAVdAl8Begt+Fi24H/uOriymS3ynTcnxS3HaI5AF7UjS\\niGgjrYg5MZGqt8CAVIr9VkpXUQKBgQDZ8QwjfGaty8aIGli3fzw//Ywn5ZbJP82o\\nO4ChaiqU1XW2gN1RM5Zb6GLrAOtC5ahjr/gmvEs5rBNtDfdE4JoHojKXdNE6rX9P\\nT79y70U2UIp2xm0T1449OQNnEzmpY2SJ28GfY442jlaR6KDIzmwOPTYqnuiLu2ax\\n6IfKIorRJQKBgENXvK4I9Xslm9jzVe+7arOAbFT8fckzcMjIzgBmV1mKTPNdFuQ3\\npt9d0/ufEQsAhMAvAblhIitfPOXnplwCcrHHpqosDBiM8wGFZLJDG7wz6gbpnYpQ\\nyU7SPszt1wyF6MDtEZUuegxV0c/KMquo7O97iRzRHc0xjmzk7FwwVkIxAoGBAJio\\nwgnxT7MZc/1OByqxkzB3l78ykMZzTMk0tMtcJGuQgh3Ocjg43G+QfgmC4UhAugzp\\n6/amGkNRh2HyUGwMr5f9Q1bX2t8xPGX/xGjrtR1wmSzNnQYzDU1RLFL9InzGRFxU\\ndHIDOFB6r6UQv98oyIPI2LJOETIfmLWx3bv3KimJAoGAch+fBA08gc3AjjNUI2yk\\nrUS/E1YPNpOp+DAzbPrhs9tHel6GzW5Y9oYzr9IizCSc90FKN4Ydt38ezVPcbRLM\\n2XHqHFP788ERnsAzB1IzCGhYtPwLnwZq4klkCT0RyrYVBWc+e+Nm1A6RSJTcJ5F6\\nB1n7NdC5pMWPbkTSIWRaOAA=\\n-----END PRIVATE KEY-----\\n\",\n    \"data\": {\n        \"value\": 10\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4101/sdk/v2/signature/generate",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4101",
+							"path": [
+								"sdk",
+								"v2",
+								"signature",
+								"generate"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

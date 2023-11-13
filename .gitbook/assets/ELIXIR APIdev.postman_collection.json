@@ -1,0 +1,2302 @@
+{
+	"info": {
+		"_postman_id": "258e12c6-f8c4-4845-9d2f-773883ed2ff4",
+		"name": "ELIXIR API",
+		"description": "Elixir offers a powerful REST API that supports tokenization in the bitcoin's sidechain of Liquid. It brings powerful features to create a unique NFT standard technology for inter-operable skins. ",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "API KEYS",
+			"item": [
+				{
+					"name": "Issue and API key",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"description": "Authentication token from the API key belonging to the user / JWT if the request is coming from the front",
+								"key": "x-api-key",
+								"type": "text",
+								"value": "5dda3946-c3d0-4ee6-abef-ed27196f14f4"
+							}
+						],
+						"url": {
+							"raw": "https://sandbox.elixir.app/keys",
+							"protocol": "https",
+							"host": [
+								"sandbox",
+								"elixir",
+								"app"
+							],
+							"path": [
+								"keys"
+							]
+						},
+						"description": "Functionality to get the key and userId"
+					},
+					"response": [
+						{
+							"name": "Issue and API key",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "Authentication token from the API key belonging to the user / JWT if the request is coming from the front",
+										"key": "x-api-key",
+										"type": "text",
+										"value": "5dda3946-c3d0-4ee6-abef-ed27196f14f4"
+									}
+								],
+								"url": {
+									"raw": "https://sandbox.elixir.app/keys",
+									"protocol": "https",
+									"host": [
+										"sandbox",
+										"elixir",
+										"app"
+									],
+									"path": [
+										"keys"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Length",
+									"value": "94"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 14 Apr 2021 20:33:31 GMT"
+								},
+								{
+									"key": "Etag",
+									"value": "W/\"5e-NAyz6yNC2A5VX/yqnP7kBtPH4Nk\""
+								},
+								{
+									"key": "Expect-Ct",
+									"value": "max-age=0"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Dns-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "X-Xss-Protection",
+									"value": "0"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"key\": \"5e0fc6db-6472-4167-b789-c83d671ae9bf\",\n    \"userId\": \"09142dc7-283d-400a-b073-9a20955cb92d\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Retrieve an API key",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "5dda3946-c3d0-4ee6-abef-ed27196f14f4",
+								"description": "Authentication token from the API key belonging to the user / JWT if the request is coming from the front",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://sandbox.elixir.app/keys/:api-key",
+							"protocol": "https",
+							"host": [
+								"sandbox",
+								"elixir",
+								"app"
+							],
+							"path": [
+								"keys",
+								":api-key"
+							],
+							"variable": [
+								{
+									"key": "api-key",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Retrieve an API key",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "5dda3946-c3d0-4ee6-abef-ed27196f14f4",
+										"description": "Authentication token from the API key belonging to the user / JWT if the request is coming from the front",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://sandbox.elixir.app/keys/c9b95643-0741-479c-9a6e-f62f7acba2a1",
+									"protocol": "https",
+									"host": [
+										"sandbox",
+										"elixir",
+										"app"
+									],
+									"path": [
+										"keys",
+										"c9b95643-0741-479c-9a6e-f62f7acba2a1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Length",
+									"value": "94"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 14 Apr 2021 20:35:03 GMT"
+								},
+								{
+									"key": "Etag",
+									"value": "W/\"5e-qJiinuBcbFWgrOO0QAhSodAxTzU\""
+								},
+								{
+									"key": "Expect-Ct",
+									"value": "max-age=0"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Dns-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "X-Xss-Protection",
+									"value": "0"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"key\": \"c9b95643-0741-479c-9a6e-f62f7acba2a1\",\n    \"userId\": \"09142dc7-283d-400a-b073-9a20955cb92d\"\n}"
+						}
+					]
+				},
+				{
+					"name": "List API keys",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "5dda3946-c3d0-4ee6-abef-ed27196f14f4",
+								"description": "Authentication token from the API key belonging to the user / JWT if the request is coming from the front",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://sandbox.elixir.app/keys",
+							"protocol": "https",
+							"host": [
+								"sandbox",
+								"elixir",
+								"app"
+							],
+							"path": [
+								"keys"
+							]
+						},
+						"description": "List all keys and userId"
+					},
+					"response": [
+						{
+							"name": "List API keys",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "5dda3946-c3d0-4ee6-abef-ed27196f14f4",
+										"description": "Authentication token from the API key belonging to the user / JWT if the request is coming from the front",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://sandbox.elixir.app/keys",
+									"protocol": "https",
+									"host": [
+										"sandbox",
+										"elixir",
+										"app"
+									],
+									"path": [
+										"keys"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 14 Apr 2021 20:33:52 GMT"
+								},
+								{
+									"key": "Etag",
+									"value": "W/\"2f9-rWyuICB/7+MJnea25X5P4qIJyGQ\""
+								},
+								{
+									"key": "Expect-Ct",
+									"value": "max-age=0"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Dns-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "X-Xss-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Content-Length",
+									"value": "270"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"key\": \"5dda3946-c3d0-4ee6-abef-ed27196f14f4\",\n        \"userId\": \"09142dc7-283d-400a-b073-9a20955cb92d\"\n    },\n    {\n        \"key\": \"fbefa09f-cfb8-401f-9ff0-084ce985d444\",\n        \"userId\": \"09142dc7-283d-400a-b073-9a20955cb92d\"\n    },\n    {\n        \"key\": \"83895156-95b1-4ae9-a739-b6b38505f253\",\n        \"userId\": \"09142dc7-283d-400a-b073-9a20955cb92d\"\n    },\n    {\n        \"key\": \"2b004ddb-0a2f-4fe4-98ac-3f116ca1752b\",\n        \"userId\": \"09142dc7-283d-400a-b073-9a20955cb92d\"\n    },\n    {\n        \"key\": \"783f6a26-61bd-400f-8f41-84d090b237ce\",\n        \"userId\": \"09142dc7-283d-400a-b073-9a20955cb92d\"\n    },\n    {\n        \"key\": \"c9b95643-0741-479c-9a6e-f62f7acba2a1\",\n        \"userId\": \"09142dc7-283d-400a-b073-9a20955cb92d\"\n    },\n    {\n        \"key\": \"2f5bca37-4801-4a82-b580-6463e21a8098\",\n        \"userId\": \"09142dc7-283d-400a-b073-9a20955cb92d\"\n    },\n    {\n        \"key\": \"5e0fc6db-6472-4167-b789-c83d671ae9bf\",\n        \"userId\": \"09142dc7-283d-400a-b073-9a20955cb92d\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Remove API key",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "5dda3946-c3d0-4ee6-abef-ed27196f14f4",
+								"description": "Authentication token from the API key belonging to the user / `JWT if the request is coming from the front",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://sandbox.elixir.app/keys/:api-key",
+							"protocol": "https",
+							"host": [
+								"sandbox",
+								"elixir",
+								"app"
+							],
+							"path": [
+								"keys",
+								":api-key"
+							],
+							"variable": [
+								{
+									"key": "api-key",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Remove API key failed",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "5dda3946-c3d0-4ee6-abef-ed27196f14f4",
+										"description": "Authentication token from the API key belonging to the user / `JWT if the request is coming from the front",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://sandbox.elixir.app/keys/34275556-608e-4cbf-b2be-0057424affbc",
+									"protocol": "https",
+									"host": [
+										"sandbox",
+										"elixir",
+										"app"
+									],
+									"path": [
+										"keys",
+										"34275556-608e-4cbf-b2be-0057424affbc"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Length",
+									"value": "17"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 14 Apr 2021 20:34:09 GMT"
+								},
+								{
+									"key": "Etag",
+									"value": "W/\"11-UIVUdQWNarX1D9mk06okyEMbpS8\""
+								},
+								{
+									"key": "Expect-Ct",
+									"value": "max-age=0"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Dns-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "X-Xss-Protection",
+									"value": "0"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": false\n}"
+						},
+						{
+							"name": "Remove API key",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "5dda3946-c3d0-4ee6-abef-ed27196f14f4",
+										"description": "Authentication token from the API key belonging to the user / `JWT if the request is coming from the front",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://sandbox.elixir.app/keys/2f5bca37-4801-4a82-b580-6463e21a8098",
+									"protocol": "https",
+									"host": [
+										"sandbox",
+										"elixir",
+										"app"
+									],
+									"path": [
+										"keys",
+										"2f5bca37-4801-4a82-b580-6463e21a8098"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Length",
+									"value": "16"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 14 Apr 2021 20:34:27 GMT"
+								},
+								{
+									"key": "Etag",
+									"value": "W/\"10-oV4hJxRVSENxc/wX8+mA4/Pe4tA\""
+								},
+								{
+									"key": "Expect-Ct",
+									"value": "max-age=0"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Dns-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "X-Xss-Protection",
+									"value": "0"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true\n}"
+						}
+					]
+				}
+			],
+			"description": "The Elixir API usesAPI Keysto authenticate requests. Authentication to the API is performed with a key. Provide your API key on the token header.\nAll API requests must be made over HTTPS. Calls made over plain HTTP will fail. API Requests without authentication will also fail.",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "GAMES",
+			"item": [
+				{
+					"name": "Retrieve games",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "5dda3946-c3d0-4ee6-abef-ed27196f14f4",
+								"description": "Authorization token from the API key belonging to the user / JWT if the request is coming from the front",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://sandbox.elixir.app/games",
+							"protocol": "https",
+							"host": [
+								"sandbox",
+								"elixir",
+								"app"
+							],
+							"path": [
+								"games"
+							]
+						},
+						"description": "This endpoint list all uploaded games in Elixir"
+					},
+					"response": [
+						{
+							"name": "Retrieve games",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "5dda3946-c3d0-4ee6-abef-ed27196f14f4",
+										"description": "Authorization token from the API key belonging to the user / JWT if the request is coming from the front",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://sandbox.elixir.app/games",
+									"protocol": "https",
+									"host": [
+										"sandbox",
+										"elixir",
+										"app"
+									],
+									"path": [
+										"games"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 14 Apr 2021 20:32:40 GMT"
+								},
+								{
+									"key": "Etag",
+									"value": "W/\"142e-TfY8jHmKa0tnFUZEMYqEop/rUhM\""
+								},
+								{
+									"key": "Expect-Ct",
+									"value": "max-age=0"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Dns-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "X-Xss-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1849"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"_id\": \"0d3a01eb-73dd-4f7b-a81f-91aa0e7420c6\",\n        \"status\": \"DRAFT\",\n        \"information\": {\n            \"description\": \"LIGHT⚡️NITE is a multiplayer third person shooter with in-game rewards and a minimalistic low-poly & cartoonish design offering several game modes like team deathmatch or a battle-royale game mode for soloQ and squads teamplay .\",\n            \"developer\": \"Satoshis Games\",\n            \"genre\": [\n                \"MMO\",\n                \"Adventure\",\n                \"Sports\",\n                \"Role\"\n            ],\n            \"name\": \"Light Nite\",\n            \"players\": [\n                \"MultiPlayer\",\n                \"SinglePlayer\"\n            ],\n            \"publisher\": \"Satoshis Games\",\n            \"website\": \"https://satoshis.games\",\n            \"admins\": [\n                \"09142dc7-283d-400a-b073-9a20955cb92d\",\n                \"cfec5e48-3009-40e7-919f-3586015cef8e\",\n                \"329753d8-0c26-4840-b615-3d9a399c6f08\",\n                \"8ef61fb4-7e13-4d09-aac9-2ab3a53c739b\",\n                \"e87cca6d-d28a-4ee4-af8c-fe444307287d\",\n                \"ed78a1d7-eb4b-4ae6-946d-6898b29073ce\",\n                \"f94a0ee7-7a2a-45c0-843a-ea7e993b632c\",\n                \"aea1f008-c8a6-4041-bd2d-95a7c4735d36\"\n            ],\n            \"liquidAddress\": \"VJLHXVnV5cBciQv5C7M65SRVvw8s8GfjE67WkwCbHuh4zHtqJpwcyM6R6McpSaJjSvdKiHukAfioV91A\",\n            \"status\": \"DRAFT\"\n        },\n        \"specs\": {\n            \"minimum\": [\n                {\n                    \"cpu\": \"Intel i3 / AMD Ryzen 3\",\n                    \"gpu\": \"2 GB\",\n                    \"hdd\": \"2 GB\",\n                    \"ram\": \"Nvidia GeForce GTX 970 / AMD RX480\",\n                    \"os\": \"Windows\"\n                }\n            ],\n            \"recommended\": [\n                {\n                    \"cpu\": \"i5\",\n                    \"gpu\": \"NVIDIA GeForce GTX 1Gb\",\n                    \"hdd\": \"1GB\",\n                    \"ram\": \"4GB\",\n                    \"os\": \"Windows\"\n                },\n                {\n                    \"cpu\": \"Intel i5 / AMD Ryzen 5\",\n                    \"gpu\": \"8 GB\",\n                    \"hdd\": \"2 GB\",\n                    \"ram\": \"Nvidia GeForce GTX 1GB VRAM / AMD Radeon R0 Fury\",\n                    \"os\": \"Mac\"\n                }\n            ]\n        },\n        \"languages\": {\n            \"interface\": [\n                \"English\"\n            ],\n            \"audio\": [\n                \"French\"\n            ],\n            \"subtitles\": [\n                \"Swidish\"\n            ]\n        },\n        \"media\": {\n            \"images\": [\n                \"https://d1udajbuf50cfc.cloudfront.net/game/d24435fb-6a2e-4797-b7ef-2a5fb5053be1/1611852431739_battle_royale_2_png\",\n                \"https://d1udajbuf50cfc.cloudfront.net/game/d24435fb-6a2e-4797-b7ef-2a5fb5053be1/1611852434588_battle_royale_1_png\",\n                \"https://d1udajbuf50cfc.cloudfront.net/game/d24435fb-6a2e-4797-b7ef-2a5fb5053be1/1611852428994_battle_royale_3_png\",\n                \"https://d1udajbuf50cfc.cloudfront.net/game/d24435fb-6a2e-4797-b7ef-2a5fb5053be1/1611852425675_battle_royale_4_png\"\n            ],\n            \"icons\": [\n                \"https://d1udajbuf50cfc.cloudfront.net/game/d24435fb-6a2e-4797-b7ef-2a5fb5053be1/1611852381950_lightnite_logo_png\"\n            ],\n            \"videos\": [\n                \"https://d1udajbuf50cfc.cloudfront.net/game/d24435fb-6a2e-4797-b7ef-2a5fb5053be1/1611852463666_clip_3_1_basic_fixed_mov\",\n                \"https://d1udajbuf50cfc.cloudfront.net/game/d24435fb-6a2e-4797-b7ef-2a5fb5053be1/1611852459000_clip_1_2_mp_4\"\n            ]\n        },\n        \"social\": {\n            \"Twitter\": \"www.twitter.com\"\n        }\n    },\n    {\n        \"_id\": \"64baef21-1b1a-474c-99a1-46466b5e714d\",\n        \"status\": \"DRAFT\",\n        \"information\": {\n            \"description\": \"ADFADFSA\",\n            \"developer\": \"ADFASDFA\",\n            \"genre\": [\n                \"FPS\"\n            ],\n            \"name\": \"Bitcoin Bounty Hunt\",\n            \"players\": [\n                \"SinglePlayer\",\n                \"LocalMultiPlayer\",\n                \"CoOp\"\n            ],\n            \"publisher\": \"ADFAD\",\n            \"website\": \"https://otrojuego.com\",\n            \"admins\": [\n                \"09142dc7-283d-400a-b073-9a20955cb92d\"\n            ],\n            \"liquidAddress\": \"VJLEKH6A39iV2ast8Ewai7UGQHt7pvaGivXoPsFeCiEhvUPNdkHUSQHPPW9sJ5RwtTwyieCnzEtY76rU\",\n            \"status\": \"DRAFT\"\n        },\n        \"specs\": {\n            \"minimum\": [\n                {\n                    \"cpu\": \"i5\",\n                    \"gpu\": \"NVIDIA GeForce GTX 1Gb\",\n                    \"hdd\": \"1GB\",\n                    \"ram\": \"4GB\",\n                    \"os\": \"Windows\"\n                }\n            ],\n            \"recommended\": [\n                {\n                    \"cpu\": \"i5\",\n                    \"gpu\": \"NVIDIA GeForce GTX 1Gb\",\n                    \"hdd\": \"1GB\",\n                    \"ram\": \"4GB\",\n                    \"os\": \"Windows\"\n                }\n            ]\n        },\n        \"languages\": {\n            \"interface\": [\n                \"English\",\n                \"French\",\n                \"German\"\n            ],\n            \"audio\": [\n                \"English\"\n            ],\n            \"subtitles\": [\n                \"Chinese\"\n            ]\n        },\n        \"media\": {\n            \"images\": [\n                \"https://d1udajbuf50cfc.cloudfront.net/game/64baef21-1b1a-474c-99a1-46466b5e714d/1611855243886_game_logo_png\",\n                \"https://d1udajbuf50cfc.cloudfront.net/game/64baef21-1b1a-474c-99a1-46466b5e714d/1611855518300_gorilla_jpg\"\n            ],\n            \"icons\": [\n                \"https://d1udajbuf50cfc.cloudfront.net/game/64baef21-1b1a-474c-99a1-46466b5e714d/1611855288499_hxr_g_7_q_png\"\n            ],\n            \"videos\": [\n                \"https://d1udajbuf50cfc.cloudfront.net/game/64baef21-1b1a-474c-99a1-46466b5e714d/1611855313430_clip_1_1_2_mp_4\"\n            ]\n        },\n        \"social\": {\n            \"Twitter\": \"www.twitter.com\"\n        }\n    },\n    {\n        \"_id\": \"a90e46d5-83eb-4def-a145-2b1db16031a2\",\n        \"status\": \"DRAFT\",\n        \"information\": {\n            \"description\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum\",\n            \"developer\": \"Satoshis Games\",\n            \"genre\": [\n                \"Arcade\",\n                \"FPS\"\n            ],\n            \"name\": \"Lightning Shooter\",\n            \"players\": [\n                \"MultiPlayer\"\n            ],\n            \"publisher\": \"Satoshis Games\",\n            \"website\": \"https://satoshis.games\",\n            \"admins\": [\n                \"09142dc7-283d-400a-b073-9a20955cb92d\"\n            ],\n            \"liquidAddress\": \"VJL62kixiTkr62s5Uv1vER1nGEBNHEk2JBK78MubtesfZbebhek5yp2bB67Mg97YsBoJGrqW4mSdidNE\",\n            \"status\": \"DRAFT\"\n        },\n        \"specs\": {\n            \"minimum\": [\n                {\n                    \"cpu\": \"i5\",\n                    \"gpu\": \"NVIDIA GeForce GTX 1Gb\",\n                    \"hdd\": \"1GB\",\n                    \"ram\": \"4GB\",\n                    \"os\": \"Windows\"\n                }\n            ],\n            \"recommended\": [\n                {\n                    \"cpu\": \"i5\",\n                    \"gpu\": \"NVIDIA GeForce GTX 1Gb\",\n                    \"hdd\": \"1GB\",\n                    \"ram\": \"4GB\",\n                    \"os\": \"Windows\"\n                }\n            ]\n        },\n        \"languages\": {\n            \"interface\": [\n                \"English\"\n            ],\n            \"audio\": [\n                \"English\"\n            ],\n            \"subtitles\": [\n                \"English\"\n            ]\n        },\n        \"media\": {\n            \"images\": [\n                \"https://d1udajbuf50cfc.cloudfront.net/game/a90e46d5-83eb-4def-a145-2b1db16031a2/1613376191317_lightnite_logo_png\"\n            ],\n            \"icons\": [\n                \"https://d1udajbuf50cfc.cloudfront.net/game/a90e46d5-83eb-4def-a145-2b1db16031a2/1613376198001_lightnite_logo_png\"\n            ],\n            \"videos\": [\n                \"https://d1udajbuf50cfc.cloudfront.net/game/a90e46d5-83eb-4def-a145-2b1db16031a2/1613376214098_january_update_mp_4\"\n            ]\n        },\n        \"social\": {\n            \"Twitter\": \"www.twitter.com\"\n        }\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Deposit Balance to Game",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "5dda3946-c3d0-4ee6-abef-ed27196f14f4",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"amount\": 20000\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://sandbox.elixir.app/games/:gameId/deposit/request",
+							"protocol": "https",
+							"host": [
+								"sandbox",
+								"elixir",
+								"app"
+							],
+							"path": [
+								"games",
+								":gameId",
+								"deposit",
+								"request"
+							],
+							"variable": [
+								{
+									"key": "gameId",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Deposit Balance to Game",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "5dda3946-c3d0-4ee6-abef-ed27196f14f4",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"amount\": 20000\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://sandbox.elixir.app/games/0d3a01eb-73dd-4f7b-a81f-91aa0e7420c6/deposit/request",
+									"protocol": "https",
+									"host": [
+										"sandbox",
+										"elixir",
+										"app"
+									],
+									"path": [
+										"games",
+										"0d3a01eb-73dd-4f7b-a81f-91aa0e7420c6",
+										"deposit",
+										"request"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 14 Apr 2021 20:32:53 GMT"
+								},
+								{
+									"key": "Etag",
+									"value": "W/\"8ed-6h5BRc3Qol9cZnKDRghyV8WBGCg\""
+								},
+								{
+									"key": "Expect-Ct",
+									"value": "max-age=0"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Dns-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "X-Xss-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1106"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"0d3a01eb-73dd-4f7b-a81f-91aa0e7420c6\",\n    \"status\": \"DRAFT\",\n    \"information\": {\n        \"description\": \"LIGHT⚡️NITE is a multiplayer third person shooter with in-game rewards and a minimalistic low-poly & cartoonish design offering several game modes like team deathmatch or a battle-royale game mode for soloQ and squads teamplay .\",\n        \"developer\": \"Satoshis Games\",\n        \"genre\": [\n            \"MMO\",\n            \"Adventure\",\n            \"Sports\",\n            \"Role\"\n        ],\n        \"name\": \"Light Nite\",\n        \"players\": [\n            \"MultiPlayer\",\n            \"SinglePlayer\"\n        ],\n        \"publisher\": \"Satoshis Games\",\n        \"website\": \"https://satoshis.games\",\n        \"admins\": [\n            \"09142dc7-283d-400a-b073-9a20955cb92d\",\n            \"cfec5e48-3009-40e7-919f-3586015cef8e\",\n            \"329753d8-0c26-4840-b615-3d9a399c6f08\",\n            \"8ef61fb4-7e13-4d09-aac9-2ab3a53c739b\",\n            \"e87cca6d-d28a-4ee4-af8c-fe444307287d\",\n            \"ed78a1d7-eb4b-4ae6-946d-6898b29073ce\",\n            \"f94a0ee7-7a2a-45c0-843a-ea7e993b632c\",\n            \"aea1f008-c8a6-4041-bd2d-95a7c4735d36\"\n        ],\n        \"liquidAddress\": \"VJLFvsUgqRd8JHR5q9cxqWFRrjM2i3wtk8YZMJATo2Eg7RoYJtMCmHysbZCFySABthVpogFCEAdswSL6\"\n    },\n    \"specs\": {\n        \"minimum\": [\n            {\n                \"cpu\": \"Intel i3 / AMD Ryzen 3\",\n                \"gpu\": \"2 GB\",\n                \"hdd\": \"2 GB\",\n                \"ram\": \"Nvidia GeForce GTX 970 / AMD RX480\",\n                \"os\": \"Windows\"\n            }\n        ],\n        \"recommended\": [\n            {\n                \"cpu\": \"i5\",\n                \"gpu\": \"NVIDIA GeForce GTX 1Gb\",\n                \"hdd\": \"1GB\",\n                \"ram\": \"4GB\",\n                \"os\": \"Windows\"\n            },\n            {\n                \"cpu\": \"Intel i5 / AMD Ryzen 5\",\n                \"gpu\": \"8 GB\",\n                \"hdd\": \"2 GB\",\n                \"ram\": \"Nvidia GeForce GTX 1GB VRAM / AMD Radeon R0 Fury\",\n                \"os\": \"Mac\"\n            }\n        ]\n    },\n    \"languages\": {\n        \"interface\": [\n            \"English\"\n        ],\n        \"audio\": [\n            \"French\"\n        ],\n        \"subtitles\": [\n            \"Swidish\"\n        ]\n    },\n    \"media\": {\n        \"images\": [\n            \"https://d1udajbuf50cfc.cloudfront.net/game/d24435fb-6a2e-4797-b7ef-2a5fb5053be1/1611852431739_battle_royale_2_png\",\n            \"https://d1udajbuf50cfc.cloudfront.net/game/d24435fb-6a2e-4797-b7ef-2a5fb5053be1/1611852434588_battle_royale_1_png\",\n            \"https://d1udajbuf50cfc.cloudfront.net/game/d24435fb-6a2e-4797-b7ef-2a5fb5053be1/1611852428994_battle_royale_3_png\",\n            \"https://d1udajbuf50cfc.cloudfront.net/game/d24435fb-6a2e-4797-b7ef-2a5fb5053be1/1611852425675_battle_royale_4_png\"\n        ],\n        \"icons\": [\n            \"https://d1udajbuf50cfc.cloudfront.net/game/d24435fb-6a2e-4797-b7ef-2a5fb5053be1/1611852381950_lightnite_logo_png\"\n        ],\n        \"videos\": [\n            \"https://d1udajbuf50cfc.cloudfront.net/game/d24435fb-6a2e-4797-b7ef-2a5fb5053be1/1611852463666_clip_3_1_basic_fixed_mov\",\n            \"https://d1udajbuf50cfc.cloudfront.net/game/d24435fb-6a2e-4797-b7ef-2a5fb5053be1/1611852459000_clip_1_2_mp_4\"\n        ]\n    },\n    \"social\": {\n        \"Twitter\": \"www.twitter.com\"\n    }\n}"
+						}
+					]
+				}
+			],
+			"description": "This page will help you get started with the upload & management of your games. Below there are all available endpoints."
+		},
+		{
+			"name": "ASSETS",
+			"item": [
+				{
+					"name": "Get assets",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "5dda3946-c3d0-4ee6-abef-ed27196f14f4",
+								"description": "Authorization token from the API key belonging to the user / JWT if the request is coming from the front",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://sandbox.elixir.app/assets",
+							"protocol": "https",
+							"host": [
+								"sandbox",
+								"elixir",
+								"app"
+							],
+							"path": [
+								"assets"
+							]
+						},
+						"description": "This endpoint allows you to get a game's assets to Elixir"
+					},
+					"response": [
+						{
+							"name": "Get assets",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "5dda3946-c3d0-4ee6-abef-ed27196f14f4",
+										"description": "Authorization token from the API key belonging to the user / JWT if the request is coming from the front",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://sandbox.elixir.app/assets",
+									"protocol": "https",
+									"host": [
+										"sandbox",
+										"elixir",
+										"app"
+									],
+									"path": [
+										"assets"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 14 Apr 2021 20:32:25 GMT"
+								},
+								{
+									"key": "Etag",
+									"value": "W/\"6053-7ZmtNgWiXufVVhie2RMJhAwv2fU\""
+								},
+								{
+									"key": "Expect-Ct",
+									"value": "max-age=0"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Dns-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "X-Xss-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"_id\": \"4a5b68e8-b53b-4603-98de-b845c83b45a1\",\n        \"status\": \"DRAFT\",\n        \"information\": {\n            \"category\": [\n                \"Character\"\n            ],\n            \"description\": \"american indian\",\n            \"gameId\": \"0d3a01eb-73dd-4f7b-a81f-91aa0e7420c6\",\n            \"limited\": true,\n            \"name\": \"Ale epo\",\n            \"price\": 50,\n            \"supply\": 500,\n            \"address\": \"VJL5gf1H1u87oQ6Bj81hiJdRwposQSveK98GhFEf5sGwXWYzCx1WPYMNcHqtdGdX2P7ZNq9HeS58aWS5\",\n            \"contract\": {\n                \"entity\": {\n                    \"domain\": \"explorer.elixir.app\"\n                },\n                \"issuer_pubkey\": \"02eafa3e7951335d57652999dd079b9559f42acc03c42fc0880f7c1f581bbee923\",\n                \"name\": \"Ale epo\",\n                \"precision\": 0,\n                \"ticker\": \"CAlep\",\n                \"version\": 0\n            },\n            \"liquidId\": \"1b4fe2c183caeccff8b974626432c1506af006cadd388022e4e51402ace97e0a\",\n            \"utxo\": \"36d35ee69ebb848df1cd60f4b4f005ee790ed443490a0792ec4a6eda2f43405f\",\n            \"numVotes\": 2,\n            \"change\": \"-0.40\",\n            \"marketPrice\": 85197,\n            \"soldUnits\": 8,\n            \"status\": \"DRAFT\"\n        },\n        \"media\": {\n            \"images\": \"https://d1udajbuf50cfc.cloudfront.net/game/0d3a01eb-73dd-4f7b-a81f-91aa0e7420c6/assets/4a5b68e8-b53b-4603-98de-b845c83b45a1/1611853695594_poster_png\",\n            \"glb\": \"https://elixir-gaming.s3.eu-west-2.amazonaws.com/game/0d3a01eb-73dd-4f7b-a81f-91aa0e7420c6/assets/4a5b68e8-b53b-4603-98de-b845c83b45a1/1611853707105_data?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAW7MG6ZVSBVKQUPOF%2F20210414%2Feu-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210414T203225Z&X-Amz-Expires=900&X-Amz-Signature=078850a49a7e51c5d8b28bbcd640f124bc425b29050501478dd9ea44057f4328&X-Amz-SignedHeaders=host\",\n            \"fbx\": \"https://elixir-gaming.s3.eu-west-2.amazonaws.com/game/0d3a01eb-73dd-4f7b-a81f-91aa0e7420c6/assets/4a5b68e8-b53b-4603-98de-b845c83b45a1/1611853716377_ale_epo_fbx?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAW7MG6ZVSBVKQUPOF%2F20210414%2Feu-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210414T203225Z&X-Amz-Expires=900&X-Amz-Signature=268dc377333ba7ad0f1460de2b243167ee8da1492125fa631a270dac6f4f9821&X-Amz-SignedHeaders=host\"\n        }\n    },\n    {\n        \"_id\": \"d0024ee4-1fb2-4dde-b172-6a51e25b4b92\",\n        \"status\": \"DRAFT\",\n        \"information\": {\n            \"category\": [\n                \"Clothing\"\n            ],\n            \"description\": \"Spy cap by blockstream\",\n            \"gameId\": \"64baef21-1b1a-474c-99a1-46466b5e714d\",\n            \"limited\": true,\n            \"name\": \"Blockstream Cap\",\n            \"price\": 100,\n            \"supply\": 100,\n            \"address\": \"VJL6sQM5YH5uzULBzRDYia4HK3S1WF2NcL86XbGgYE585xxndUQDuCtuRLFXn9QaNJSucwuV8JeBmhXS\",\n            \"contract\": {\n                \"entity\": {\n                    \"domain\": \"explorer.elixir.app\"\n                },\n                \"issuer_pubkey\": \"02cb2bf9da7497e5baebcc8671cfc5ce7124a95dca0a9c2d78c79ca7f64bc990a9\",\n                \"name\": \"Blockstream Cap\",\n                \"precision\": 0,\n                \"ticker\": \"CBlCa\",\n                \"version\": 0\n            },\n            \"liquidId\": \"21db92fa8b2b25fda799e5007d737cb98f88d3f06c8591baf18173a025f27184\",\n            \"utxo\": \"23fb1c50b7b0cb2c80ed590f0e88704533af2661b5488ec6b220636e5fcb9fde\",\n            \"numVotes\": 1,\n            \"soldUnits\": 1,\n            \"status\": \"DRAFT\"\n        },\n        \"media\": {\n            \"images\": \"https://d1udajbuf50cfc.cloudfront.net/game/64baef21-1b1a-474c-99a1-46466b5e714d/assets/d0024ee4-1fb2-4dde-b172-6a51e25b4b92/1611855637650_poster_png\",\n            \"glb\": \"https://elixir-gaming.s3.eu-west-2.amazonaws.com/game/64baef21-1b1a-474c-99a1-46466b5e714d/assets/d0024ee4-1fb2-4dde-b172-6a51e25b4b92/1611855665964_data?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAW7MG6ZVSBVKQUPOF%2F20210414%2Feu-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210414T203225Z&X-Amz-Expires=900&X-Amz-Signature=7b86ec97ff2b5219027814e5d2285539f7474bf1b8b2febeab124df3e041d824&X-Amz-SignedHeaders=host\",\n            \"fbx\": \"https://elixir-gaming.s3.eu-west-2.amazonaws.com/game/64baef21-1b1a-474c-99a1-46466b5e714d/assets/d0024ee4-1fb2-4dde-b172-6a51e25b4b92/1611855674331_blockstream_cap_fbx?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAW7MG6ZVSBVKQUPOF%2F20210414%2Feu-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210414T203225Z&X-Amz-Expires=900&X-Amz-Signature=260dce9c2dce72421077c21ec392e189d71e92e8cb0341b47241e02ebf170fe8&X-Amz-SignedHeaders=host\"\n        }\n    },\n    {\n        \"_id\": \"6d0c7db1-d8ac-4e21-9bbb-81076ef1dc9d\",\n        \"status\": \"DRAFT\",\n        \"information\": {\n            \"category\": [\n                \"Character\"\n            ],\n            \"description\": \"Charlie lee with chicken costum\",\n            \"gameId\": \"0d3a01eb-73dd-4f7b-a81f-91aa0e7420c6\",\n            \"limited\": true,\n            \"name\": \"Chicken\",\n            \"price\": 100,\n            \"supply\": 100,\n            \"address\": \"VJL5gf1H1u87oQ6Bj81hiJdRwposQSveK98GhFEf5sGwXWYzCx1WPYMNcHqtdGdX2P7ZNq9HeS58aWS5\",\n            \"contract\": {\n                \"entity\": {\n                    \"domain\": \"explorer.elixir.app\"\n                },\n                \"issuer_pubkey\": \"02eafa3e7951335d57652999dd079b9559f42acc03c42fc0880f7c1f581bbee923\",\n                \"name\": \"Chicken\",\n                \"precision\": 0,\n                \"ticker\": \"CChic\",\n                \"version\": 0\n            },\n            \"liquidId\": \"2ae08497f2c567bc2277d9435139ec3ff0d49db370261522655bfaa9817bda45\",\n            \"utxo\": \"7a2ae7351d0ea9737e8a94da047c647f5c1adc1797beaf88f50f41e9533b72d6\",\n            \"status\": \"DRAFT\"\n        },\n        \"media\": {\n            \"images\": \"https://d1udajbuf50cfc.cloudfront.net/game/0d3a01eb-73dd-4f7b-a81f-91aa0e7420c6/assets/6d0c7db1-d8ac-4e21-9bbb-81076ef1dc9d/1611856469804_poster_png\",\n            \"glb\": \"https://elixir-gaming.s3.eu-west-2.amazonaws.com/game/0d3a01eb-73dd-4f7b-a81f-91aa0e7420c6/assets/6d0c7db1-d8ac-4e21-9bbb-81076ef1dc9d/1611856474786_data?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAW7MG6ZVSBVKQUPOF%2F20210414%2Feu-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210414T203225Z&X-Amz-Expires=900&X-Amz-Signature=febdcbeb55d380149ea81d06d72b813daddb3718fa284ab663fabc0e0b38d79c&X-Amz-SignedHeaders=host\",\n            \"fbx\": \"https://elixir-gaming.s3.eu-west-2.amazonaws.com/game/0d3a01eb-73dd-4f7b-a81f-91aa0e7420c6/assets/6d0c7db1-d8ac-4e21-9bbb-81076ef1dc9d/1611856480474_chicken_fbx?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAW7MG6ZVSBVKQUPOF%2F20210414%2Feu-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210414T203225Z&X-Amz-Expires=900&X-Amz-Signature=377655238a3e1dcb8cb86628abc6abe427960b34fb4d8007d26223bd1f5ee682&X-Amz-SignedHeaders=host\"\n        }\n    },\n    {\n        \"_id\": \"b8dbf7df-6c41-4b92-aff2-b61a58f176be\",\n        \"status\": \"DRAFT\",\n        \"information\": {\n            \"category\": [\n                \"Weapon\"\n            ],\n            \"description\": \"beisbol bat\",\n            \"gameId\": \"0d3a01eb-73dd-4f7b-a81f-91aa0e7420c6\",\n            \"limited\": true,\n            \"name\": \"Hodl bat\",\n            \"price\": 25,\n            \"supply\": 45,\n            \"address\": \"VJL5gf1H1u87oQ6Bj81hiJdRwposQSveK98GhFEf5sGwXWYzCx1WPYMNcHqtdGdX2P7ZNq9HeS58aWS5\",\n            \"contract\": {\n                \"entity\": {\n                    \"domain\": \"explorer.elixir.app\"\n                },\n                \"issuer_pubkey\": \"02eafa3e7951335d57652999dd079b9559f42acc03c42fc0880f7c1f581bbee923\",\n                \"name\": \"Hodl bat\",\n                \"precision\": 0,\n                \"ticker\": \"WHoba\",\n                \"version\": 0\n            },\n            \"liquidId\": \"c7f4c7fd8dccf810810b5786de863b1f251d80b65180e2e9bc28d77ec48e46db\",\n            \"utxo\": \"11bd3925290ea278af33ccdf9f55016012437b2da22cff9343d0f7f7b9e5e808\",\n            \"soldUnits\": 8,\n            \"change\": \"-4.44\",\n            \"marketPrice\": 37081,\n            \"status\": \"DRAFT\"\n        },\n        \"media\": {\n            \"images\": \"https://d1udajbuf50cfc.cloudfront.net/game/0d3a01eb-73dd-4f7b-a81f-91aa0e7420c6/assets/b8dbf7df-6c41-4b92-aff2-b61a58f176be/1611856630324_poster_png\",\n            \"glb\": \"https://elixir-gaming.s3.eu-west-2.amazonaws.com/game/0d3a01eb-73dd-4f7b-a81f-91aa0e7420c6/assets/b8dbf7df-6c41-4b92-aff2-b61a58f176be/1611856634168_data?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAW7MG6ZVSBVKQUPOF%2F20210414%2Feu-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210414T203225Z&X-Amz-Expires=900&X-Amz-Signature=101a1ce023310e5f5c18195db9f7669e702959b72c60b3231d48ad7434e3091f&X-Amz-SignedHeaders=host\",\n            \"fbx\": \"https://elixir-gaming.s3.eu-west-2.amazonaws.com/game/0d3a01eb-73dd-4f7b-a81f-91aa0e7420c6/assets/b8dbf7df-6c41-4b92-aff2-b61a58f176be/1611856642589_hodlshop_fbx?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAW7MG6ZVSBVKQUPOF%2F20210414%2Feu-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210414T203225Z&X-Amz-Expires=900&X-Amz-Signature=582343ff6f9cecdc54b575adaa638f8563db584e2a9c60389b1f4717dba6d20c&X-Amz-SignedHeaders=host\"\n        }\n    },\n    {\n        \"_id\": \"cc23df5f-035b-4b31-945a-fd3520fd048a\",\n        \"status\": \"DRAFT\",\n        \"information\": {\n            \"category\": [\n                \"Clothing\"\n            ],\n            \"description\": \"backpack with strike logo\",\n            \"gameId\": \"64baef21-1b1a-474c-99a1-46466b5e714d\",\n            \"limited\": true,\n            \"name\": \"Strike Backpack\",\n            \"price\": 35,\n            \"supply\": 100,\n            \"address\": \"VJL6sQM5YH5uzULBzRDYia4HK3S1WF2NcL86XbGgYE585xxndUQDuCtuRLFXn9QaNJSucwuV8JeBmhXS\",\n            \"contract\": {\n                \"entity\": {\n                    \"domain\": \"explorer.elixir.app\"\n                },\n                \"issuer_pubkey\": \"02cb2bf9da7497e5baebcc8671cfc5ce7124a95dca0a9c2d78c79ca7f64bc990a9\",\n                \"name\": \"Strike Backpack\",\n                \"precision\": 0,\n                \"ticker\": \"CStBa\",\n                \"version\": 0\n            },\n            \"liquidId\": \"8da1d8c5fabb8ec0dff2e82ea5072c9a3fd1b9cab24989957240bc8ce18f6536\",\n            \"utxo\": \"421d416517680d8b9ab210ba38b8ee673e286a5630130eb85ffb671e4b9c466b\",\n            \"change\": \"-1.00\",\n            \"marketPrice\": 55868,\n            \"soldUnits\": 6,\n            \"numVotes\": 1,\n            \"status\": \"DRAFT\"\n        },\n        \"media\": {\n            \"images\": \"https://d1udajbuf50cfc.cloudfront.net/game/64baef21-1b1a-474c-99a1-46466b5e714d/assets/cc23df5f-035b-4b31-945a-fd3520fd048a/1612187393838_poster_png\",\n            \"glb\": \"https://elixir-gaming.s3.eu-west-2.amazonaws.com/game/64baef21-1b1a-474c-99a1-46466b5e714d/assets/cc23df5f-035b-4b31-945a-fd3520fd048a/1612187409162_data?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAW7MG6ZVSBVKQUPOF%2F20210414%2Feu-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210414T203225Z&X-Amz-Expires=900&X-Amz-Signature=d662e38ad6cad791bcf46f008225eed9e64ad90890ccb0190b70d5397a7c16bc&X-Amz-SignedHeaders=host\",\n            \"fbx\": \"https://elixir-gaming.s3.eu-west-2.amazonaws.com/game/64baef21-1b1a-474c-99a1-46466b5e714d/assets/cc23df5f-035b-4b31-945a-fd3520fd048a/1612187418577_strikepack_fbx?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAW7MG6ZVSBVKQUPOF%2F20210414%2Feu-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210414T203225Z&X-Amz-Expires=900&X-Amz-Signature=26231bc31fe3dc51f7b1398e96c93efe824b10210a8b0e0112f440921cadd4ef&X-Amz-SignedHeaders=host\"\n        }\n    },\n    {\n        \"_id\": \"9e7c6bb9-0260-4b8c-9a52-6461c92f626b\",\n        \"status\": \"PUBLISHED\",\n        \"information\": {\n            \"address\": \"VJLCvbgbv7kC8QLUe8eSHTNQiytgQkVADdJrDgBW85tmKd2PRj7PVEgMTActfi3boPAzbBuRuhqARRhA\",\n            \"category\": [\n                \"characters\"\n            ],\n            \"change\": 0,\n            \"contract\": {\n                \"entity\": {\n                    \"domain\": \"explorer.lightnite.io\"\n                },\n                \"issuer_pubkey\": \"03cd20f82e967e9b822dc537a8b0579f6a9c4958aa03a56a98efd94fa77c24f786\",\n                \"name\": \"Forest Guardian\",\n                \"precision\": 0,\n                \"ticker\": \"CFoGu\",\n                \"version\": 0\n            },\n            \"description\": \"This unique Light Nite Forest Guardian will make you look awesome on the Battlefield\",\n            \"gameId\": \"0d3a01eb-73dd-4f7b-a81f-91aa0e7420c6\",\n            \"limited\": true,\n            \"liquidId\": \"f321fea00c3a8dfcbdd8ec245677c6510f8f8d763fe39dd4407e20a708454fb7\",\n            \"market\": false,\n            \"marketPrice\": 172530,\n            \"name\": \"Forest Guardian\",\n            \"numVotes\": 2,\n            \"price\": 100,\n            \"registered\": true,\n            \"soldUnits\": 0,\n            \"status\": \"PUBLISHED\",\n            \"supply\": 100,\n            \"tag\": \"forest-guardian\",\n            \"utxo\": \"84c8f633d77b8ef1d22f76ce17cb925e3978ef1e2ecd77b169f67660884fbeff\"\n        },\n        \"media\": {\n            \"images\": \"https://d2cb3hgqwhjsel.cloudfront.net/characters/forest-guardian/poster.png\",\n            \"glb\": \"https://d2cb3hgqwhjsel.cloudfront.net/characters/forest-guardian/data\"\n        }\n    },\n    {\n        \"_id\": \"c709cf45-57f1-4ba4-a389-a72c0168cf80\",\n        \"status\": \"PUBLISHED\",\n        \"information\": {\n            \"address\": \"VJLCuij3pjSJZSiHbiwfKdaNNcJFaKP6SRJMxK361df1D8dVsTTZh1ccHM87RySDKCQkwkynxaLUVxgu\",\n            \"category\": [\n                \"characters\"\n            ],\n            \"change\": 0,\n            \"contract\": {\n                \"entity\": {\n                    \"domain\": \"explorer.lightnite.io\"\n                },\n                \"issuer_pubkey\": \"03a650c43126802379e3bab297a9924a2d13df3f389f1a22bb3b901903c2cf410b\",\n                \"name\": \"Rouge\",\n                \"precision\": 0,\n                \"ticker\": \"CRoug\",\n                \"version\": 0\n            },\n            \"description\": \"This unique Light Nite Rouge will make you look awesome on the Battlefield\",\n            \"gameId\": \"0d3a01eb-73dd-4f7b-a81f-91aa0e7420c6\",\n            \"limited\": true,\n            \"liquidId\": \"3cd6e67ff3d98c851248ee48efa428f344e331bfc1a642725ce03766ce53e18a\",\n            \"market\": false,\n            \"marketPrice\": 8626,\n            \"name\": \"Rouge\",\n            \"numVotes\": 11,\n            \"price\": 5,\n            \"registered\": true,\n            \"soldUnits\": 0,\n            \"status\": \"PUBLISHED\",\n            \"supply\": -1,\n            \"tag\": \"rouge\",\n            \"utxo\": \"e606681a27bd543034116c57920cb995a08b3b20a29c7af09d7c13c09ea2d2de\"\n        },\n        \"media\": {\n            \"images\": \"https://d2cb3hgqwhjsel.cloudfront.net/characters/rouge/poster.png\",\n            \"glb\": \"https://d2cb3hgqwhjsel.cloudfront.net/characters/rouge/data\"\n        }\n    },\n    {\n        \"_id\": \"683a60a8-2536-4c53-9190-121ffa450c1a\",\n        \"status\": \"PUBLISHED\",\n        \"information\": {\n            \"address\": \"VJLKBED8677vnXHUDFyuhmjenvvrFSXkMn9NmZjEToUb9rGhwwc7gSKFfRTsJ1nYnViWbSCQ7DSQKSPZ\",\n            \"category\": [\n                \"melee\"\n            ],\n            \"change\": 0,\n            \"contract\": {\n                \"entity\": {\n                    \"domain\": \"explorer.lightnite.io\"\n                },\n                \"issuer_pubkey\": \"029aaea75690cc6de58a8acb4a575083d6a64a784f21db14fb41c94a95e71d7187\",\n                \"name\": \"Titan Support\",\n                \"precision\": 0,\n                \"ticker\": \"MTiSu\",\n                \"version\": 0\n            },\n            \"description\": \"This unique Light Nite Titan Support will make you look awesome on the Battlefield\",\n            \"gameId\": \"0d3a01eb-73dd-4f7b-a81f-91aa0e7420c6\",\n            \"limited\": true,\n            \"liquidId\": \"8585c7014eec2de142cd226619df0202ca4a9dddabe88ab067b3f4a31d1ec61b\",\n            \"market\": false,\n            \"marketPrice\": 43132,\n            \"name\": \"Titan Support\",\n            \"numVotes\": 1,\n            \"price\": 25,\n            \"registered\": true,\n            \"soldUnits\": 0,\n            \"status\": \"PUBLISHED\",\n            \"supply\": 500,\n            \"tag\": \"titan-support\",\n            \"utxo\": \"c2efcdf379eef3c486b982e78f0ce407af34be34c5ee36d18b098e3fc1cef72e\"\n        },\n        \"media\": {\n            \"images\": \"https://d2cb3hgqwhjsel.cloudfront.net/melee/titan-support/poster.png\",\n            \"glb\": \"https://d2cb3hgqwhjsel.cloudfront.net/melee/titan-support/data\"\n        }\n    },\n    {\n        \"_id\": \"c10258b5-70b5-45cb-b1a5-fd404aa120fa\",\n        \"status\": \"PUBLISHED\",\n        \"information\": {\n            \"address\": \"VJL8VXaeDJFXhvpyZjnDLmU7w3ZPbBmbBqbn6nuMynncnpppy7XHEy1rJy39feDmRfrAs6fSCVawVBB1\",\n            \"category\": [\n                \"helmets\"\n            ],\n            \"change\": 0,\n            \"contract\": {\n                \"entity\": {\n                    \"domain\": \"explorer.lightnite.io\"\n                },\n                \"issuer_pubkey\": \"03a30b096adbfebd8c9452527a166cdbda1065b9c296b938049f7101e56da6ef04\",\n                \"name\": \"Gas Mask\",\n                \"precision\": 0,\n                \"ticker\": \"HGaMa\",\n                \"version\": 0\n            },\n            \"description\": \"This unique Light Nite Gas Mask will make you look awesome on the Battlefield\",\n            \"gameId\": \"0d3a01eb-73dd-4f7b-a81f-91aa0e7420c6\",\n            \"limited\": true,\n            \"liquidId\": \"03d2188073aa8baef98a16999e7d81f1116efc17ffe00a39f514c569f56e3cb0\",\n            \"market\": false,\n            \"marketPrice\": 8626,\n            \"name\": \"Gas Mask\",\n            \"numVotes\": 6,\n            \"price\": 5,\n            \"registered\": true,\n            \"soldUnits\": 0,\n            \"status\": \"PUBLISHED\",\n            \"supply\": -1,\n            \"tag\": \"gas-mask\",\n            \"utxo\": \"4f79d5ccffe7f1540a7f95108f69141f4cf037c6d33a57e435e035f103cebdaf\"\n        },\n        \"media\": {\n            \"images\": \"https://d2cb3hgqwhjsel.cloudfront.net/helmets/gas-mask/poster.png\",\n            \"glb\": \"https://d2cb3hgqwhjsel.cloudfront.net/helmets/gas-mask/data\"\n        }\n    },\n    {\n        \"_id\": \"a99db374-a51d-4e00-b73f-08c96e2ec60e\",\n        \"status\": \"PUBLISHED\",\n        \"information\": {\n            \"address\": \"VJLErdPoE5wgcn6ZdNdWuocrVxGpGpqX2NusZiBdBVetQ1xdaiMunhxC9uwk8XmwvwNytqDWYKkphVYd\",\n            \"category\": [\n                \"melee\"\n            ],\n            \"change\": 0,\n            \"contract\": {\n                \"entity\": {\n                    \"domain\": \"explorer.lightnite.io\"\n                },\n                \"issuer_pubkey\": \"0212980ff45f646375f758fe9e417213a0151e745d510e51637e7c53aa41697589\",\n                \"name\": \"Titanfall\",\n                \"precision\": 0,\n                \"ticker\": \"MTita\",\n                \"version\": 0\n            },\n            \"description\": \"This unique Light Nite Titanfall will make you look awesome on the Battlefield\",\n            \"gameId\": \"0d3a01eb-73dd-4f7b-a81f-91aa0e7420c6\",\n            \"limited\": true,\n            \"liquidId\": \"cad9f7b1df4e9ba8f4b55a9153841e9cdb72723f8094d3d8a2e338a16bda9c2a\",\n            \"market\": false,\n            \"marketPrice\": 172530,\n            \"name\": \"Titanfall\",\n            \"numVotes\": 1,\n            \"price\": 100,\n            \"registered\": true,\n            \"soldUnits\": 0,\n            \"status\": \"PUBLISHED\",\n            \"supply\": 100,\n            \"tag\": \"titanfall\",\n            \"utxo\": \"481d04a7472503da91b3b96587d59a9816fa9bbb4ba7efb633a973d544b11714\"\n        },\n        \"media\": {\n            \"images\": \"https://d2cb3hgqwhjsel.cloudfront.net/melee/titanfall/poster.png\",\n            \"glb\": \"https://d2cb3hgqwhjsel.cloudfront.net/melee/titanfall/data\"\n        }\n    },\n    {\n        \"_id\": \"afae1b30-65b4-49c5-a8a4-d9c98ea4cadb\",\n        \"status\": \"PUBLISHED\",\n        \"information\": {\n            \"address\": \"VJLAWDLkXZzCpxAoyeSRWY6oMuVw2R4XawnuZwZHuKypJ6runTpr2qaPRshwp2eKjGjDjfkYNkrwSMU4\",\n            \"category\": [\n                \"characters\"\n            ],\n            \"change\": 0,\n            \"contract\": {\n                \"entity\": {\n                    \"domain\": \"explorer.lightnite.io\"\n                },\n                \"issuer_pubkey\": \"023660fae8e36a782cad4a9b877299b2c0da1e3c93a5222a972773a8c8fa01fa7b\",\n                \"name\": \"Mr. R0b0t\",\n                \"precision\": 0,\n                \"ticker\": \"CMrRb\",\n                \"version\": 0\n            },\n            \"description\": \"This unique Light Nite Mr. R0b0t will make you look awesome on the Battlefield\",\n            \"gameId\": \"0d3a01eb-73dd-4f7b-a81f-91aa0e7420c6\",\n            \"limited\": true,\n            \"liquidId\": \"7c18b554ced2c7469d75f94e21dcc5089b3baa2cba85e6b1adcc22283187ace1\",\n            \"market\": false,\n            \"marketPrice\": 43132,\n            \"name\": \"Mr. R0b0t\",\n            \"numVotes\": 1,\n            \"price\": 25,\n            \"registered\": true,\n            \"soldUnits\": 0,\n            \"status\": \"PUBLISHED\",\n            \"supply\": 500,\n            \"tag\": \"mr-robot\",\n            \"utxo\": \"3efa57600ee36f5cc9413aae6c519bffed234564fb96e1594cecd1bdb58838f6\"\n        },\n        \"media\": {\n            \"images\": \"https://d2cb3hgqwhjsel.cloudfront.net/characters/mr-robot/poster.png\",\n            \"glb\": \"https://d2cb3hgqwhjsel.cloudfront.net/characters/mr-robot/data\"\n        }\n    },\n    {\n        \"_id\": \"e551bc51-226b-4a4b-a163-d27bb8c5dd36\",\n        \"status\": \"PUBLISHED\",\n        \"information\": {\n            \"address\": \"VJLDA1srZjbrR7DXDkEsn6YYuptq2FDJR6KwBFPHzbAyaFVJKeHMUQE92vpGVwrkJuSeDUR1wUnf7TfQ\",\n            \"category\": [\n                \"characters\"\n            ],\n            \"change\": \"-73.21\",\n            \"contract\": {\n                \"entity\": {\n                    \"domain\": \"explorer.lightnite.io\"\n                },\n                \"issuer_pubkey\": \"02d27c8588bc243f2de396a12bdef861a978390144fd6bb175a4a917817c73eb4a\",\n                \"name\": \"Ed\",\n                \"precision\": 0,\n                \"ticker\": \"CEd\",\n                \"version\": 0\n            },\n            \"description\": \"This unique Light Nite Ed will make you look awesome on the Battlefield\",\n            \"gameId\": \"0d3a01eb-73dd-4f7b-a81f-91aa0e7420c6\",\n            \"limited\": true,\n            \"liquidId\": \"9397bf37926dfb3794bc0661f133aab77b9a77a7976c2280fefc2ccbcfd0b013\",\n            \"market\": false,\n            \"marketPrice\": 1999,\n            \"name\": \"Ed\",\n            \"numVotes\": 0,\n            \"price\": 5,\n            \"registered\": true,\n            \"soldUnits\": 2,\n            \"status\": \"PUBLISHED\",\n            \"supply\": -1,\n            \"tag\": \"ed\",\n            \"utxo\": \"f341ef49683a749620fa8d981f5dfc4e658d729d3fa9d60217ee4854556482c9\"\n        },\n        \"media\": {\n            \"images\": \"https://d2cb3hgqwhjsel.cloudfront.net/characters/ed/poster.png\",\n            \"glb\": \"https://d2cb3hgqwhjsel.cloudfront.net/characters/ed/data\"\n        }\n    },\n    {\n        \"_id\": \"2c097a9f-5d7e-48f2-a0de-d5e6a35f4fa0\",\n        \"status\": \"PUBLISHED\",\n        \"information\": {\n            \"address\": \"VJLKPis469dgwokexbK5Gmzadoc6sFYC97mBqEchMJ56UqAVemuRbAQzthmuxqa8QvSvPv59wTQGTk3P\",\n            \"category\": [\n                \"helmets\"\n            ],\n            \"change\": 0,\n            \"contract\": {\n                \"entity\": {\n                    \"domain\": \"explorer.lightnite.io\"\n                },\n                \"issuer_pubkey\": \"02828b57080f99801d16e2b2dee46bc89ba92edab306da61e4bb42c4b0ace5d786\",\n                \"name\": \"Phones\",\n                \"precision\": 0,\n                \"ticker\": \"HPhon\",\n                \"version\": 0\n            },\n            \"description\": \"This unique Light Nite Phones will make you look awesome on the Battlefield\",\n            \"gameId\": \"0d3a01eb-73dd-4f7b-a81f-91aa0e7420c6\",\n            \"limited\": true,\n            \"liquidId\": \"90f1bbad1d751617a7cb4d8e0819e42e4db24008973ebdbe316720094c9cd6ea\",\n            \"market\": false,\n            \"marketPrice\": 8626,\n            \"name\": \"Phones\",\n            \"numVotes\": 2,\n            \"price\": 5,\n            \"registered\": true,\n            \"soldUnits\": 0,\n            \"status\": \"PUBLISHED\",\n            \"supply\": -1,\n            \"tag\": \"phones\",\n            \"utxo\": \"368fc0630c700a8667f344047f3211c8bcb22d46ac5b8ec64c707092cba3fa79\"\n        },\n        \"media\": {\n            \"images\": \"https://d2cb3hgqwhjsel.cloudfront.net/helmets/phones/poster.png\",\n            \"glb\": \"https://d2cb3hgqwhjsel.cloudfront.net/helmets/phones/data\"\n        }\n    },\n    {\n        \"_id\": \"acf4d10d-d374-4143-a6ff-0a5a09de1698\",\n        \"status\": \"PUBLISHED\",\n        \"information\": {\n            \"address\": \"VJLGE5v4KxSthzpcq1C1WZ5rAywo3iAibnFHnYRo7kzNFWzjYcSKZB42MyNKL7x1Ay9jTJ8xwTUwgKnU\",\n            \"category\": [\n                \"guns\"\n            ],\n            \"change\": \"-22.25\",\n            \"contract\": {\n                \"entity\": {\n                    \"domain\": \"explorer.lightnite.io\"\n                },\n                \"issuer_pubkey\": \"02628b9f252820050e0109a630ef3357e52f529f8a5effe49f0a2ebb148336561a\",\n                \"name\": \"MX44\",\n                \"precision\": 0,\n                \"ticker\": \"GMX\",\n                \"version\": 0\n            },\n            \"description\": \"This unique Light Nite MX44 will make you look awesome on the Battlefield\",\n            \"gameId\": \"0d3a01eb-73dd-4f7b-a81f-91aa0e7420c6\",\n            \"limited\": true,\n            \"liquidId\": \"3837a550aa2f32e25d8d125c2a8b074744e17b43e8e3a3821378e90326b515ba\",\n            \"market\": false,\n            \"marketPrice\": 6707,\n            \"name\": \"MX44\",\n            \"numVotes\": 2,\n            \"price\": 5,\n            \"registered\": true,\n            \"soldUnits\": 1,\n            \"status\": \"PUBLISHED\",\n            \"supply\": -1,\n            \"tag\": \"mx44\",\n            \"utxo\": \"45c185ae92237f088e989a79c751fdda7f765137e8ce3e87c128e8eef6132731\"\n        },\n        \"media\": {\n            \"images\": \"https://d2cb3hgqwhjsel.cloudfront.net/guns/mx44/poster.png\",\n            \"glb\": \"https://d2cb3hgqwhjsel.cloudfront.net/guns/mx44/data\"\n        }\n    },\n    {\n        \"_id\": \"a3874e57-8755-4c37-85b3-09ff80eb2e84\",\n        \"status\": \"PUBLISHED\",\n        \"information\": {\n            \"address\": \"VJLAvdxqjS3S1mjJjuWXU9QZbs3UfAfpFPaZc2gUkuYRfm8eue3MbvmLEVsKFT8yZDms2zNQoVbWNANL\",\n            \"category\": [\n                \"characters\"\n            ],\n            \"change\": 0,\n            \"contract\": {\n                \"entity\": {\n                    \"domain\": \"explorer.lightnite.io\"\n                },\n                \"issuer_pubkey\": \"02b1af6d02d6ae654dcd22d8d3be236f0130dae7cdc77767f03b02064e6207cfad\",\n                \"name\": \"Skeleton\",\n                \"precision\": 0,\n                \"ticker\": \"CSkel\",\n                \"version\": 0\n            },\n            \"description\": \"This unique Light Nite Skeleton will make you look awesome on the Battlefield\",\n            \"gameId\": \"0d3a01eb-73dd-4f7b-a81f-91aa0e7420c6\",\n            \"limited\": true,\n            \"liquidId\": \"07f38f586614b74223fae59c11c313f1df13c80e7365334b6b2a724936e24d78\",\n            \"market\": false,\n            \"marketPrice\": 86265,\n            \"name\": \"Skeleton\",\n            \"numVotes\": 0,\n            \"price\": 50,\n            \"registered\": true,\n            \"soldUnits\": 0,\n            \"status\": \"PUBLISHED\",\n            \"supply\": 500,\n            \"tag\": \"skeleton\",\n            \"utxo\": \"688b333d6f2dfc2d701a064851a5d0d9dcc5ba4cb4f090dbad826145e3383f51\"\n        },\n        \"media\": {\n            \"images\": \"https://d2cb3hgqwhjsel.cloudfront.net/characters/skeleton/poster.png\",\n            \"glb\": \"https://d2cb3hgqwhjsel.cloudfront.net/characters/skeleton/data\"\n        }\n    },\n    {\n        \"_id\": \"1ab42612-6833-4a7d-bc6a-1c1624f7ce2c\",\n        \"status\": \"PUBLISHED\",\n        \"information\": {\n            \"address\": \"VJLJpRrtEpzUhMHifBmqXNU84u1fSy9FquRi9JzMwpt84Ar3Fevd5m8meqNTYYTfr4wwqcmZEVhTyg2f\",\n            \"category\": [\n                \"armor\"\n            ],\n            \"change\": 0,\n            \"contract\": {\n                \"entity\": {\n                    \"domain\": \"explorer.lightnite.io\"\n                },\n                \"issuer_pubkey\": \"0339b5a771f8d566c38accceec0638834da31e2a62c22250aa55fdc960196d76bb\",\n                \"name\": \"On-The-Go\",\n                \"precision\": 0,\n                \"ticker\": \"AOnTh\",\n                \"version\": 0\n            },\n            \"description\": \"This unique Light Nite On-The-Go will make you look awesome on the Battlefield\",\n            \"gameId\": \"0d3a01eb-73dd-4f7b-a81f-91aa0e7420c6\",\n            \"limited\": true,\n            \"liquidId\": \"bc8ea281525a971185eee32da05a9d57e5117336a1660c7a0ac7870acdc6bb08\",\n            \"market\": false,\n            \"marketPrice\": 8806,\n            \"name\": \"On-The-Go\",\n            \"numVotes\": 1,\n            \"price\": 5,\n            \"registered\": true,\n            \"soldUnits\": 0,\n            \"status\": \"PUBLISHED\",\n            \"supply\": -1,\n            \"tag\": \"on-the-go\",\n            \"utxo\": \"9b095f5f6df39d762380c379f47911b3a81d04b9b8bad86a802baeaaa530139f\"\n        },\n        \"media\": {\n            \"images\": \"https://d2cb3hgqwhjsel.cloudfront.net/armor/on-the-go/poster.png\",\n            \"glb\": \"https://d2cb3hgqwhjsel.cloudfront.net/armor/on-the-go/data\"\n        }\n    },\n    {\n        \"_id\": \"ab0ac249-8200-4e12-a1b9-0f5cae8bdd49\",\n        \"status\": \"PUBLISHED\",\n        \"information\": {\n            \"address\": \"VJLJQdK6vzFbvh9nWd1unqnRtkRRfUidc7DJ4qrjebJah41SsAVdBJMpJANtn3j8zrb5uji19PxbqNB1\",\n            \"category\": [\n                \"guns\"\n            ],\n            \"change\": 0,\n            \"contract\": {\n                \"entity\": {\n                    \"domain\": \"explorer.lightnite.io\"\n                },\n                \"issuer_pubkey\": \"03751d35ee1b0de8c7120be63a07852b27922fdfb93b09a9d968d97791f0201f30\",\n                \"name\": \"Binance Rifle\",\n                \"precision\": 0,\n                \"ticker\": \"GBiRi\",\n                \"version\": 0\n            },\n            \"description\": \"This unique Light Nite Binance Rifle will make you look awesome on the Battlefield\",\n            \"gameId\": \"0d3a01eb-73dd-4f7b-a81f-91aa0e7420c6\",\n            \"limited\": true,\n            \"liquidId\": \"b7115fa67a3131fa946660ef3090ad0cd8c2329efd9045b523113f31fd3adf53\",\n            \"market\": false,\n            \"marketPrice\": 44706,\n            \"name\": \"Binance Rifle\",\n            \"numVotes\": 0,\n            \"price\": 25,\n            \"registered\": true,\n            \"soldUnits\": 0,\n            \"status\": \"PUBLISHED\",\n            \"supply\": 500,\n            \"tag\": \"binance-rifle\",\n            \"utxo\": \"788c45430053fee0f2db783e23eb13bf64bc4e48a18ed13e5db5bee599ffe2cc\"\n        },\n        \"media\": {\n            \"images\": \"https://d2cb3hgqwhjsel.cloudfront.net/guns/binance-rifle/poster.png\",\n            \"glb\": \"https://d2cb3hgqwhjsel.cloudfront.net/guns/binance-rifle/data\"\n        }\n    },\n    {\n        \"_id\": \"8f5374c0-840d-48cd-a45f-15d79872d882\",\n        \"status\": \"PUBLISHED\",\n        \"information\": {\n            \"address\": \"VJLCTWZ918FtEiPmHXdGD4BTkoNqSRPUpZNcKCLyU3BkeKnrbSuswGZRD5p1CWEWEUbfBX1wayRFn9yL\",\n            \"category\": [\n                \"armor\"\n            ],\n            \"change\": 0,\n            \"contract\": {\n                \"entity\": {\n                    \"domain\": \"explorer.lightnite.io\"\n                },\n                \"issuer_pubkey\": \"02d6855a2bb7ace010400c5116e6c966e13734453ba5969114c924598c70e440f9\",\n                \"name\": \"Camping Bag\",\n                \"precision\": 0,\n                \"ticker\": \"ACaBa\",\n                \"version\": 0\n            },\n            \"description\": \"This unique Light Nite Camping Bag will make you look awesome on the Battlefield\",\n            \"gameId\": \"0d3a01eb-73dd-4f7b-a81f-91aa0e7420c6\",\n            \"limited\": true,\n            \"liquidId\": \"5f3567ecec038ecc0703de975a5738be823916cffda0cff8a276f5f0b0142f19\",\n            \"market\": false,\n            \"marketPrice\": 8941,\n            \"name\": \"Camping Bag\",\n            \"numVotes\": 3,\n            \"price\": 5,\n            \"registered\": true,\n            \"soldUnits\": 0,\n            \"status\": \"PUBLISHED\",\n            \"supply\": -1,\n            \"tag\": \"camping-bag\",\n            \"utxo\": \"ced28e0c40ea94ef8f856bd7d732053db3f53e090fe1c69b2d394d659b96e203\"\n        },\n        \"media\": {\n            \"images\": \"https://d2cb3hgqwhjsel.cloudfront.net/armor/camping-bag/poster.png\",\n            \"glb\": \"https://d2cb3hgqwhjsel.cloudfront.net/armor/camping-bag/data\"\n        }\n    },\n    {\n        \"_id\": \"0eb6ab50-829a-418a-957c-6180af84fcae\",\n        \"status\": \"PUBLISHED\",\n        \"information\": {\n            \"address\": \"VJLEQjqjT2T48zw2p3tDoy7YnsGVHAKoBmk2akxpmtNxDBJSC3FRhG3dLo61kcNjWqTiNp1Zvsps5s4Q\",\n            \"category\": [\n                \"hoverboards\"\n            ],\n            \"change\": 0,\n            \"contract\": {\n                \"entity\": {\n                    \"domain\": \"explorer.lightnite.io\"\n                },\n                \"issuer_pubkey\": \"023dfbfd3f28f9021aa5f3b197a8dcf45e0feb4807c6ee18ada982f53c0010ca69\",\n                \"name\": \"Strikeboard\",\n                \"precision\": 0,\n                \"ticker\": \"HStri\",\n                \"version\": 0\n            },\n            \"description\": \"This unique Light Nite Strikeboard will make you look awesome on the Battlefield\",\n            \"gameId\": \"0d3a01eb-73dd-4f7b-a81f-91aa0e7420c6\",\n            \"limited\": true,\n            \"liquidId\": \"5f5109be19c618088228622c02e97d11e1347f1032cb9b6658cc359196a931bd\",\n            \"market\": false,\n            \"marketPrice\": 44706,\n            \"name\": \"Strikeboard\",\n            \"numVotes\": 0,\n            \"price\": 25,\n            \"registered\": true,\n            \"soldUnits\": 0,\n            \"status\": \"PUBLISHED\",\n            \"supply\": 500,\n            \"tag\": \"strikeboard\",\n            \"utxo\": \"fcb03f52965756c7c6a1023c81d1770e2825e143cca2fa6f4915a6caffd5c42e\"\n        },\n        \"media\": {\n            \"images\": \"https://d2cb3hgqwhjsel.cloudfront.net/hoverboards/strikeboard/poster.png\",\n            \"glb\": \"https://d2cb3hgqwhjsel.cloudfront.net/hoverboards/strikeboard/data\"\n        }\n    },\n    {\n        \"_id\": \"d4b24453-30e2-4659-a6c1-63d69c03fcb9\",\n        \"status\": \"PUBLISHED\",\n        \"information\": {\n            \"address\": \"VJLCmqsQ66Ff9Nipr9BR3Q1fJVP1r8eA3j9mEsNDbQ4LyzRYpwrMYrkYErqcd2oePFSLD9mCAaFb4dEw\",\n            \"category\": [\n                \"characters\"\n            ],\n            \"change\": 0,\n            \"contract\": {\n                \"entity\": {\n                    \"domain\": \"explorer.lightnite.io\"\n                },\n                \"issuer_pubkey\": \"022c7979b1edc9f1ec209dfa635520ba2a83389b23324f0a87d88a09f260719e14\",\n                \"name\": \"Trezor Detective\",\n                \"precision\": 0,\n                \"ticker\": \"CTrDe\",\n                \"version\": 0\n            },\n            \"description\": \"This unique Light Nite Trezor Detective will make you look awesome on the Battlefield\",\n            \"gameId\": \"0d3a01eb-73dd-4f7b-a81f-91aa0e7420c6\",\n            \"limited\": true,\n            \"liquidId\": \"6249fa3e478c103db4f749ae0c4d9add71df12a8a84c49f0b47a5f533a9b7f40\",\n            \"market\": false,\n            \"marketPrice\": 178824,\n            \"name\": \"Trezor Detective\",\n            \"numVotes\": 0,\n            \"price\": 100,\n            \"registered\": true,\n            \"soldUnits\": 0,\n            \"status\": \"PUBLISHED\",\n            \"supply\": 100,\n            \"tag\": \"trezor-detective\",\n            \"utxo\": \"f8fcd712121baab4d8cdf6b492adea70c48edca5e449b01756ffbe5a0ffc7fa3\"\n        },\n        \"media\": {\n            \"images\": \"https://d2cb3hgqwhjsel.cloudfront.net/characters/trezor-detective/poster.png\",\n            \"glb\": \"https://d2cb3hgqwhjsel.cloudfront.net/characters/trezor-detective/data\"\n        }\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Disable asset",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "bc7354a1-aa6f-47a8-93a2-fe41c41b7864",
+								"description": "Authorization token from the API key belonging to the user / JWT if the request is coming from the front",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://sandbox.elixir.app/assets/fe9fb409-b3f4-4b5d-b9b7-d72dc8e8c1d8",
+							"protocol": "https",
+							"host": [
+								"sandbox",
+								"elixir",
+								"app"
+							],
+							"path": [
+								"assets",
+								"fe9fb409-b3f4-4b5d-b9b7-d72dc8e8c1d8"
+							]
+						},
+						"description": "This endpoint lets you disable an asset from Elixir. But it will remain tokenised in liquid"
+					},
+					"response": [
+						{
+							"name": "Disable asset",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "bc7354a1-aa6f-47a8-93a2-fe41c41b7864",
+										"description": "Authorization token from the API key belonging to the user / JWT if the request is coming from the front",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://sandbox.elixir.app/assets/fe9fb409-b3f4-4b5d-b9b7-d72dc8e8c1d8",
+									"protocol": "https",
+									"host": [
+										"sandbox",
+										"elixir",
+										"app"
+									],
+									"path": [
+										"assets",
+										"fe9fb409-b3f4-4b5d-b9b7-d72dc8e8c1d8"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Length",
+									"value": "59"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 01 Mar 2021 18:23:07 GMT"
+								},
+								{
+									"key": "Etag",
+									"value": "W/\"3b-hm9uSD3afhLj/qfKQ0K26DkJQts\""
+								},
+								{
+									"key": "Expect-Ct",
+									"value": "max-age=0"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Dns-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "X-Xss-Protection",
+									"value": "0"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"Asset succesfully disabled\"\n}"
+						}
+					]
+				}
+			],
+			"description": "This page will help you get started with the management of your in-game assets from your Elixir games. You'll be up and running real quick!"
+		},
+		{
+			"name": "REWARDS",
+			"item": [
+				{
+					"name": "Get Session",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "---",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "https://sandbox.elixir.app/rewards/:gameId/session/:externID",
+							"protocol": "https",
+							"host": [
+								"sandbox",
+								"elixir",
+								"app"
+							],
+							"path": [
+								"rewards",
+								":gameId",
+								"session",
+								":externID"
+							],
+							"variable": [
+								{
+									"key": "gameId",
+									"value": ""
+								},
+								{
+									"key": "externID",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Session",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "5dda3946-c3d0-4ee6-abef-ed27196f14f4",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "https://sandbox.elixir.app/rewards/0d3a01eb-73dd-4f7b-a81f-91aa0e7420c6/session/SteamUser1234",
+									"protocol": "https",
+									"host": [
+										"sandbox",
+										"elixir",
+										"app"
+									],
+									"path": [
+										"rewards",
+										"0d3a01eb-73dd-4f7b-a81f-91aa0e7420c6",
+										"session",
+										"SteamUser1234"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Length",
+									"value": "401"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 14 Apr 2021 20:27:02 GMT"
+								},
+								{
+									"key": "Etag",
+									"value": "W/\"191-6EMFEZfIDUt6n6HY9uaSYRr/NYo\""
+								},
+								{
+									"key": "Expect-Ct",
+									"value": "max-age=0"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Dns-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "X-Xss-Protection",
+									"value": "0"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"session\": {\n        \"sessionId\": \"5a86921a-40c4-4c82-a1ff-46405c22c96d\",\n        \"externId\": \"SteamUser1234\"\n    },\n    \"nfts\": [\n        {\n            \"skinId\": \"84fc0889-de17-495a-895f-46fac3c0b323\",\n            \"asset\": \"3efdd819-27df-4e37-8773-a96346aa0165\",\n            \"status\": \"ACTIVE\",\n            \"media\": {\n                \"images\": [\n                    {\n                        \"url\": \"https://d2cb3hgqwhjsel.cloudfront.net/characters/jimmy/poster.png\"\n                    }\n                ],\n                \"glb\": [\n                    {\n                        \"url\": \"https://d2cb3hgqwhjsel.cloudfront.net/characters/jimmy/data\"\n                    }\n                ],\n                \"fbx\": [\n                    {}\n                ]\n            }\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Reward Balance To User",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "---",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"amount\":10\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://sandbox.elixir.app/rewards/:gameId/balance/:sessionId",
+							"protocol": "https",
+							"host": [
+								"sandbox",
+								"elixir",
+								"app"
+							],
+							"path": [
+								"rewards",
+								":gameId",
+								"balance",
+								":sessionId"
+							],
+							"variable": [
+								{
+									"key": "gameId",
+									"value": ""
+								},
+								{
+									"key": "sessionId",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Reward Balance To User",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "83895156-95b1-4ae9-a739-b6b38505f253",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"amount\":1\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://sandbox.elixir.app/rewards/0d3a01eb-73dd-4f7b-a81f-91aa0e7420c6/balance/SatvivalUser123",
+									"protocol": "https",
+									"host": [
+										"sandbox",
+										"elixir",
+										"app"
+									],
+									"path": [
+										"rewards",
+										"0d3a01eb-73dd-4f7b-a81f-91aa0e7420c6",
+										"balance",
+										"SatvivalUser123"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Length",
+									"value": "388"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 14 Apr 2021 16:32:34 GMT"
+								},
+								{
+									"key": "Etag",
+									"value": "W/\"184-qdEpsKvf2A5zLjMWFWKdYY3k3bc\""
+								},
+								{
+									"key": "Expect-Ct",
+									"value": "max-age=0"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Dns-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "X-Xss-Protection",
+									"value": "0"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"type\": \"success\",\n    \"userType\": \"session-not-claimed\",\n    \"date\": \"2021-04-14\",\n    \"msg\": \"Balance reward succesfuly applied to non registered user. Send reward URL for user to claim it.\",\n    \"sessionId\": \"a865a439-cbda-435e-8e0a-14a882d9549f\",\n    \"externId\": \"SatvivalUser123\",\n    \"sessionBalance\": 1,\n    \"reward\": 1,\n    \"gameBalance\": 988890,\n    \"rewardUrl\": \"https://beta.elixir.apprewards/a865a439-cbda-435e-8e0a-14a882d9549f\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Reward Balance Multiple Users",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "---",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"sessionsIds\": [\t\n\t\t\"Array of sessionIds\"\n\t\t],\n\t\"amount\": 10\n}"
+						},
+						"url": {
+							"raw": "https://sandbox.elixir.app/rewards/:gameId/balances",
+							"protocol": "https",
+							"host": [
+								"sandbox",
+								"elixir",
+								"app"
+							],
+							"path": [
+								"rewards",
+								":gameId",
+								"balances"
+							],
+							"variable": [
+								{
+									"key": "gameId",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Reward Balance Multiple Users",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "83895156-95b1-4ae9-a739-b6b38505f253",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"sessionsIds\": [\t\n\t\t\"SatvivalUser123\",\n\t\t\"15981955-3220-48cc-a936-6515abe9dada\"\n\t\t],\n\t\"amount\": 500\n}"
+								},
+								"url": {
+									"raw": "https://sandbox.elixir.app/rewards/0d3a01eb-73dd-4f7b-a81f-91aa0e7420c6/balances",
+									"protocol": "https",
+									"host": [
+										"sandbox",
+										"elixir",
+										"app"
+									],
+									"path": [
+										"rewards",
+										"0d3a01eb-73dd-4f7b-a81f-91aa0e7420c6",
+										"balances"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 14 Apr 2021 16:33:37 GMT"
+								},
+								{
+									"key": "Etag",
+									"value": "W/\"2c8-EwTKXs7AH/zRjpXSh6NcGKLW1yk\""
+								},
+								{
+									"key": "Expect-Ct",
+									"value": "max-age=0"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Dns-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "X-Xss-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Content-Length",
+									"value": "344"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"type\": \"success\",\n    \"reward\": 500,\n    \"date\": \"2021-04-14\",\n    \"gameBalance\": 988889,\n    \"totalBalanceRewarded\": 1000,\n    \"rewards\": [\n        {\n            \"msg\": \"Balance reward succesfuly applied to non registered user. Send reward URL for user to claim it.\",\n            \"sessionId\": \"a865a439-cbda-435e-8e0a-14a882d9549f\",\n            \"externId\": \"SatvivalUser123\",\n            \"sessionBalance\": 501,\n            \"rewardUrl\": \"https://beta.elixir.apprewards/a865a439-cbda-435e-8e0a-14a882d9549f\"\n        },\n        {\n            \"msg\": \"Balance reward succesfuly applied to non registered user. Send reward URL for user to claim it.\",\n            \"sessionId\": \"e26753e8-1d0e-4f05-8816-ba559580c4a0\",\n            \"externId\": \"15981955-3220-48cc-a936-6515abe9dada\",\n            \"sessionBalance\": 1000,\n            \"rewardUrl\": \"https://beta.elixir.apprewards/e26753e8-1d0e-4f05-8816-ba559580c4a0\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Reward Asset To User",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-api-key",
+								"value": "---",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"assetsIds\": [\"Array of asset ids from ELIXIR\"]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://sandbox.elixir.app/rewards/:gameId/asset/:sessionId",
+							"protocol": "https",
+							"host": [
+								"sandbox",
+								"elixir",
+								"app"
+							],
+							"path": [
+								"rewards",
+								":gameId",
+								"asset",
+								":sessionId"
+							],
+							"variable": [
+								{
+									"key": "gameId",
+									"value": ""
+								},
+								{
+									"key": "sessionId",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Reward Asset To User",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "x-api-key",
+										"value": "83895156-95b1-4ae9-a739-b6b38505f253",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"assetsIds\": [\"2de7d2c9-275e-4357-b499-82bd65a218dd\"]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://sandbox.elixir.app/rewards/0d3a01eb-73dd-4f7b-a81f-91aa0e7420c6/asset/a2f46312-eb37-469a-82b6-093b88d0049a",
+									"protocol": "https",
+									"host": [
+										"sandbox",
+										"elixir",
+										"app"
+									],
+									"path": [
+										"rewards",
+										"0d3a01eb-73dd-4f7b-a81f-91aa0e7420c6",
+										"asset",
+										"a2f46312-eb37-469a-82b6-093b88d0049a"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Length",
+									"value": "508"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 14 Apr 2021 16:35:30 GMT"
+								},
+								{
+									"key": "Etag",
+									"value": "W/\"1fc-zWuVAQAoT/aLnF9cBZfStseskQs\""
+								},
+								{
+									"key": "Expect-Ct",
+									"value": "max-age=0"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Dns-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "X-Xss-Protection",
+									"value": "0"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"type\": \"success\",\n    \"userType\": \"session-not-claimed\",\n    \"date\": \"2021-04-14\",\n    \"msg\": \"Asset reward succesfuly applied to non registered user. Send reward URL for user to claim it.\",\n    \"sessionId\": \"cbec2418-a062-4739-bebe-586b2bf8cc67\",\n    \"externId\": \"a2f46312-eb37-469a-82b6-093b88d0049a\",\n    \"assets\": [\n        {\n            \"assetId\": \"2de7d2c9-275e-4357-b499-82bd65a218dd\",\n            \"media\": [\n                {\n                    \"url\": \"https://d2cb3hgqwhjsel.cloudfront.net/melee/vikings-affair/poster.png\"\n                }\n            ]\n        }\n    ],\n    \"rewardUrl\": \"https://beta.elixir.apprewards/cbec2418-a062-4739-bebe-586b2bf8cc67\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Reward Assets Multiple Users",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-api-key",
+								"value": "---",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"assetsIds\": [\"Array of valid asset Id from ELIXIR\"],\n    \"sessionsIds\": [\t\n\t\t\"Array of sessionIds or externIds\"\n\t\t]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://sandbox.elixir.app/rewards/:gameId/assets",
+							"protocol": "https",
+							"host": [
+								"sandbox",
+								"elixir",
+								"app"
+							],
+							"path": [
+								"rewards",
+								":gameId",
+								"assets"
+							],
+							"variable": [
+								{
+									"key": "gameId",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Reward Assets Multiple Users",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "x-api-key",
+										"value": "83895156-95b1-4ae9-a739-b6b38505f253",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"assetsIds\": [\"3efdd819-27df-4e37-8773-a96346aa0165\"],\n    \"sessionsIds\": [\t\n\t\t\"a2f46312-eb37-469a-82b6-093b88d0049a\",\n\t\t\"SteamUser1234\"\n\t\t]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://sandbox.elixir.app/rewards/0d3a01eb-73dd-4f7b-a81f-91aa0e7420c6/assets",
+									"protocol": "https",
+									"host": [
+										"sandbox",
+										"elixir",
+										"app"
+									],
+									"path": [
+										"rewards",
+										"0d3a01eb-73dd-4f7b-a81f-91aa0e7420c6",
+										"assets"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 14 Apr 2021 20:26:39 GMT"
+								},
+								{
+									"key": "Etag",
+									"value": "W/\"2ed-lAq1DnmrRFxbI+fCXIF/WSCGeug\""
+								},
+								{
+									"key": "Expect-Ct",
+									"value": "max-age=0"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Dns-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "X-Xss-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Content-Length",
+									"value": "386"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"type\": \"success\",\n    \"date\": \"2021-04-14\",\n    \"assets\": [\n        {\n            \"assetId\": \"3efdd819-27df-4e37-8773-a96346aa0165\",\n            \"media\": [\n                {\n                    \"url\": \"https://d2cb3hgqwhjsel.cloudfront.net/characters/jimmy/poster.png\"\n                }\n            ]\n        }\n    ],\n    \"rewards\": [\n        {\n            \"msg\": \"Asset reward succesfuly applied to non registered user. Send reward URL for user to claim it.\",\n            \"sessionId\": \"cbec2418-a062-4739-bebe-586b2bf8cc67\",\n            \"externId\": \"a2f46312-eb37-469a-82b6-093b88d0049a\",\n            \"rewardUrl\": \"https://beta.elixir.apprewards/cbec2418-a062-4739-bebe-586b2bf8cc67\"\n        },\n        {\n            \"msg\": \"Asset reward succesfuly applied to non registered user. Send reward URL for user to claim it.\",\n            \"sessionId\": \"5a86921a-40c4-4c82-a1ff-46405c22c96d\",\n            \"externId\": \"SteamUser1234\",\n            \"rewardUrl\": \"https://beta.elixir.apprewards/5a86921a-40c4-4c82-a1ff-46405c22c96d\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Substract Balance From User",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "---",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"amount\":10\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://sandbox.elixir.app/rewards/:gameId/subtract/:sessionId",
+							"protocol": "https",
+							"host": [
+								"sandbox",
+								"elixir",
+								"app"
+							],
+							"path": [
+								"rewards",
+								":gameId",
+								"subtract",
+								":sessionId"
+							],
+							"variable": [
+								{
+									"key": "gameId",
+									"value": ""
+								},
+								{
+									"key": "sessionId",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Substract Balance From User",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "83895156-95b1-4ae9-a739-b6b38505f253",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"amount\":10\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://sandbox.elixir.app/rewards/0d3a01eb-73dd-4f7b-a81f-91aa0e7420c6/subtract/aea1f008-c8a6-4041-bd2d-95a7c4735d36",
+									"protocol": "https",
+									"host": [
+										"sandbox",
+										"elixir",
+										"app"
+									],
+									"path": [
+										"rewards",
+										"0d3a01eb-73dd-4f7b-a81f-91aa0e7420c6",
+										"subtract",
+										"aea1f008-c8a6-4041-bd2d-95a7c4735d36"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Length",
+									"value": "285"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 14 Apr 2021 18:28:46 GMT"
+								},
+								{
+									"key": "Etag",
+									"value": "W/\"11d-slTebzDbQROhSAZ5s12F5mCjPOg\""
+								},
+								{
+									"key": "Expect-Ct",
+									"value": "max-age=0"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Dns-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "X-Xss-Protection",
+									"value": "0"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"type\": \"success\",\n    \"date\": \"2021-04-14\",\n    \"msg\": \"Asset reward succesfuly applied to non registered user. Send reward URL for user to claim it.\",\n    \"sessionId\": \"87cc4392-7719-4412-b1d3-a204f5050962\",\n    \"amount\": 10,\n    \"rewardUrl\": \"https://beta.elixir.apprewards/87cc4392-7719-4412-b1d3-a204f5050962\"\n}"
+						}
+					]
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

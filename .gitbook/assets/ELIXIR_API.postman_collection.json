@@ -1,0 +1,908 @@
+{
+	"info": {
+		"_postman_id": "7d665f45-24ce-4cb4-bf6c-d8587c15e134",
+		"name": "ELIXIR API",
+		"description": "Elixir offers a powerful REST API that supports tokenization in the bitcoin's sidechain of Liquid. It brings powerful features to create a unique NFT standard technology for inter-operable skins. ",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "API KEYS",
+			"item": [
+				{
+					"name": "Issue and API key",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"description": "Authentication token from the API key belonging to the user / JWT if the request is coming from the front",
+								"key": "x-api-key",
+								"type": "text",
+								"value": ""
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8899/keys",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8899",
+							"path": [
+								"keys"
+							]
+						},
+						"description": "Functionality to get the key and userId"
+					},
+					"response": [
+						{
+							"name": "Issue and API key",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-api-key",
+										"type": "text",
+										"value": ""
+									}
+								],
+								"url": {
+									"raw": "http://localhost:8899/keys",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8899",
+									"path": [
+										"keys"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": "{\n    \"key\": \"9759dd17-357a-4a81-a25a-0ced7fa6e61e\",\n    \"userId\": \"f357abeb-b4c7-43ac-afd8-f76067c829ab\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Retrieve an API key",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "",
+								"description": "Authentication token from the API key belonging to the user / JWT if the request is coming from the front",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8899/:key",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8899",
+							"path": [
+								":key"
+							],
+							"variable": [
+								{
+									"key": "key",
+									"value": "",
+									"description": "API key"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Retrieve an API key",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "",
+										"description": "Authentication token from the API key belonging to the user / JWT if the request is coming from the front",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:8899/:key",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8899",
+									"path": [
+										":key"
+									],
+									"variable": [
+										{
+											"key": "key",
+											"value": "",
+											"description": "API key"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": "{\n    \"key\": \"9759dd17-357a-4a81-a25a-0ced7fa6e61e\",\n    \"userId\": \"f357abeb-b4c7-43ac-afd8-f76067c829ab\"\n}"
+						}
+					]
+				},
+				{
+					"name": "List API keys",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "",
+								"description": "Authentication token from the API key belonging to the user / JWT if the request is coming from the front",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8899/keys",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8899",
+							"path": [
+								"keys"
+							]
+						},
+						"description": "List all keys and userId"
+					},
+					"response": [
+						{
+							"name": "List API keys",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "",
+										"description": "Authentication token from the API key belonging to the user / JWT if the request is coming from the front",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:8899/keys",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8899",
+									"path": [
+										"keys"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": "{\n    \"key\": \"f823396c-ab01-4179-b138-e1e538cd49e5\",\n    \"userId\": \"f357abeb-b4c7-43ac-afd8-f76067c829ab\"\n},\n{\n    \"key\": \"0354b6a0-d1a6-449e-a8be-36773bdfb99e\",\n    \"userId\": \"f357abeb-b4c7-43ac-afd8-f76067c829ab\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Remove API key",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "",
+								"description": "Authentication token from the API key belonging to the user / `JWT if the request is coming from the front",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8899/:key",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8899",
+							"path": [
+								":key"
+							],
+							"variable": [
+								{
+									"key": "key",
+									"value": "",
+									"description": "API key"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Remove API key",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "",
+										"description": "Authentication token from the API key belonging to the user / `JWT if the request is coming from the front",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:8899/:key",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8899",
+									"path": [
+										":key"
+									],
+									"variable": [
+										{
+											"key": "key",
+											"value": "",
+											"description": "API key"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": "{\n    \"success\": true\n}"
+						}
+					]
+				}
+			],
+			"description": "The Elixir API usesAPI Keysto authenticate requests. Authentication to the API is performed with a key. Provide your API key on the token header.\nAll API requests must be made over HTTPS. Calls made over plain HTTP will fail. API Requests without authentication will also fail.",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "5d552d3d-f3ad-43ad-8573-3e3d0aadbd6d",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "96723cb0-9f32-49aa-afeb-28d337bfd6fb",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "GAMES",
+			"item": [
+				{
+					"name": "Retrieve games",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "",
+								"description": "Authorization token from the API key belonging to the user / JWT if the request is coming from the front",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8899/games",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8899",
+							"path": [
+								"games"
+							]
+						},
+						"description": "This endpoint list all uploaded games in Elixir"
+					},
+					"response": [
+						{
+							"name": "Retrieve games",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "",
+										"description": "Authorization token from the API key belonging to the user / JWT if the request is coming from the front",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:8899/games",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8899",
+									"path": [
+										"games"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": "[\n    {\n        \"_id\": \"3637b83b-9634-427e-ba76-988964916375\",\n        \"status\": \"DRAFT\",\n        \"information\": {\n            \"name\": \"Light Nite\",\n            \"genre\": [\"Multiplayer, MMO, Sandbox\"],\n            \"price\": 20,\n            \"headline\": \"Earn bitcoin playing the most epic battle-royale\",\n            \"description\": \"Multiplayer battle-royale game with in-game bitcoin rewards and a minimalistic low-poly & cartoonish design. Bitcoin micro-transactions add a new level of interaction within the game. Players can get bitcoin instantly as they shoot opponents. All in-game items have a real value which players can consume or trade to withdraw your balance using lightning network ⚡\",\n            \"developer\": \"Satoshis Games\",\n            \"publisher\": \"Satoshis Games\",\n            \"liquidAddress\": \"VJLFJfZpBFJ3U9XNJte7ZVVd54dLSACgrGiVN6R16duhTwajxESxqtR7HvLoq3GhvrosgnZceJ5knns9\",\n            \"balance\": 303141\n        },\n        \"specs\": {\n            \"minimum\": {\n                \"cpu\": \"i3\",\n                \"gpu\": \"NVIDIA GTX 1060\",\n                \"hdd\": \"300mb\",\n                \"ram\": \"8gb\",\n                \"os\": [\"Windows\", \"Linux\", \"Mac OS\"]\n            }, \n            \"recommended\": {\n                \"cpu\": \"i8\",\n                \"gpu\": \"NVIDIA GTX 1080\",\n                \"hdd\": \"300mb\",\n                \"ram\": \"16gb\",\n                \"os\": [\"Windows\", \"Linux\", \"Mac OS\"]\n            }\n        },\n        \"language\": {\n            \"interface\": [\"english, spanish\"],\n            \"audio\":  [\"spanish\"],\n            \"subtitles\":  [\"english, spanish, arabic, french\"]\n        },\n        \"media\": {\n            \"images\": [\"https://d195044cvo06vb.cloudfront.net/games/3637b83b-9634-427e-ba76-988964916375/1.png\", \"https://d195044cvo06vb.cloudfront.net/games/3637b83b-9634-427e-ba76-988964916375/2.png\", \"https://d195044cvo06vb.cloudfront.net/games/3637b83b-9634-427e-ba76-988964916375/3.png\", \"https://d195044cvo06vb.cloudfront.net/games/3637b83b-9634-427e-ba76-988964916375/4.png\"],\n            \"icons\": [\"https://d195044cvo06vb.cloudfront.net/games/3637b83b-9634-427e-ba76-988964916375/icon.png\"],\n            \"videos\": [\"https://youtu.be/FMF1vMcCWzQ\"]\n        },\n        \"social\": {\n            \"website\": \"https://lightnite.io\",\n            \"twitter\": \"https://twitter.com/lightnitegame\",\n            \"email\": \"hi@lightnite.io\",\n            \"facebook\": \"https://facebook.com/lightnitegame\",\n            \"youtube\": \"https://youtube.com/lightnitegame\",\n            \"discord\": \"https://discord.gg/lightnitegame\",\n            \"itchio\": \"https://itch.io/lightnitegame\",\n            \"blog\": \"https://medium.com/lightnitegame\"\n        }\n    },\n    {\n        \"_id\": \"65a4d571-b474-4939-acde-6e2ac8fef321\",\n        \"status\": \"PUBLISHED\",\n        \"infromation\": {\n            \"status\": \"BETA\",\n            \"name\": \"Craig Wright is a Fraud\",\n            \"genre\": [\"Action\"],\n            \"price\": 0,\n            \"headline\": \"Plays this iconic version of the meme\",\n            \"description\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed facilisis semper consequat. Phasellus venenatis iaculis viverra. Sed dictum quam sit amet libero vulputate consectetur. Morbi aliquet neque semper cursus egestas. Curabitur porttitor, tortor ut efficitur pharetra, arcu nulla fringilla eros, non dapibus lectus quam id metus. Praesent vehicula cursus sem, at sagittis elit elementum eget. Suspendisse a hendrerit tortor. Nullam quis lacus nisi. Mauris bibendum sit amet erat eu imperdiet. Praesent sit amet accumsan lectus. Etiam mi turpis, mollis ac mauris in, pretium porta risus. Aliquam mauris lacus, venenatis fermentum efficitur non, viverra sed nibh. Aliquam aliquet velit vel enim euismod placerat. Integer elementum tortor sed est vestibulum, quis molestie tortor vehicula.\",\n            \"developer\": \"Satoshis Games\",\n            \"publisher\": \"Satoshis Games\",\n            \"liquidAddress\": \"VJL7xoFB6tg9Yf2r51CHM7ge2GLEsyzErBH3dzMehm2iTVG4Kf9vJvzmsmuGg6PuS7DRpywKVmhf5pVD\",\n            \"balance\": 3998\n        },\n        \"specs\": {\n            \"minimum\": {\n                \"cpu\": \"i3\",\n                \"gpu\": \"NVIDIA GTX 1060\",\n                \"hdd\": \"80mb\",\n                \"ram\": \"4gb\",\n                \"os\": [\"Windows\"]\n            }, \n            \"recommended\": {\n                \"cpu\": \"i5\",\n                \"gpu\": \"NVIDIA GTX 1080\",\n                \"hdd\": \"80\",\n                \"ram\": \"8gb\",\n                \"os\": [\"Windows\"]\n            }\n        },\n        \"language\": {\n            \"interface\": [\"english, spanish\"],\n            \"audio\":  [\"spanish\"],\n            \"subtitles\":  [\"english, spanish, arabic, french\"]\n        },\n        \"media\": {\n            \"images\": [\"https://d195044cvo06vb.cloudfront.net/games/3637b83b-9634-427e-ba76-988964916375/1.png\", \"https://d195044cvo06vb.cloudfront.net/games/3637b83b-9634-427e-ba76-988964916375/2.png\", \"https://d195044cvo06vb.cloudfront.net/games/3637b83b-9634-427e-ba76-988964916375/3.png\", \"https://d195044cvo06vb.cloudfront.net/games/3637b83b-9634-427e-ba76-988964916375/4.png\"],\n            \"icons\": [\"https://d195044cvo06vb.cloudfront.net/games/3637b83b-9634-427e-ba76-988964916375/icon.png\"],\n            \"videos\": [\"https://youtu.be/FMF1vMcCWzQ\"]\n        },\n        \"social\": {\n            \"website\": \"https://fraud-game.io\",\n            \"twitter\": \"https://twitter.com/fraud-gamegame\",\n            \"email\": \"hi@fraud-game.io\",\n            \"facebook\": \"https://facebook.com/fraud-gamegame\",\n            \"youtube\": \"https://youtube.com/fraud-gamegame\",\n            \"discord\": \"https://discord.gg/fraud-gamegame\",\n            \"itchio\": \"https://itch.io/fraud-gamegame\",\n            \"blog\": \"https://medium.com/fraud-gamegame\"\n        }\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Updload game",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "",
+								"description": "Authorization token from the API key belonging to the user / JWT if the request is coming from the front",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"info\": {\n\t\t\"JSON object containing all data about the game information\"\n\t\t},\n\t\"settings\": [\n\t\t{\n\t\t\t\"Array of 2 JSON objects containing all data about the game settings\"\n\t\t},\n\t\t{\n\t\t\t\n\t\t}\n\t\t],\n\t\"social\":{ \n\t\t\"JSON object containing all data about the game social links\"\n\t},\n\t\"files\": {\n\t\t\"JSON object containing all data about the game executable links\"\n\t}\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8899/games/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8899",
+							"path": [
+								"games",
+								""
+							]
+						},
+						"description": "This endpoint allows you to upload a game in Elixir. Once you upload all the required information & media files the request is processed"
+					},
+					"response": [
+						{
+							"name": "Updload game",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "",
+										"description": "Authorization token from the API key belonging to the user / JWT if the request is coming from the front",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"info\": {\n\t\t\"JSON object containing all data about the game information\"\n\t\t},\n\t\"settings\": [\n\t\t{\n\t\t\t\"Array of 2 JSON objects containing all data about the game settings\"\n\t\t},\n\t\t{\n\t\t\t\n\t\t}\n\t\t],\n\t\"social\":{ \n\t\t\"JSON object containing all data about the game social links\"\n\t},\n\t\"files\": {\n\t\t\"JSON object containing all data about the game executable links\"\n\t}\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8899/games/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8899",
+									"path": [
+										"games",
+										""
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": "\n    \"_id\": \"3637b83b-9634-427e-ba76-988964916375\",\n    \"status\": \"DRAFT\",\n    \"information\": {\n        \"name\": \"Light Nite\",\n        \"genre\": [\"Multiplayer, MMO, Sandbox\"],\n        \"price\": 20,\n        \"headline\": \"Earn bitcoin playing the most epic battle-royale\",\n        \"description\": \"Multiplayer battle-royale game with in-game bitcoin rewards and a minimalistic low-poly & cartoonish design. Bitcoin micro-transactions add a new level of interaction within the game. Players can get bitcoin instantly as they shoot opponents. All in-game items have a real value which players can consume or trade to withdraw your balance using lightning network ⚡\",\n        \"developer\": \"Satoshis Games\",\n        \"publisher\": \"Satoshis Games\",\n        \"players\": 88761,\n        \"liquidAddress\": \"VJLFJfZpBFJ3U9XNJte7ZVVd54dLSACgrGiVN6R16duhTwajxESxqtR7HvLoq3GhvrosgnZceJ5knns9\",\n        \"balance\": 303141\n    },\n    \"specs\": {\n        \"minimum\": {\n            \"cpu\": \"i3\",\n            \"gpu\": \"NVIDIA GTX 1060\",\n            \"hdd\": \"300mb\",\n            \"ram\": \"8gb\",\n            \"os\": [\"Windows\", \"Linux\", \"Mac OS\"]\n        }, \n        \"recommended\": {\n            \"cpu\": \"i8\",\n            \"gpu\": \"NVIDIA GTX 1080\",\n            \"hdd\": \"300mb\",\n            \"ram\": \"16gb\",\n            \"os\": [\"Windows\", \"Linux\", \"Mac OS\"]\n        }\n    },\n    \"language\": {\n        \"interface\": [\"english, spanish\"],\n        \"audio\":  [\"spanish\"],\n        \"subtitles\":  [\"english, spanish, arabic, french\"]\n    },\n    \"social\": {\n        \"website\": \"https://lightnite.io\",\n        \"twitter\": \"https://twitter.com/lightnitegame\",\n        \"email\": \"hi@lightnite.io\",\n        \"facebook\": \"https://facebook.com/lightnitegame\",\n        \"youtube\": \"https://youtube.com/lightnitegame\",\n        \"discord\": \"https://discord.gg/lightnitegame\",\n        \"itchio\": \"https://itch.io/lightnitegame\",\n        \"blog\": \"https://medium.com/lightnitegame\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Update game",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"props\": \"props to update\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8899/games/:id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8899",
+							"path": [
+								"games",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "",
+									"description": "game id"
+								}
+							]
+						},
+						"description": "This endpoint aupdate/adds existing fields in the fame with `DRAFT`status in Elixir"
+					},
+					"response": [
+						{
+							"name": "Update game",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"props\": \"props to update\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8899/games/:id",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8899",
+									"path": [
+										"games",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "",
+											"description": "game id"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": "{\n    \"_id\": \"3637b83b-9634-427e-ba76-988964916375\",\n    \"status\": \"DRAFT\",\n    \"information\": {\n        \"name\": \"Light Nite\",\n        \"genre\": [\"Multiplayer, MMO, Sandbox\"],\n        \"price\": 20,\n        \"headline\": \"Earn bitcoin playing the most epic battle-royale\",\n        \"description\": \"Multiplayer battle-royale game with in-game bitcoin rewards and a minimalistic low-poly & cartoonish design. Bitcoin micro-transactions add a new level of interaction within the game. Players can get bitcoin instantly as they shoot opponents. All in-game items have a real value which players can consume or trade to withdraw your balance using lightning network ⚡\",\n        \"developer\": \"Satoshis Games\",\n        \"publisher\": \"Satoshis Games\",\n        \"liquidAddress\": \"VJLDJNXVBoTNbnMvuDMcSPA5jCgNDH3k9Qmg3QU99BQykBSqGeAp8Bd2zm7aAwQGZCjTyxMXkpXFyQP5\",\n        \"balance\": 303141\n    },\n    \"specs\": {\n        \"minimum\": {\n            \"cpu\": \"i3\",\n            \"gpu\": \"NVIDIA GTX 1060\",\n            \"hdd\": \"300mb\",\n            \"ram\": \"8gb\",\n            \"os\": [\"Windows\", \"Linux\", \"Mac OS\"]\n        }, \n        \"recommended\": {\n            \"cpu\": \"i8\",\n            \"gpu\": \"NVIDIA GTX 1080\",\n            \"hdd\": \"300mb\",\n            \"ram\": \"16gb\",\n            \"os\": [\"Windows\", \"Linux\", \"Mac OS\"]\n        }\n    },\n    \"language\": {\n        \"interface\": [\"english, spanish\"],\n        \"audio\":  [\"spanish\"],\n        \"subtitles\":  [\"english, spanish, arabic, french\"]\n    },\n    \"media\": {\n        \"images\": [\"https://d195044cvo06vb.cloudfront.net/games/3637b83b-9634-427e-ba76-988964916375/1.png\", \"https://d195044cvo06vb.cloudfront.net/games/3637b83b-9634-427e-ba76-988964916375/2.png\", \"https://d195044cvo06vb.cloudfront.net/games/3637b83b-9634-427e-ba76-988964916375/3.png\", \"https://d195044cvo06vb.cloudfront.net/games/3637b83b-9634-427e-ba76-988964916375/4.png\"],\n        \"icons\": [\"https://d195044cvo06vb.cloudfront.net/games/3637b83b-9634-427e-ba76-988964916375/icon.png\"],\n        \"videos\": [\"https://youtu.be/FMF1vMcCWzQ\"]\n    },\n    \"social\": {\n        \"website\": \"https://lightnite.io\",\n        \"twitter\": \"https://twitter.com/lightnitegame\",\n        \"email\": \"hi@lightnite.io\",\n        \"facebook\": \"https://facebook.com/lightnitegame\",\n        \"youtube\": \"https://youtube.com/lightnitegame\",\n        \"discord\": \"https://discord.gg/lightnitegame\",\n        \"itchio\": \"https://itch.io/lightnitegame\",\n        \"blog\": \"https://medium.com/lightnitegame\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Remove game",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8899/games/:id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8899",
+							"path": [
+								"games",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "",
+									"description": "game id"
+								}
+							]
+						},
+						"description": "This endpoint removes an existing game uploaded to Elixir"
+					},
+					"response": [
+						{
+							"name": "Remove game",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8899/games/:id",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8899",
+									"path": [
+										"games",
+										":id"
+									],
+									"variable": [
+										{
+											"description": "game id",
+											"key": "id",
+											"value": ""
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"Game succesfully deleted\"\n}"
+						}
+					]
+				}
+			],
+			"description": "This page will help you get started with the upload & management of your games. Below there are all available endpoints.",
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "ASSETS",
+			"item": [
+				{
+					"name": "Get assets",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "",
+								"description": "Authorization token from the API key belonging to the user / JWT if the request is coming from the front",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8899/assets",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8899",
+							"path": [
+								"assets"
+							]
+						},
+						"description": "This endpoint allows you to get a game's assets to Elixir"
+					},
+					"response": [
+						{
+							"name": "Get assets",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "",
+										"description": "Authorization token from the API key belonging to the user / JWT if the request is coming from the front",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:8899/assets",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8899",
+									"path": [
+										"assets"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": "[\n    {\n        \"_id\": \"8325as2-bd3e-4e80-a2fb-6618e39ef551\",\n        \"status\": \"DRAFT\",\n        \"information\": {\n             \"gameId\": \"8acava3a-9634-427e-ba76-988964916375\",\n             \"liquidId\": \"c8w9qn2375f7d6f0992b76c82e50aad6919079eb606967896dee6caa44888c4\",\n             \"name\": \"Bazooka\",\n             \"ticker\":  \"BaZOO\",\n             \"utxo\": \"fas9fs453b729ed84b8370f2793f44996a24b8310cc9e59613a72fb2184b9046\",\n             \"description\": \"Lorem ipsum...\",\n             \"supply\": -1,\n             \"limited\": true,\n             \"category\": [\"range weapon\", \"projectile\"],\n             \"price\": 5,\n             \"prop1(rarity)\": \"normal\",\n             \"prop2(status)\": \"NEW\",\n             \"prop3(headline)\": \"The magic sword from the evil\" \n        },\n        \"media\": {\n            \"fbxFile\": \"https://d195044cvo06vb.cloudfront.net/games/3637b83b-9634-427e-ba76-988964916375/assets/inifinity-sword.fbx\",\n            \"glbFile\": \"https://d195044cvo06vb.cloudfront.net/games/3637b83b-9634-427e-ba76-988964916375/assets/inifinity-sword.glb\",\n            \"pngFile\": \"https://d195044cvo06vb.cloudfront.net/games/3637b83b-9634-427e-ba76-988964916375/assets/inifinity-sword.png\"\n        }\n    },\n    {\n        \"_id\": \"6f882028-bd3e-4e80-a2fb-6618e39ef551\",\n        \"status\": \"DRAFT\",\n        \"information\": {\n             \"gameId\": \"3637b83b-9634-427e-ba76-988964916375\",\n             \"liquidId\": \"7ca874f2375f7d6f0992b76c82e50aad6919079eb606967896dee6caa44888c4\",\n             \"name\": \"Infinity Sword\",\n             \"ticker\":  \"BVoCa\",\n             \"utxo\": \"d7ec81453b729ed84b8370f2793f44996a24b8310cc9e59613a72fb2184b9046\",\n             \"description\": \"Lorem ipsum...\",\n             \"supply\": 100,\n             \"limited\": true,\n             \"category\": [\"melee weapon\"],\n             \"price\": 30,\n             \"prop1(rarity)\": \"rare\",\n             \"prop2(status)\": \"status\": \"DAMAGED\",\n             \"prop3(headline)\": \"The magic sword from the evil\" \n        },\n        \"media\": {\n            \"fbxFile\": \"https://d195044cvo06vb.cloudfront.net/games/3637b83b-9634-427e-ba76-988964916375/assets/inifinity-sword.fbx\",\n            \"glbFile\": \"https://d195044cvo06vb.cloudfront.net/games/3637b83b-9634-427e-ba76-988964916375/assets/inifinity-sword.glb\",\n            \"pngFile\": \"https://d195044cvo06vb.cloudfront.net/games/3637b83b-9634-427e-ba76-988964916375/assets/inifinity-sword.png\"\n        }\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Upload Asset",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "",
+								"description": "Authorization token from the API key belonging to the user / JWT if the request is coming from the front",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"description\": \"Description from the asset context\",\n\t\"props\": \"Any additional property helpful for your context\",\n\t\"price\": \"(INT)Value to sell the asset\",\n\t\"fbxFile\": {\n\t\t\"FBX file to be stored in Elixir. Used to render the model in Unity\"\n\t},\n\t\"glbFile\": {\n\t\t\"(optional) GLB file to be stored in Elixir. Used to display the 3D model rendered view from explorer\"\n\t}\n\t\"supply\": \"Finite number of assets to be issued. Type -1 to have an infinite amount\",\n\t\"pngFile\": {\n\t\t\"PNG file to be stored in Elixir\"\n\t}\n\t\"name\": \"Name of the in-game asset\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8899/assets",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8899",
+							"path": [
+								"assets"
+							]
+						},
+						"description": "This endpoint allows you to upload a game's asset in Elixir.  Once you upload all the required information and media files the request is processed."
+					},
+					"response": [
+						{
+							"name": "Upload Asset",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "",
+										"description": "Authorization token from the API key belonging to the user / JWT if the request is coming from the front",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"description\": \"Description from the asset context\",\n\t\"props\": \"Any additional property helpful for your context\",\n\t\"price\": \"(INT)Value to sell the asset\",\n\t\"fbxFile\": {\n\t\t\"FBX file to be stored in Elixir. Used to render the model in Unity\"\n\t},\n\t\"glbFile\": {\n\t\t\"(optional) GLB file to be stored in Elixir. Used to display the 3D model rendered view from explorer\"\n\t}\n\t\"supply\": \"Finite number of assets to be issued. Type -1 to have an infinite amount\",\n\t\"pngFile\": {\n\t\t\"PNG file to be stored in Elixir\"\n\t}\n\t\"name\": \"Name of the in-game asset\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8899/assets",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8899",
+									"path": [
+										"assets"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": "{\n    \"_id\": \"6f882028-bd3e-4e80-a2fb-6618e39ef551\",\n    \"status\": \"DRAFT\",\n    \"information\": {\n         \"gameId\": \"3637b83b-9634-427e-ba76-988964916375\",\n         \"liquidId\": \"7ca874f2375f7d6f0992b76c82e50aad6919079eb606967896dee6caa44888c4\",\n         \"name\": \"Infinity Sword\",\n         \"ticker\":  \"BVoCa\",\n         \"utxo\": \"d7ec81453b729ed84b8370f2793f44996a24b8310cc9e59613a72fb2184b9046\",\n         \"description\": \"Lorem ipsum...\",\n         \"supply\": 100,\n         \"limited\": true,\n         \"category\": [\"melee weapon\"],\n         \"price\": 30,\n         \"prop1(rarity)\": \"rare\",\n         \"prop2(status)\": \"status\": \"DAMAGED\",\n         \"prop3(headline)\": \"The magic sword from the evil\" \n    },\n    \"media\": {\n        \"fbxFile\": \"https://d195044cvo06vb.cloudfront.net/games/3637b83b-9634-427e-ba76-988964916375/assets/inifinity-sword.fbx\",\n        \"glbFile\": \"https://d195044cvo06vb.cloudfront.net/games/3637b83b-9634-427e-ba76-988964916375/assets/inifinity-sword.glb\",\n        \"pngFile\": \"https://d195044cvo06vb.cloudfront.net/games/3637b83b-9634-427e-ba76-988964916375/assets/inifinity-sword.png\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Update Asset",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "",
+								"description": "Authorization token from the API key belonging to the user / JWT if the request is coming from the front",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"description\": \"Description from the asset context\",\n\t\"props\": \"Any additional property helpful for your context\",\n\t\"price\": \"(INT)Value to sell the asset\",\n\t\"fbxFile\": {\n\t\t\"FBX file to be stored in Elixir. Used to render the model in Unity\"\n\t},\n\t\"glbFile\": {\n\t\t\"(optional) GLB file to be stored in Elixir. Used to display the 3D model rendered view from explorer\"\n\t}\n\t\"supply\": \"Finite number of assets to be issued. Type -1 to have an infinite amount\",\n\t\"pngFile\": {\n\t\t\"PNG file to be stored in Elixir\"\n\t}\n\t\"name\": \"Name of the in-game asset\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8899/assets/:id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8899",
+							"path": [
+								"assets",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "",
+									"description": "Asset identifier"
+								}
+							]
+						},
+						"description": "This endpoint allows you to aa/update a game's asset with DRAFT status in Elixir."
+					},
+					"response": [
+						{
+							"name": "Update Asset",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "",
+										"description": "Authorization token from the API key belonging to the user / JWT if the request is coming from the front",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"description\": \"Description from the asset context\",\n\t\"props\": \"Any additional property helpful for your context\",\n\t\"price\": \"(INT)Value to sell the asset\",\n\t\"fbxFile\": {\n\t\t\"FBX file to be stored in Elixir. Used to render the model in Unity\"\n\t},\n\t\"glbFile\": {\n\t\t\"(optional) GLB file to be stored in Elixir. Used to display the 3D model rendered view from explorer\"\n\t}\n\t\"supply\": \"Finite number of assets to be issued. Type -1 to have an infinite amount\",\n\t\"pngFile\": {\n\t\t\"PNG file to be stored in Elixir\"\n\t}\n\t\"name\": \"Name of the in-game asset\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8899/assets/:id",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8899",
+									"path": [
+										"assets",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "",
+											"description": "Asset identifier"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": "{\n    \"_id\": \"6f882028-bd3e-4e80-a2fb-6618e39ef551\",\n    \"status\": \"DRAFT\",\n    \"information\": {\n         \"gameId\": \"3637b83b-9634-427e-ba76-988964916375\",\n         \"liquidId\": \"7ca874f2375f7d6f0992b76c82e50aad6919079eb606967896dee6caa44888c4\",\n         \"name\": \"Infinity Sword\",\n         \"ticker\":  \"BVoCa\",\n         \"utxo\": \"d7ec81453b729ed84b8370f2793f44996a24b8310cc9e59613a72fb2184b9046\",\n         \"description\": \"Lorem ipsum...\",\n         \"supply\": 100,\n         \"limited\": true,\n         \"category\": [\"melee weapon\"],\n         \"price\": 30,\n         \"prop1(rarity)\": \"rare\",\n         \"prop2(status)\": \"status\": \"DAMAGED\",\n         \"prop3(headline)\": \"The magic sword from the evil\" \n    },\n    \"media\": {\n        \"fbxFile\": \"https://d195044cvo06vb.cloudfront.net/games/3637b83b-9634-427e-ba76-988964916375/assets/inifinity-sword.fbx\",\n        \"glbFile\": \"https://d195044cvo06vb.cloudfront.net/games/3637b83b-9634-427e-ba76-988964916375/assets/inifinity-sword.glb\",\n        \"pngFile\": \"https://d195044cvo06vb.cloudfront.net/games/3637b83b-9634-427e-ba76-988964916375/assets/inifinity-sword.png\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Disable asset",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "",
+								"description": "Authorization token from the API key belonging to the user / JWT if the request is coming from the front",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"assetId\": \"ID belonging the registered asset\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8899/assets",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8899",
+							"path": [
+								"assets"
+							]
+						},
+						"description": "This endpoint lets you disable an asset from Elixir. But it will remain tokenised in liquid"
+					},
+					"response": []
+				}
+			],
+			"description": "This page will help you get started with the management of your in-game assets from your Elixir games. You'll be up and running real quick!",
+			"protocolProfileBehavior": {}
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "748c6ecd-df81-4c9b-8ad0-c62a2b4768f6",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "6ead174b-4fd7-4e03-b6a3-e181d6a296fe",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

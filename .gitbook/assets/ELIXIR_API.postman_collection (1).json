@@ -1,0 +1,2220 @@
+{
+	"info": {
+		"_postman_id": "258e12c6-f8c4-4845-9d2f-773883ed2ff4",
+		"name": "ELIXIR API",
+		"description": "Elixir offers a powerful REST API that supports tokenization in the bitcoin's sidechain of Liquid. It brings powerful features to create a unique NFT standard technology for inter-operable skins. ",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "API KEYS",
+			"item": [
+				{
+					"name": "Issue and API key",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"description": "Authentication token from the API key belonging to the user / JWT if the request is coming from the front",
+								"key": "x-api-key",
+								"type": "text",
+								"value": "5dda3946-c3d0-4ee6-abef-ed27196f14f4"
+							}
+						],
+						"url": {
+							"raw": "https://sandbox.elixir.app/keys",
+							"protocol": "https",
+							"host": [
+								"sandbox",
+								"elixir",
+								"app"
+							],
+							"path": [
+								"keys"
+							]
+						},
+						"description": "Functionality to get the key and userId"
+					},
+					"response": [
+						{
+							"name": "Issue and API key",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "Authentication token from the API key belonging to the user / JWT if the request is coming from the front",
+										"key": "x-api-key",
+										"type": "text",
+										"value": "5dda3946-c3d0-4ee6-abef-ed27196f14f4"
+									}
+								],
+								"url": {
+									"raw": "https://sandbox.elixir.app/keys",
+									"protocol": "https",
+									"host": [
+										"sandbox",
+										"elixir",
+										"app"
+									],
+									"path": [
+										"keys"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Length",
+									"value": "94"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 01 Mar 2021 18:13:09 GMT"
+								},
+								{
+									"key": "Etag",
+									"value": "W/\"5e-/fa2vSVXEhPPpOMwjIhuHAON9J0\""
+								},
+								{
+									"key": "Expect-Ct",
+									"value": "max-age=0"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Dns-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "X-Xss-Protection",
+									"value": "0"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"key\": \"bc7354a1-aa6f-47a8-93a2-fe41c41b7864\",\n    \"userId\": \"09142dc7-283d-400a-b073-9a20955cb92d\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Retrieve an API key",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "bc7354a1-aa6f-47a8-93a2-fe41c41b7864",
+								"description": "Authentication token from the API key belonging to the user / JWT if the request is coming from the front",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://sandbox.elixir.app/keys/bc7354a1-aa6f-47a8-93a2-fe41c41b7864",
+							"protocol": "https",
+							"host": [
+								"sandbox",
+								"elixir",
+								"app"
+							],
+							"path": [
+								"keys",
+								"bc7354a1-aa6f-47a8-93a2-fe41c41b7864"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Retrieve an API key",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "bc7354a1-aa6f-47a8-93a2-fe41c41b7864",
+										"description": "Authentication token from the API key belonging to the user / JWT if the request is coming from the front",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://sandbox.elixir.app/keys/bc7354a1-aa6f-47a8-93a2-fe41c41b7864",
+									"protocol": "https",
+									"host": [
+										"sandbox",
+										"elixir",
+										"app"
+									],
+									"path": [
+										"keys",
+										"bc7354a1-aa6f-47a8-93a2-fe41c41b7864"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Length",
+									"value": "94"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 01 Mar 2021 18:16:53 GMT"
+								},
+								{
+									"key": "Etag",
+									"value": "W/\"5e-/fa2vSVXEhPPpOMwjIhuHAON9J0\""
+								},
+								{
+									"key": "Expect-Ct",
+									"value": "max-age=0"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Dns-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "X-Xss-Protection",
+									"value": "0"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"key\": \"bc7354a1-aa6f-47a8-93a2-fe41c41b7864\",\n    \"userId\": \"09142dc7-283d-400a-b073-9a20955cb92d\"\n}"
+						}
+					]
+				},
+				{
+					"name": "List API keys",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "5dda3946-c3d0-4ee6-abef-ed27196f14f4",
+								"description": "Authentication token from the API key belonging to the user / JWT if the request is coming from the front",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://sandbox.elixir.app/keys",
+							"protocol": "https",
+							"host": [
+								"sandbox",
+								"elixir",
+								"app"
+							],
+							"path": [
+								"keys"
+							]
+						},
+						"description": "List all keys and userId"
+					},
+					"response": [
+						{
+							"name": "List API keys",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "5dda3946-c3d0-4ee6-abef-ed27196f14f4",
+										"description": "Authentication token from the API key belonging to the user / JWT if the request is coming from the front",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://sandbox.elixir.app/keys",
+									"protocol": "https",
+									"host": [
+										"sandbox",
+										"elixir",
+										"app"
+									],
+									"path": [
+										"keys"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Length",
+									"value": "381"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 01 Mar 2021 18:15:30 GMT"
+								},
+								{
+									"key": "Etag",
+									"value": "W/\"17d-Snm3q3oiC/cen9SdKBjBV7eXIE0\""
+								},
+								{
+									"key": "Expect-Ct",
+									"value": "max-age=0"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Dns-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "X-Xss-Protection",
+									"value": "0"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"key\": \"5dda3946-c3d0-4ee6-abef-ed27196f14f4\",\n        \"userId\": \"09142dc7-283d-400a-b073-9a20955cb92d\"\n    },\n    {\n        \"key\": \"0e094cee-a693-4a7f-b822-e1347acca90c\",\n        \"userId\": \"09142dc7-283d-400a-b073-9a20955cb92d\"\n    },\n    {\n        \"key\": \"34275556-608e-4cbf-b2be-0057424affbc\",\n        \"userId\": \"09142dc7-283d-400a-b073-9a20955cb92d\"\n    },\n    {\n        \"key\": \"bc7354a1-aa6f-47a8-93a2-fe41c41b7864\",\n        \"userId\": \"09142dc7-283d-400a-b073-9a20955cb92d\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Remove API key",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "5dda3946-c3d0-4ee6-abef-ed27196f14f4",
+								"description": "Authentication token from the API key belonging to the user / `JWT if the request is coming from the front",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://sandbox.elixir.app/keys/34275556-608e-4cbf-b2be-0057424affbc",
+							"protocol": "https",
+							"host": [
+								"sandbox",
+								"elixir",
+								"app"
+							],
+							"path": [
+								"keys",
+								"34275556-608e-4cbf-b2be-0057424affbc"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Remove API key",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "5dda3946-c3d0-4ee6-abef-ed27196f14f4",
+										"description": "Authentication token from the API key belonging to the user / `JWT if the request is coming from the front",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://sandbox.elixir.app/keys/34275556-608e-4cbf-b2be-0057424affbc",
+									"protocol": "https",
+									"host": [
+										"sandbox",
+										"elixir",
+										"app"
+									],
+									"path": [
+										"keys",
+										"34275556-608e-4cbf-b2be-0057424affbc"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Length",
+									"value": "16"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 01 Mar 2021 18:17:46 GMT"
+								},
+								{
+									"key": "Etag",
+									"value": "W/\"10-oV4hJxRVSENxc/wX8+mA4/Pe4tA\""
+								},
+								{
+									"key": "Expect-Ct",
+									"value": "max-age=0"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Dns-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "X-Xss-Protection",
+									"value": "0"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true\n}"
+						}
+					]
+				}
+			],
+			"description": "The Elixir API usesAPI Keysto authenticate requests. Authentication to the API is performed with a key. Provide your API key on the token header.\nAll API requests must be made over HTTPS. Calls made over plain HTTP will fail. API Requests without authentication will also fail.",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "GAMES",
+			"item": [
+				{
+					"name": "Retrieve games",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "bc7354a1-aa6f-47a8-93a2-fe41c41b7864",
+								"description": "Authorization token from the API key belonging to the user / JWT if the request is coming from the front",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://sandbox.elixir.app/games",
+							"protocol": "https",
+							"host": [
+								"sandbox",
+								"elixir",
+								"app"
+							],
+							"path": [
+								"games"
+							]
+						},
+						"description": "This endpoint list all uploaded games in Elixir"
+					},
+					"response": [
+						{
+							"name": "Retrieve games",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "bc7354a1-aa6f-47a8-93a2-fe41c41b7864",
+										"description": "Authorization token from the API key belonging to the user / JWT if the request is coming from the front",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://sandbox.elixir.app/games",
+									"protocol": "https",
+									"host": [
+										"sandbox",
+										"elixir",
+										"app"
+									],
+									"path": [
+										"games"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 01 Mar 2021 18:31:58 GMT"
+								},
+								{
+									"key": "Etag",
+									"value": "W/\"1fee-etI0V+He5DlmCY3Y5a+xq/ZS93A\""
+								},
+								{
+									"key": "Expect-Ct",
+									"value": "max-age=0"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Dns-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "X-Xss-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"_id\": \"0d3a01eb-73dd-4f7b-a81f-91aa0e7420c6\",\n        \"status\": \"DRAFT\",\n        \"information\": {\n            \"description\": \"LIGHT⚡️NITE is a multiplayer third person shooter with in-game rewards and a minimalistic low-poly & cartoonish design offering several game modes like team deathmatch or a battle-royale game mode for soloQ and squads teamplay .\",\n            \"developer\": \"Satoshis Games\",\n            \"genre\": [\n                \"MMO\",\n                \"Adventure\",\n                \"Sports\",\n                \"Role\"\n            ],\n            \"name\": \"Light Nite\",\n            \"players\": [\n                \"MultiPlayer\",\n                \"SinglePlayer\"\n            ],\n            \"publisher\": \"Satoshis Games\",\n            \"website\": \"https://satoshis.games\",\n            \"liquidAddress\": \"VJL5gf1H1u87oQ6Bj81hiJdRwposQSveK98GhFEf5sGwXWYzCx1WPYMNcHqtdGdX2P7ZNq9HeS58aWS5\",\n            \"status\": \"DRAFT\"\n        },\n        \"specs\": {\n            \"minimum\": [\n                {\n                    \"cpu\": \"Intel i3 / AMD Ryzen 3\",\n                    \"gpu\": \"2 GB\",\n                    \"hdd\": \"2 GB\",\n                    \"ram\": \"Nvidia GeForce GTX 970 / AMD RX480\",\n                    \"os\": \"Windows\"\n                }\n            ],\n            \"recommended\": [\n                {\n                    \"cpu\": \"i5\",\n                    \"gpu\": \"NVIDIA GeForce GTX 1Gb\",\n                    \"hdd\": \"1GB\",\n                    \"ram\": \"4GB\",\n                    \"os\": \"Windows\"\n                },\n                {\n                    \"cpu\": \"Intel i5 / AMD Ryzen 5\",\n                    \"gpu\": \"8 GB\",\n                    \"hdd\": \"2 GB\",\n                    \"ram\": \"Nvidia GeForce GTX 1GB VRAM / AMD Radeon R0 Fury\",\n                    \"os\": \"Mac\"\n                }\n            ]\n        },\n        \"languages\": {\n            \"interface\": [\n                \"English\"\n            ],\n            \"audio\": [\n                \"French\"\n            ],\n            \"subtitles\": [\n                \"Swidish\"\n            ]\n        },\n        \"media\": {\n            \"images\": [\n                \"https://d1udajbuf50cfc.cloudfront.net/game/d24435fb-6a2e-4797-b7ef-2a5fb5053be1/1611852431739_battle_royale_2_png\",\n                \"https://d1udajbuf50cfc.cloudfront.net/game/d24435fb-6a2e-4797-b7ef-2a5fb5053be1/1611852434588_battle_royale_1_png\",\n                \"https://d1udajbuf50cfc.cloudfront.net/game/d24435fb-6a2e-4797-b7ef-2a5fb5053be1/1611852428994_battle_royale_3_png\",\n                \"https://d1udajbuf50cfc.cloudfront.net/game/d24435fb-6a2e-4797-b7ef-2a5fb5053be1/1611852425675_battle_royale_4_png\"\n            ],\n            \"icons\": [\n                \"https://d1udajbuf50cfc.cloudfront.net/game/d24435fb-6a2e-4797-b7ef-2a5fb5053be1/1611852381950_lightnite_logo_png\"\n            ],\n            \"videos\": [\n                \"https://d1udajbuf50cfc.cloudfront.net/game/d24435fb-6a2e-4797-b7ef-2a5fb5053be1/1611852463666_clip_3_1_basic_fixed_mov\",\n                \"https://d1udajbuf50cfc.cloudfront.net/game/d24435fb-6a2e-4797-b7ef-2a5fb5053be1/1611852459000_clip_1_2_mp_4\"\n            ]\n        },\n        \"social\": {\n            \"Twitter\": \"www.twitter.com\"\n        }\n    },\n    {\n        \"_id\": \"a90e46d5-83eb-4def-a145-2b1db16031a2\",\n        \"status\": \"DRAFT\",\n        \"information\": {\n            \"description\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum\",\n            \"developer\": \"Satoshis Games\",\n            \"genre\": [\n                \"Arcade\",\n                \"FPS\"\n            ],\n            \"name\": \"Lightning Shooter\",\n            \"players\": [\n                \"MultiPlayer\"\n            ],\n            \"publisher\": \"Satoshis Games\",\n            \"website\": \"https://satoshis.games\",\n            \"liquidAddress\": \"VJLEoRfT6Zy9HP4XmvAshjJ1fWVgcXzzbXywtU5VJgVLcQ4yvH8a24KvveSfsUnvvL6U8uKZku9GnesX\",\n            \"status\": \"DRAFT\"\n        },\n        \"specs\": {\n            \"minimum\": [\n                {\n                    \"cpu\": \"i5\",\n                    \"gpu\": \"NVIDIA GeForce GTX 1Gb\",\n                    \"hdd\": \"1GB\",\n                    \"ram\": \"4GB\",\n                    \"os\": \"Windows\"\n                }\n            ],\n            \"recommended\": [\n                {\n                    \"cpu\": \"i5\",\n                    \"gpu\": \"NVIDIA GeForce GTX 1Gb\",\n                    \"hdd\": \"1GB\",\n                    \"ram\": \"4GB\",\n                    \"os\": \"Windows\"\n                }\n            ]\n        },\n        \"languages\": {\n            \"interface\": [\n                \"English\"\n            ],\n            \"audio\": [\n                \"English\"\n            ],\n            \"subtitles\": [\n                \"English\"\n            ]\n        },\n        \"media\": {\n            \"images\": [\n                \"https://d1udajbuf50cfc.cloudfront.net/game/a90e46d5-83eb-4def-a145-2b1db16031a2/1613376191317_lightnite_logo_png\"\n            ],\n            \"icons\": [\n                \"https://d1udajbuf50cfc.cloudfront.net/game/a90e46d5-83eb-4def-a145-2b1db16031a2/1613376198001_lightnite_logo_png\"\n            ],\n            \"videos\": [\n                \"https://d1udajbuf50cfc.cloudfront.net/game/a90e46d5-83eb-4def-a145-2b1db16031a2/1613376214098_january_update_mp_4\"\n            ]\n        },\n        \"social\": {\n            \"Twitter\": \"www.twitter.com\"\n        }\n    },\n    {\n        \"_id\": \"6de100f9-c4eb-491e-906e-f719b3900459\",\n        \"status\": \"DRAFT\",\n        \"information\": {\n            \"description\": \"TestGame forAPi\",\n            \"developer\": \"Teste4r\",\n            \"genre\": [\n                \"FPS\"\n            ],\n            \"name\": \"testGame\",\n            \"players\": [\n                \"mon\"\n            ],\n            \"publisher\": \"tester\",\n            \"website\": \"\",\n            \"liquidAddress\": \"VJL8X1skrSGWqanLYzuTEZXBCsjdjiKbN847pUUz7zNakcRHFjvt1h1JuXUh9qY2kN1vwBMcf4T9HxbE\",\n            \"status\": \"DRAFT\"\n        },\n        \"specs\": {\n            \"minimum\": [\n                {\n                    \"cpu\": \"i5\",\n                    \"gpu\": \"NVIDIA GeForce GTX 1Gb\",\n                    \"hdd\": \"1GB\",\n                    \"ram\": \"4GB\",\n                    \"os\": \"Windows\"\n                }\n            ],\n            \"recommended\": [\n                {\n                    \"cpu\": \"i5\",\n                    \"gpu\": \"NVIDIA GeForce GTX 1Gb\",\n                    \"hdd\": \"1GB\",\n                    \"ram\": \"4GB\",\n                    \"os\": \"Windows\"\n                }\n            ]\n        },\n        \"languages\": {\n            \"interface\": [\n                \"English\"\n            ],\n            \"audio\": [\n                \"English\"\n            ],\n            \"subtitles\": [\n                \"English\"\n            ]\n        },\n        \"media\": {\n            \"images\": [\n                \"https://d1udajbuf50cfc.cloudfront.net/game/02775b80-7b61-4887-a69a-4ffe83c1ab8b/1613770738155_icon_2_jpg\",\n                \"https://d1udajbuf50cfc.cloudfront.net/game/02775b80-7b61-4887-a69a-4ffe83c1ab8b/1613770734141_icon_3_png\"\n            ],\n            \"icons\": [\n                \"https://d1udajbuf50cfc.cloudfront.net/game/02775b80-7b61-4887-a69a-4ffe83c1ab8b/1613770742352_icon_1_jfif\"\n            ],\n            \"videos\": [\n                \"https://d1udajbuf50cfc.cloudfront.net/game/02775b80-7b61-4887-a69a-4ffe83c1ab8b/1613770774437_vc_mepx\"\n            ]\n        },\n        \"social\": {\n            \"Twitter\": \"www.twitter.com\"\n        }\n    },\n    {\n        \"_id\": \"e09c6f46-7abd-4608-ba61-c237d16dddcd\",\n        \"status\": \"DRAFT\",\n        \"information\": {\n            \"description\": \"MFPS 2.0 is an advanced multiplayer first-person game kit to help kickstart the development of your own online multiplayer First Person Shooter (FPS) game. this template includes all the basics and tons of advanced systems that all multiplayer shooter require, this game framework is very polished, utilizing the latest Unity game engine technologies with high efficiency and performance. Including a professional UI using full UGUI, player Mecanim animations, and plenty of options to customize to your taste and needed. Utilizing the Photon PUN 2 as network solution, you have 3 different game modes in the core of the kit: Free for All, Team Death Match, and Capture the Flag. Additionally, there are 4 player classes that you can modify to your taste and 6 different kinds of weapons: Rifle, Sniper, Shotgun, Pistol, Grenade, and Knife. This kit is AAA graphics ready and very easily customizable. The fully decoupled C# scripts make this kit one of the best online multiplayer development assets in the world\",\n            \"developer\": \"Test\",\n            \"genre\": [\n                \"FPS\"\n            ],\n            \"name\": \"Game\",\n            \"players\": [\n                \"mon\"\n            ],\n            \"publisher\": \"TestUser\",\n            \"website\": \"\",\n            \"liquidAddress\": \"VJLEVmeuXFHdWat41cFVDBYpynGEQtBSdeJmXKBEDvvKqzwuD9ykxZjxpvLanZr4eJ9owys19CWrxFjT\",\n            \"status\": \"DRAFT\"\n        },\n        \"specs\": {\n            \"minimum\": [\n                {\n                    \"cpu\": \"i5\",\n                    \"gpu\": \"NVIDIA GeForce GTX 1Gb\",\n                    \"hdd\": \"1GB\",\n                    \"ram\": \"4GB\",\n                    \"os\": \"Windows\"\n                }\n            ],\n            \"recommended\": [\n                {\n                    \"cpu\": \"i5\",\n                    \"gpu\": \"NVIDIA GeForce GTX 1Gb\",\n                    \"hdd\": \"1GB\",\n                    \"ram\": \"4GB\",\n                    \"os\": \"Windows\"\n                }\n            ]\n        },\n        \"languages\": {\n            \"interface\": [\n                \"English\"\n            ],\n            \"audio\": [\n                \"English\"\n            ],\n            \"subtitles\": [\n                \"English\"\n            ]\n        },\n        \"media\": {\n            \"images\": [\n                \"https://d1udajbuf50cfc.cloudfront.net/game/e09c6f46-7abd-4608-ba61-c237d16dddcd/1614583719554_oip_jfif\"\n            ],\n            \"icons\": [\n                \"https://d1udajbuf50cfc.cloudfront.net/game/e09c6f46-7abd-4608-ba61-c237d16dddcd/1614583729419_70810507_ba_79_4614_98_fd_f_078318_e_6038_1_png\"\n            ],\n            \"videos\": [\n                \"https://d1udajbuf50cfc.cloudfront.net/game/e09c6f46-7abd-4608-ba61-c237d16dddcd/1614583735042_mfps_2_0_update_1_7_1_mp_4\"\n            ]\n        },\n        \"social\": {\n            \"Twitter\": \"www.twitter.com\"\n        }\n    },\n    {\n        \"_id\": \"b279792c-1bb8-4051-b957-27d42d3eddd1\",\n        \"status\": \"DRAFT\",\n        \"information\": {\n            \"description\": \"We can add a description!!\",\n            \"developer\": \"Satoshis Games\",\n            \"genre\": [\n                \"FPS\",\n                \"Indie\"\n            ],\n            \"name\": \"Lightnite\",\n            \"players\": [\n                \"single\",\n                \"mon\"\n            ],\n            \"publisher\": \"Satoshis Games\",\n            \"website\": \"https://satoshis.games\",\n            \"liquidAddress\": \"VJL6oCiVT4Kn8RExnmES36vhWP66pb6xuhn5Kc75ZJnaP6QS3pMbBzecBBTGtgR9JXCbNwQzH62ErZrV\",\n            \"status\": \"DRAFT\"\n        },\n        \"specs\": {\n            \"minimum\": [\n                {\n                    \"cpu\": \"i5\",\n                    \"gpu\": \"NVIDIA GeForce GTX 1Gb\",\n                    \"hdd\": \"1GB\",\n                    \"ram\": \"4GB\",\n                    \"os\": \"Windows\"\n                }\n            ],\n            \"recommended\": [\n                {\n                    \"cpu\": \"i5\",\n                    \"gpu\": \"NVIDIA GeForce GTX 1Gb\",\n                    \"hdd\": \"1GB\",\n                    \"ram\": \"4GB\",\n                    \"os\": \"Windows\"\n                }\n            ]\n        },\n        \"languages\": {\n            \"interface\": [\n                \"English\",\n                \"Spanish\"\n            ],\n            \"audio\": [\n                \"English\",\n                \"Spanish\"\n            ],\n            \"subtitles\": [\n                \"English\",\n                \"Spanish\"\n            ]\n        },\n        \"media\": {\n            \"images\": [\n                \"https://d1udajbuf50cfc.cloudfront.net/game/4f980d9f-7952-48d3-976e-9275d9380056/1614616676743_covid_png\",\n                \"https://d1udajbuf50cfc.cloudfront.net/game/4f980d9f-7952-48d3-976e-9275d9380056/1614616673953_bay_png\",\n                \"https://d1udajbuf50cfc.cloudfront.net/game/4f980d9f-7952-48d3-976e-9275d9380056/1614616670120_battle_royale_4_png\",\n                \"https://d1udajbuf50cfc.cloudfront.net/game/4f980d9f-7952-48d3-976e-9275d9380056/1614616652998_battle_royale_2_png\"\n            ],\n            \"icons\": [\n                \"https://d1udajbuf50cfc.cloudfront.net/game/4f980d9f-7952-48d3-976e-9275d9380056/1614616682740_icon_png\"\n            ],\n            \"videos\": [\n                \"https://d1udajbuf50cfc.cloudfront.net/game/4f980d9f-7952-48d3-976e-9275d9380056/1614616696654_trailer_mp_4\"\n            ]\n        },\n        \"social\": {\n            \"Twitter\": \"www.twitter.com\"\n        }\n    }\n]"
+						},
+						{
+							"name": "Retrieve game 2",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "8eb93617-9e83-4765-9ea2-6c50a3f2b5de",
+										"description": "Authorization token from the API key belonging to the user / JWT if the request is coming from the front",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://sandbox.elixir.app/games",
+									"protocol": "https",
+									"host": [
+										"sandbox",
+										"elixir",
+										"app"
+									],
+									"path": [
+										"games"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 23 Feb 2021 18:21:04 GMT"
+								},
+								{
+									"key": "Etag",
+									"value": "W/\"16a8-Ok3aJ/qCqefQMCpJ04EkM/OmiJI\""
+								},
+								{
+									"key": "Expect-Ct",
+									"value": "max-age=0"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Dns-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "X-Xss-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1371"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"_id\": \"6d12872c-2940-4d5a-9a79-bc03678a2138\",\n        \"status\": \"DRAFT\",\n        \"information\": {\n            \"description\": \"Test1\",\n            \"developer\": \"Me\",\n            \"genre\": [\n                \"FPS\"\n            ],\n            \"name\": \"Test1\",\n            \"players\": [\n                \"single\",\n                \"mon\",\n                \"mlan\"\n            ],\n            \"publisher\": \"Supergames\",\n            \"website\": \"https://supergames.com\",\n            \"liquidAddress\": \"VJLBW3bSf5eRovFcvr1hfaWVceseWJCDHEk6u3ocW9yGQQzw87ejhvwgKWjnpcypvaYgpTDZEoHv9Zzx\",\n            \"status\": \"DRAFT\"\n        },\n        \"specs\": {\n            \"minimum\": [\n                {\n                    \"cpu\": \"i5\",\n                    \"gpu\": \"NVIDIA GeForce GTX 1Gb\",\n                    \"hdd\": \"1GB\",\n                    \"ram\": \"4GB\",\n                    \"os\": \"Windows\"\n                }\n            ],\n            \"recommended\": [\n                {\n                    \"cpu\": \"i5\",\n                    \"gpu\": \"NVIDIA GeForce GTX 1Gb\",\n                    \"hdd\": \"1GB\",\n                    \"ram\": \"4GB\",\n                    \"os\": \"Windows\"\n                }\n            ]\n        },\n        \"languages\": {\n            \"interface\": [\n                \"English\"\n            ],\n            \"audio\": [\n                \"French\"\n            ],\n            \"subtitles\": [\n                \"English\"\n            ]\n        },\n        \"media\": {\n            \"images\": [\n                \"https://d1udajbuf50cfc.cloudfront.net/game/6d12872c-2940-4d5a-9a79-bc03678a2138/1611863915812_1610362055611_battle_royale_1_png_png\"\n            ],\n            \"icons\": [\n                \"https://d1udajbuf50cfc.cloudfront.net/game/6d12872c-2940-4d5a-9a79-bc03678a2138/1611863920629_1610362079228_lightnite_logo_png_png\"\n            ],\n            \"videos\": [\n                \"https://d1udajbuf50cfc.cloudfront.net/game/6d12872c-2940-4d5a-9a79-bc03678a2138/1611863924929_1607896436839_clip_4_1_basic_mp_4_mp_4\"\n            ]\n        },\n        \"social\": {\n            \"Twitter\": \"www.twitter.com\"\n        }\n    },\n    {\n        \"_id\": \"08521039-5aec-4acc-b043-b4596a13f968\",\n        \"status\": \"DRAFT\",\n        \"information\": {\n            \"description\": \"Game2\",\n            \"developer\": \"GameDevs\",\n            \"genre\": [\n                \"Arcade\"\n            ],\n            \"name\": \"Game2\",\n            \"players\": [],\n            \"publisher\": \"Rokoko\",\n            \"website\": \"https://rokoko.com\",\n            \"liquidAddress\": \"VJLFumyJUHXbLkBaBSWLbRNQQ67hGkD5B1X11BchJDrjZjoQDXgAsQnyMfp3kvmQi9BCEucrDG8vwgX3\",\n            \"status\": \"DRAFT\"\n        },\n        \"specs\": {\n            \"minimum\": [\n                {\n                    \"cpu\": \"i5\",\n                    \"gpu\": \"NVIDIA GeForce GTX 1Gb\",\n                    \"hdd\": \"1GB\",\n                    \"ram\": \"4GB\",\n                    \"os\": \"Windows\"\n                },\n                {\n                    \"cpu\": \"Intel i3 / AMD Ryzen 3\",\n                    \"gpu\": \"1 GB\",\n                    \"hdd\": \"512 MB\",\n                    \"ram\": \"Nvidia GeForce GTX 970 / AMD RX480\",\n                    \"os\": \"Linux\"\n                }\n            ],\n            \"recommended\": [\n                {\n                    \"cpu\": \"i5\",\n                    \"gpu\": \"NVIDIA GeForce GTX 1Gb\",\n                    \"hdd\": \"1GB\",\n                    \"ram\": \"4GB\",\n                    \"os\": \"Windows\"\n                }\n            ]\n        },\n        \"languages\": {\n            \"interface\": [\n                \"English\"\n            ],\n            \"audio\": [\n                \"English\"\n            ],\n            \"subtitles\": [\n                \"English\"\n            ]\n        },\n        \"media\": {\n            \"images\": [\n                \"https://d1udajbuf50cfc.cloudfront.net/game/08521039-5aec-4acc-b043-b4596a13f968/1611874255842_1610362060766_battle_royale_4_png_png\",\n                \"https://d1udajbuf50cfc.cloudfront.net/game/08521039-5aec-4acc-b043-b4596a13f968/1611870421316_villages_png\"\n            ],\n            \"icons\": [\n                \"https://d1udajbuf50cfc.cloudfront.net/game/08521039-5aec-4acc-b043-b4596a13f968/1611870426942_1610362079228_lightnite_logo_png_png\"\n            ],\n            \"videos\": [\n                \"https://d1udajbuf50cfc.cloudfront.net/game/08521039-5aec-4acc-b043-b4596a13f968/1611870431267_1607896436839_clip_4_1_basic_mp_4_mp_4\"\n            ]\n        },\n        \"social\": {\n            \"Twitter\": \"www.twitter.com\"\n        }\n    },\n    {\n        \"_id\": \"224fef52-63c1-4bdb-bef7-f141e9265bb3\",\n        \"status\": \"DRAFT\",\n        \"information\": {\n            \"description\": \"Supercars\",\n            \"developer\": \"Satoshis Games\",\n            \"genre\": [\n                \"Arcade\"\n            ],\n            \"name\": \"Supercars\",\n            \"players\": [\n                \"single\"\n            ],\n            \"publisher\": \"Satoshis Games\",\n            \"website\": \"https://supercars.com\",\n            \"liquidAddress\": \"VJLBwPzU2MKoC4QEgWyo95xifaE8rKyrNxJ3NsKxAA49CodtUKkRRJx48s9aZrgtXsjZgudgpuBiyktB\",\n            \"status\": \"DRAFT\"\n        },\n        \"specs\": {\n            \"minimum\": [\n                {\n                    \"cpu\": \"i5\",\n                    \"gpu\": \"NVIDIA GeForce GTX 1Gb\",\n                    \"hdd\": \"1GB\",\n                    \"ram\": \"4GB\",\n                    \"os\": \"Windows\"\n                }\n            ],\n            \"recommended\": [\n                {\n                    \"cpu\": \"i5\",\n                    \"gpu\": \"NVIDIA GeForce GTX 1Gb\",\n                    \"hdd\": \"1GB\",\n                    \"ram\": \"4GB\",\n                    \"os\": \"Windows\"\n                }\n            ]\n        },\n        \"languages\": {\n            \"interface\": [\n                \"English\"\n            ],\n            \"audio\": [\n                \"English\"\n            ],\n            \"subtitles\": [\n                \"English\"\n            ]\n        },\n        \"media\": {\n            \"images\": [\n                \"https://d1udajbuf50cfc.cloudfront.net/game/224fef52-63c1-4bdb-bef7-f141e9265bb3/1613766756640_1609653284365_battle_royale_2_no_watermark_png_png\"\n            ],\n            \"icons\": [\n                \"https://d1udajbuf50cfc.cloudfront.net/game/224fef52-63c1-4bdb-bef7-f141e9265bb3/1613766762789_1610362079228_lightnite_logo_png_png\"\n            ],\n            \"videos\": [\n                \"https://d1udajbuf50cfc.cloudfront.net/game/224fef52-63c1-4bdb-bef7-f141e9265bb3/1613766767811_1607896436839_clip_4_1_basic_mp_4_mp_4\"\n            ]\n        },\n        \"social\": {\n            \"Twitter\": \"www.twitter.com\"\n        }\n    },\n    {\n        \"_id\": \"bef67b8a-9f05-4790-84ee-de5514cea4f7\",\n        \"status\": \"DRAFT\",\n        \"information\": {\n            \"description\": \"Test4\",\n            \"developer\": \"Satohsi\",\n            \"genre\": [\n                \"FPS\"\n            ],\n            \"name\": \"Test4\",\n            \"players\": [\n                \"single\",\n                \"mlan\"\n            ],\n            \"publisher\": \"Satoshi\",\n            \"website\": \"https://satoshi.com\",\n            \"liquidAddress\": \"VJL6uw8Ybdbz8MgERjz3NnQ2goKdEi2BUReTZck7YToiG6vL9kFmRLGHfk8deHefEqK8acY2n56UvjNo\",\n            \"status\": \"DRAFT\"\n        },\n        \"specs\": {\n            \"minimum\": [\n                {\n                    \"cpu\": \"i5\",\n                    \"gpu\": \"NVIDIA GeForce GTX 1Gb\",\n                    \"hdd\": \"1GB\",\n                    \"ram\": \"4GB\",\n                    \"os\": \"Windows\"\n                }\n            ],\n            \"recommended\": [\n                {\n                    \"cpu\": \"i5\",\n                    \"gpu\": \"NVIDIA GeForce GTX 1Gb\",\n                    \"hdd\": \"1GB\",\n                    \"ram\": \"4GB\",\n                    \"os\": \"Windows\"\n                }\n            ]\n        },\n        \"languages\": {\n            \"interface\": [\n                \"English\"\n            ],\n            \"audio\": [\n                \"English\"\n            ],\n            \"subtitles\": [\n                \"English\"\n            ]\n        },\n        \"media\": {\n            \"images\": [\n                \"https://d1udajbuf50cfc.cloudfront.net/game/bef67b8a-9f05-4790-84ee-de5514cea4f7/1613863308411_1610362079228_lightnite_logo_png_png\"\n            ],\n            \"icons\": [\n                \"https://d1udajbuf50cfc.cloudfront.net/game/bef67b8a-9f05-4790-84ee-de5514cea4f7/1613863311632_1610362079228_lightnite_logo_png_png\"\n            ],\n            \"videos\": [\n                \"https://d1udajbuf50cfc.cloudfront.net/game/bef67b8a-9f05-4790-84ee-de5514cea4f7/1613863316281_1607896436839_clip_4_1_basic_mp_4_mp_4\"\n            ]\n        },\n        \"social\": {\n            \"Twitter\": \"www.twitter.com\"\n        }\n    },\n    {\n        \"_id\": \"647727bc-eaaf-4136-939b-f314ec1b2bde\",\n        \"status\": \"DRAFT\",\n        \"information\": {\n            \"description\": \"test5\",\n            \"developer\": \"Satoshi\",\n            \"genre\": [\n                \"Arcade\"\n            ],\n            \"name\": \"test5\",\n            \"players\": [\n                \"single\",\n                \"mlan\",\n                \"cmon\"\n            ],\n            \"publisher\": \"Satoshi\",\n            \"website\": \"\",\n            \"liquidAddress\": \"VJLFARqzkZL9VTgZ3mHEikrV7yUYXqfLADTXiJZxdX2ik21c29qd3omrfKmpML66jDMheJDUKP2JpVwp\",\n            \"status\": \"DRAFT\"\n        },\n        \"specs\": {\n            \"minimum\": [\n                {\n                    \"cpu\": \"i5\",\n                    \"gpu\": \"NVIDIA GeForce GTX 1Gb\",\n                    \"hdd\": \"1GB\",\n                    \"ram\": \"4GB\",\n                    \"os\": \"Windows\"\n                }\n            ],\n            \"recommended\": [\n                {\n                    \"cpu\": \"i5\",\n                    \"gpu\": \"NVIDIA GeForce GTX 1Gb\",\n                    \"hdd\": \"1GB\",\n                    \"ram\": \"4GB\",\n                    \"os\": \"Windows\"\n                }\n            ]\n        },\n        \"languages\": {\n            \"interface\": [\n                \"English\"\n            ],\n            \"audio\": [\n                \"English\"\n            ],\n            \"subtitles\": [\n                \"English\"\n            ]\n        },\n        \"media\": {\n            \"images\": [\n                \"https://d1udajbuf50cfc.cloudfront.net/game/647727bc-eaaf-4136-939b-f314ec1b2bde/1613864347913_gameplay_6_png\"\n            ],\n            \"icons\": [\n                \"https://d1udajbuf50cfc.cloudfront.net/game/647727bc-eaaf-4136-939b-f314ec1b2bde/1613864350304_1610362079228_lightnite_logo_png_png\"\n            ],\n            \"videos\": [\n                \"https://d1udajbuf50cfc.cloudfront.net/game/647727bc-eaaf-4136-939b-f314ec1b2bde/1613864357918_game_svg\"\n            ]\n        },\n        \"social\": {\n            \"Twitter\": \"www.twitter.com\"\n        }\n    }\n]"
+						},
+						{
+							"name": "Retrieve games 0 and 1",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "",
+										"description": "Authorization token from the API key belonging to the user / JWT if the request is coming from the front",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:8899/games",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8899",
+									"path": [
+										"games"
+									]
+								}
+							},
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": "[\n    {\n        \"_id\": \"3637b83b-9634-427e-ba76-988964916375\",\n        \"status\": \"DRAFT\",\n        \"information\": {\n            \"name\": \"Light Nite\",\n            \"genre\": [\"Multiplayer, MMO, Sandbox\"],\n            \"price\": 20,\n            \"headline\": \"Earn bitcoin playing the most epic battle-royale\",\n            \"description\": \"Multiplayer battle-royale game with in-game bitcoin rewards and a minimalistic low-poly & cartoonish design. Bitcoin micro-transactions add a new level of interaction within the game. Players can get bitcoin instantly as they shoot opponents. All in-game items have a real value which players can consume or trade to withdraw your balance using lightning network ⚡\",\n            \"developer\": \"Satoshis Games\",\n            \"publisher\": \"Satoshis Games\",\n            \"liquidAddress\": \"VJLFJfZpBFJ3U9XNJte7ZVVd54dLSACgrGiVN6R16duhTwajxESxqtR7HvLoq3GhvrosgnZceJ5knns9\",\n            \"balance\": 303141\n        },\n        \"specs\": {\n            \"minimum\": {\n                \"cpu\": \"i3\",\n                \"gpu\": \"NVIDIA GTX 1060\",\n                \"hdd\": \"300mb\",\n                \"ram\": \"8gb\",\n                \"os\": [\"Windows\", \"Linux\", \"Mac OS\"]\n            }, \n            \"recommended\": {\n                \"cpu\": \"i8\",\n                \"gpu\": \"NVIDIA GTX 1080\",\n                \"hdd\": \"300mb\",\n                \"ram\": \"16gb\",\n                \"os\": [\"Windows\", \"Linux\", \"Mac OS\"]\n            }\n        },\n        \"language\": {\n            \"interface\": [\"english, spanish\"],\n            \"audio\":  [\"spanish\"],\n            \"subtitles\":  [\"english, spanish, arabic, french\"]\n        },\n        \"media\": {\n            \"images\": [\"https://d195044cvo06vb.cloudfront.net/games/3637b83b-9634-427e-ba76-988964916375/1.png\", \"https://d195044cvo06vb.cloudfront.net/games/3637b83b-9634-427e-ba76-988964916375/2.png\", \"https://d195044cvo06vb.cloudfront.net/games/3637b83b-9634-427e-ba76-988964916375/3.png\", \"https://d195044cvo06vb.cloudfront.net/games/3637b83b-9634-427e-ba76-988964916375/4.png\"],\n            \"icons\": [\"https://d195044cvo06vb.cloudfront.net/games/3637b83b-9634-427e-ba76-988964916375/icon.png\"],\n            \"videos\": [\"https://youtu.be/FMF1vMcCWzQ\"]\n        },\n        \"social\": {\n            \"website\": \"https://lightnite.io\",\n            \"twitter\": \"https://twitter.com/lightnitegame\",\n            \"email\": \"hi@lightnite.io\",\n            \"facebook\": \"https://facebook.com/lightnitegame\",\n            \"youtube\": \"https://youtube.com/lightnitegame\",\n            \"discord\": \"https://discord.gg/lightnitegame\",\n            \"itchio\": \"https://itch.io/lightnitegame\",\n            \"blog\": \"https://medium.com/lightnitegame\"\n        }\n    },\n    {\n        \"_id\": \"65a4d571-b474-4939-acde-6e2ac8fef321\",\n        \"status\": \"PUBLISHED\",\n        \"infromation\": {\n            \"status\": \"BETA\",\n            \"name\": \"Craig Wright is a Fraud\",\n            \"genre\": [\"Action\"],\n            \"price\": 0,\n            \"headline\": \"Plays this iconic version of the meme\",\n            \"description\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed facilisis semper consequat. Phasellus venenatis iaculis viverra. Sed dictum quam sit amet libero vulputate consectetur. Morbi aliquet neque semper cursus egestas. Curabitur porttitor, tortor ut efficitur pharetra, arcu nulla fringilla eros, non dapibus lectus quam id metus. Praesent vehicula cursus sem, at sagittis elit elementum eget. Suspendisse a hendrerit tortor. Nullam quis lacus nisi. Mauris bibendum sit amet erat eu imperdiet. Praesent sit amet accumsan lectus. Etiam mi turpis, mollis ac mauris in, pretium porta risus. Aliquam mauris lacus, venenatis fermentum efficitur non, viverra sed nibh. Aliquam aliquet velit vel enim euismod placerat. Integer elementum tortor sed est vestibulum, quis molestie tortor vehicula.\",\n            \"developer\": \"Satoshis Games\",\n            \"publisher\": \"Satoshis Games\",\n            \"liquidAddress\": \"VJL7xoFB6tg9Yf2r51CHM7ge2GLEsyzErBH3dzMehm2iTVG4Kf9vJvzmsmuGg6PuS7DRpywKVmhf5pVD\",\n            \"balance\": 3998\n        },\n        \"specs\": {\n            \"minimum\": {\n                \"cpu\": \"i3\",\n                \"gpu\": \"NVIDIA GTX 1060\",\n                \"hdd\": \"80mb\",\n                \"ram\": \"4gb\",\n                \"os\": [\"Windows\"]\n            }, \n            \"recommended\": {\n                \"cpu\": \"i5\",\n                \"gpu\": \"NVIDIA GTX 1080\",\n                \"hdd\": \"80\",\n                \"ram\": \"8gb\",\n                \"os\": [\"Windows\"]\n            }\n        },\n        \"language\": {\n            \"interface\": [\"english, spanish\"],\n            \"audio\":  [\"spanish\"],\n            \"subtitles\":  [\"english, spanish, arabic, french\"]\n        },\n        \"media\": {\n            \"images\": [\"https://d195044cvo06vb.cloudfront.net/games/3637b83b-9634-427e-ba76-988964916375/1.png\", \"https://d195044cvo06vb.cloudfront.net/games/3637b83b-9634-427e-ba76-988964916375/2.png\", \"https://d195044cvo06vb.cloudfront.net/games/3637b83b-9634-427e-ba76-988964916375/3.png\", \"https://d195044cvo06vb.cloudfront.net/games/3637b83b-9634-427e-ba76-988964916375/4.png\"],\n            \"icons\": [\"https://d195044cvo06vb.cloudfront.net/games/3637b83b-9634-427e-ba76-988964916375/icon.png\"],\n            \"videos\": [\"https://youtu.be/FMF1vMcCWzQ\"]\n        },\n        \"social\": {\n            \"website\": \"https://fraud-game.io\",\n            \"twitter\": \"https://twitter.com/fraud-gamegame\",\n            \"email\": \"hi@fraud-game.io\",\n            \"facebook\": \"https://facebook.com/fraud-gamegame\",\n            \"youtube\": \"https://youtube.com/fraud-gamegame\",\n            \"discord\": \"https://discord.gg/fraud-gamegame\",\n            \"itchio\": \"https://itch.io/fraud-gamegame\",\n            \"blog\": \"https://medium.com/fraud-gamegame\"\n        }\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Deposit Balance to Game",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "bc7354a1-aa6f-47a8-93a2-fe41c41b7864",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"amount\": 20000\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://sandbox.elixir.app/games/0d3a01eb-73dd-4f7b-a81f-91aa0e7420c6/deposit/request",
+							"protocol": "https",
+							"host": [
+								"sandbox",
+								"elixir",
+								"app"
+							],
+							"path": [
+								"games",
+								"0d3a01eb-73dd-4f7b-a81f-91aa0e7420c6",
+								"deposit",
+								"request"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Deposit Balance to Game 2",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "8eb93617-9e83-4765-9ea2-6c50a3f2b5de",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"amount\": 20000\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://sandbox.elixir.app/games/6d12872c-2940-4d5a-9a79-bc03678a2138/deposit/request",
+									"protocol": "https",
+									"host": [
+										"sandbox",
+										"elixir",
+										"app"
+									],
+									"path": [
+										"games",
+										"6d12872c-2940-4d5a-9a79-bc03678a2138",
+										"deposit",
+										"request"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 23 Feb 2021 18:21:47 GMT"
+								},
+								{
+									"key": "Etag",
+									"value": "W/\"456-zYEqg+xxPOit9zStLKqrAOtHUX8\""
+								},
+								{
+									"key": "Expect-Ct",
+									"value": "max-age=0"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Dns-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "X-Xss-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Content-Length",
+									"value": "572"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"6d12872c-2940-4d5a-9a79-bc03678a2138\",\n    \"status\": \"DRAFT\",\n    \"information\": {\n        \"description\": \"Test1\",\n        \"developer\": \"Me\",\n        \"genre\": [\n            \"FPS\"\n        ],\n        \"name\": \"Test1\",\n        \"players\": [\n            \"single\",\n            \"mon\",\n            \"mlan\"\n        ],\n        \"publisher\": \"Supergames\",\n        \"website\": \"https://supergames.com\",\n        \"liquidAddress\": \"VJL7k73WYhrQeF2iGnXWnH3iTsy5zosKWQ4RLfDB5RzmBGBwAaSE7LRGEJMx1ye3W7GeMgLdr3psPAbC\"\n    },\n    \"specs\": {\n        \"minimum\": [\n            {\n                \"cpu\": \"i5\",\n                \"gpu\": \"NVIDIA GeForce GTX 1Gb\",\n                \"hdd\": \"1GB\",\n                \"ram\": \"4GB\",\n                \"os\": \"Windows\"\n            }\n        ],\n        \"recommended\": [\n            {\n                \"cpu\": \"i5\",\n                \"gpu\": \"NVIDIA GeForce GTX 1Gb\",\n                \"hdd\": \"1GB\",\n                \"ram\": \"4GB\",\n                \"os\": \"Windows\"\n            }\n        ]\n    },\n    \"languages\": {\n        \"interface\": [\n            \"English\"\n        ],\n        \"audio\": [\n            \"French\"\n        ],\n        \"subtitles\": [\n            \"English\"\n        ]\n    },\n    \"media\": {\n        \"images\": [\n            \"https://d1udajbuf50cfc.cloudfront.net/game/6d12872c-2940-4d5a-9a79-bc03678a2138/1611863915812_1610362055611_battle_royale_1_png_png\"\n        ],\n        \"icons\": [\n            \"https://d1udajbuf50cfc.cloudfront.net/game/6d12872c-2940-4d5a-9a79-bc03678a2138/1611863920629_1610362079228_lightnite_logo_png_png\"\n        ],\n        \"videos\": [\n            \"https://d1udajbuf50cfc.cloudfront.net/game/6d12872c-2940-4d5a-9a79-bc03678a2138/1611863924929_1607896436839_clip_4_1_basic_mp_4_mp_4\"\n        ]\n    },\n    \"social\": {\n        \"Twitter\": \"www.twitter.com\"\n    }\n}"
+						},
+						{
+							"name": "Deposit Balance to Game 0",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "783f6a26-61bd-400f-8f41-84d090b237ce",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"amount\": 20000\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://sandbox.elixir.app/games/0d3a01eb-73dd-4f7b-a81f-91aa0e7420c6/deposit/request",
+									"protocol": "https",
+									"host": [
+										"sandbox",
+										"elixir",
+										"app"
+									],
+									"path": [
+										"games",
+										"0d3a01eb-73dd-4f7b-a81f-91aa0e7420c6",
+										"deposit",
+										"request"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 23 Feb 2021 18:20:05 GMT"
+								},
+								{
+									"key": "Etag",
+									"value": "W/\"7aa-eMLWcgmJye2KrcRIkNFO5sv8Rwk\""
+								},
+								{
+									"key": "Expect-Ct",
+									"value": "max-age=0"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Dns-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "X-Xss-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Content-Length",
+									"value": "891"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"0d3a01eb-73dd-4f7b-a81f-91aa0e7420c6\",\n    \"status\": \"DRAFT\",\n    \"information\": {\n        \"description\": \"LIGHT⚡️NITE is a multiplayer third person shooter with in-game rewards and a minimalistic low-poly & cartoonish design offering several game modes like team deathmatch or a battle-royale game mode for soloQ and squads teamplay .\",\n        \"developer\": \"Satoshis Games\",\n        \"genre\": [\n            \"MMO\",\n            \"Adventure\",\n            \"Sports\",\n            \"Role\"\n        ],\n        \"name\": \"Light Nite\",\n        \"players\": [\n            \"MultiPlayer\",\n            \"SinglePlayer\"\n        ],\n        \"publisher\": \"Satoshis Games\",\n        \"website\": \"https://satoshis.games\",\n        \"liquidAddress\": \"VJLEpQojZGTR4gmE8HoVYpA4CkaHQv7A7dBZjRgxCig3bsXeEJFVVi5jQkzdFqrWcuHLKdWoHp1inALk\"\n    },\n    \"specs\": {\n        \"minimum\": [\n            {\n                \"cpu\": \"Intel i3 / AMD Ryzen 3\",\n                \"gpu\": \"2 GB\",\n                \"hdd\": \"2 GB\",\n                \"ram\": \"Nvidia GeForce GTX 970 / AMD RX480\",\n                \"os\": \"Windows\"\n            }\n        ],\n        \"recommended\": [\n            {\n                \"cpu\": \"i5\",\n                \"gpu\": \"NVIDIA GeForce GTX 1Gb\",\n                \"hdd\": \"1GB\",\n                \"ram\": \"4GB\",\n                \"os\": \"Windows\"\n            },\n            {\n                \"cpu\": \"Intel i5 / AMD Ryzen 5\",\n                \"gpu\": \"8 GB\",\n                \"hdd\": \"2 GB\",\n                \"ram\": \"Nvidia GeForce GTX 1GB VRAM / AMD Radeon R0 Fury\",\n                \"os\": \"Mac\"\n            }\n        ]\n    },\n    \"languages\": {\n        \"interface\": [\n            \"English\"\n        ],\n        \"audio\": [\n            \"French\"\n        ],\n        \"subtitles\": [\n            \"Swidish\"\n        ]\n    },\n    \"media\": {\n        \"images\": [\n            \"https://d1udajbuf50cfc.cloudfront.net/game/d24435fb-6a2e-4797-b7ef-2a5fb5053be1/1611852431739_battle_royale_2_png\",\n            \"https://d1udajbuf50cfc.cloudfront.net/game/d24435fb-6a2e-4797-b7ef-2a5fb5053be1/1611852434588_battle_royale_1_png\",\n            \"https://d1udajbuf50cfc.cloudfront.net/game/d24435fb-6a2e-4797-b7ef-2a5fb5053be1/1611852428994_battle_royale_3_png\",\n            \"https://d1udajbuf50cfc.cloudfront.net/game/d24435fb-6a2e-4797-b7ef-2a5fb5053be1/1611852425675_battle_royale_4_png\"\n        ],\n        \"icons\": [\n            \"https://d1udajbuf50cfc.cloudfront.net/game/d24435fb-6a2e-4797-b7ef-2a5fb5053be1/1611852381950_lightnite_logo_png\"\n        ],\n        \"videos\": [\n            \"https://d1udajbuf50cfc.cloudfront.net/game/d24435fb-6a2e-4797-b7ef-2a5fb5053be1/1611852463666_clip_3_1_basic_fixed_mov\",\n            \"https://d1udajbuf50cfc.cloudfront.net/game/d24435fb-6a2e-4797-b7ef-2a5fb5053be1/1611852459000_clip_1_2_mp_4\"\n        ]\n    },\n    \"social\": {\n        \"Twitter\": \"www.twitter.com\"\n    }\n}"
+						}
+					]
+				}
+			],
+			"description": "This page will help you get started with the upload & management of your games. Below there are all available endpoints."
+		},
+		{
+			"name": "ASSETS",
+			"item": [
+				{
+					"name": "Get assets",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "bc7354a1-aa6f-47a8-93a2-fe41c41b7864",
+								"description": "Authorization token from the API key belonging to the user / JWT if the request is coming from the front",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://sandbox.elixir.app/assets",
+							"protocol": "https",
+							"host": [
+								"sandbox",
+								"elixir",
+								"app"
+							],
+							"path": [
+								"assets"
+							]
+						},
+						"description": "This endpoint allows you to get a game's assets to Elixir"
+					},
+					"response": [
+						{
+							"name": "Get assets",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "bc7354a1-aa6f-47a8-93a2-fe41c41b7864",
+										"description": "Authorization token from the API key belonging to the user / JWT if the request is coming from the front",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://sandbox.elixir.app/assets",
+									"protocol": "https",
+									"host": [
+										"sandbox",
+										"elixir",
+										"app"
+									],
+									"path": [
+										"assets"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 01 Mar 2021 18:20:49 GMT"
+								},
+								{
+									"key": "Etag",
+									"value": "W/\"22ea-FpzYCJWlF0ggGhvkOPkaFgzQMt0\""
+								},
+								{
+									"key": "Expect-Ct",
+									"value": "max-age=0"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Dns-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "X-Xss-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"_id\": \"d0024ee4-1fb2-4dde-b172-6a51e25b4b92\",\n        \"status\": \"PUBLISHED\",\n        \"information\": {\n            \"category\": [\n                \"Clothing\"\n            ],\n            \"description\": \"Spy cap by blockstream\",\n            \"gameId\": \"64baef21-1b1a-474c-99a1-46466b5e714d\",\n            \"limited\": true,\n            \"name\": \"Blockstream Cap\",\n            \"price\": 100,\n            \"supply\": 100,\n            \"address\": \"VJL6sQM5YH5uzULBzRDYia4HK3S1WF2NcL86XbGgYE585xxndUQDuCtuRLFXn9QaNJSucwuV8JeBmhXS\",\n            \"contract\": {\n                \"entity\": {\n                    \"domain\": \"explorer.elixir.app\"\n                },\n                \"issuer_pubkey\": \"02cb2bf9da7497e5baebcc8671cfc5ce7124a95dca0a9c2d78c79ca7f64bc990a9\",\n                \"name\": \"Blockstream Cap\",\n                \"precision\": 0,\n                \"ticker\": \"CBlCa\",\n                \"version\": 0\n            },\n            \"liquidId\": \"21db92fa8b2b25fda799e5007d737cb98f88d3f06c8591baf18173a025f27184\",\n            \"utxo\": \"23fb1c50b7b0cb2c80ed590f0e88704533af2661b5488ec6b220636e5fcb9fde\",\n            \"status\": \"PUBLISHED\"\n        },\n        \"media\": {\n            \"images\": \"https://d1udajbuf50cfc.cloudfront.net/game/64baef21-1b1a-474c-99a1-46466b5e714d/assets/d0024ee4-1fb2-4dde-b172-6a51e25b4b92/1611855637650_poster_png\",\n            \"glb\": \"https://elixir-gaming.s3.eu-west-2.amazonaws.com/game/64baef21-1b1a-474c-99a1-46466b5e714d/assets/d0024ee4-1fb2-4dde-b172-6a51e25b4b92/1611855665964_data?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAW7MG6ZVSBVKQUPOF%2F20210301%2Feu-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210301T182049Z&X-Amz-Expires=900&X-Amz-Signature=bbab70eda19fe6e0ee436ee3d8255f02eadf84953c2509199c6fc6ca967fb706&X-Amz-SignedHeaders=host\",\n            \"fbx\": \"https://elixir-gaming.s3.eu-west-2.amazonaws.com/game/64baef21-1b1a-474c-99a1-46466b5e714d/assets/d0024ee4-1fb2-4dde-b172-6a51e25b4b92/1611855674331_blockstream_cap_fbx?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAW7MG6ZVSBVKQUPOF%2F20210301%2Feu-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210301T182049Z&X-Amz-Expires=900&X-Amz-Signature=7f689c5b8e07aaa009a339a71ab6a10c2af05a9965e887a072d4f6165013d0be&X-Amz-SignedHeaders=host\"\n        }\n    },\n    {\n        \"_id\": \"b8dbf7df-6c41-4b92-aff2-b61a58f176be\",\n        \"status\": \"PUBLISHED\",\n        \"information\": {\n            \"category\": [\n                \"Weapon\"\n            ],\n            \"description\": \"beisbol bat\",\n            \"gameId\": \"0d3a01eb-73dd-4f7b-a81f-91aa0e7420c6\",\n            \"limited\": true,\n            \"name\": \"Hodl bat\",\n            \"price\": 25,\n            \"supply\": 45,\n            \"address\": \"VJL5gf1H1u87oQ6Bj81hiJdRwposQSveK98GhFEf5sGwXWYzCx1WPYMNcHqtdGdX2P7ZNq9HeS58aWS5\",\n            \"contract\": {\n                \"entity\": {\n                    \"domain\": \"explorer.elixir.app\"\n                },\n                \"issuer_pubkey\": \"02eafa3e7951335d57652999dd079b9559f42acc03c42fc0880f7c1f581bbee923\",\n                \"name\": \"Hodl bat\",\n                \"precision\": 0,\n                \"ticker\": \"WHoba\",\n                \"version\": 0\n            },\n            \"liquidId\": \"c7f4c7fd8dccf810810b5786de863b1f251d80b65180e2e9bc28d77ec48e46db\",\n            \"utxo\": \"11bd3925290ea278af33ccdf9f55016012437b2da22cff9343d0f7f7b9e5e808\",\n            \"status\": \"PUBLISHED\"\n        },\n        \"media\": {\n            \"images\": \"https://d1udajbuf50cfc.cloudfront.net/game/0d3a01eb-73dd-4f7b-a81f-91aa0e7420c6/assets/b8dbf7df-6c41-4b92-aff2-b61a58f176be/1611856630324_poster_png\",\n            \"glb\": \"https://elixir-gaming.s3.eu-west-2.amazonaws.com/game/0d3a01eb-73dd-4f7b-a81f-91aa0e7420c6/assets/b8dbf7df-6c41-4b92-aff2-b61a58f176be/1611856634168_data?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAW7MG6ZVSBVKQUPOF%2F20210301%2Feu-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210301T182049Z&X-Amz-Expires=900&X-Amz-Signature=8e64fd189da6cd5f2c0fb4580ba28be50d7dd4e9ea3ce19d790d784f4c54f364&X-Amz-SignedHeaders=host\",\n            \"fbx\": \"https://elixir-gaming.s3.eu-west-2.amazonaws.com/game/0d3a01eb-73dd-4f7b-a81f-91aa0e7420c6/assets/b8dbf7df-6c41-4b92-aff2-b61a58f176be/1611856642589_hodlshop_fbx?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAW7MG6ZVSBVKQUPOF%2F20210301%2Feu-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210301T182049Z&X-Amz-Expires=900&X-Amz-Signature=e5fe461c02f4b22c1c656241685ad5a9dc6d20e43259bfa390f93009ec88a603&X-Amz-SignedHeaders=host\"\n        }\n    },\n    {\n        \"_id\": \"cc23df5f-035b-4b31-945a-fd3520fd048a\",\n        \"status\": \"PUBLISHED\",\n        \"information\": {\n            \"category\": [\n                \"Clothing\"\n            ],\n            \"description\": \"backpack with strike logo\",\n            \"gameId\": \"64baef21-1b1a-474c-99a1-46466b5e714d\",\n            \"limited\": true,\n            \"name\": \"Strike Backpack\",\n            \"price\": 35,\n            \"supply\": 100,\n            \"address\": \"VJL6sQM5YH5uzULBzRDYia4HK3S1WF2NcL86XbGgYE585xxndUQDuCtuRLFXn9QaNJSucwuV8JeBmhXS\",\n            \"contract\": {\n                \"entity\": {\n                    \"domain\": \"explorer.elixir.app\"\n                },\n                \"issuer_pubkey\": \"02cb2bf9da7497e5baebcc8671cfc5ce7124a95dca0a9c2d78c79ca7f64bc990a9\",\n                \"name\": \"Strike Backpack\",\n                \"precision\": 0,\n                \"ticker\": \"CStBa\",\n                \"version\": 0\n            },\n            \"liquidId\": \"8da1d8c5fabb8ec0dff2e82ea5072c9a3fd1b9cab24989957240bc8ce18f6536\",\n            \"utxo\": \"421d416517680d8b9ab210ba38b8ee673e286a5630130eb85ffb671e4b9c466b\",\n            \"status\": \"PUBLISHED\"\n        },\n        \"media\": {\n            \"images\": \"https://d1udajbuf50cfc.cloudfront.net/game/64baef21-1b1a-474c-99a1-46466b5e714d/assets/cc23df5f-035b-4b31-945a-fd3520fd048a/1612187393838_poster_png\",\n            \"glb\": \"https://elixir-gaming.s3.eu-west-2.amazonaws.com/game/64baef21-1b1a-474c-99a1-46466b5e714d/assets/cc23df5f-035b-4b31-945a-fd3520fd048a/1612187409162_data?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAW7MG6ZVSBVKQUPOF%2F20210301%2Feu-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210301T182049Z&X-Amz-Expires=900&X-Amz-Signature=7f6925c6907867219afb3b026310e3f7f7dd2105f94cecfb085d16f625ace867&X-Amz-SignedHeaders=host\",\n            \"fbx\": \"https://elixir-gaming.s3.eu-west-2.amazonaws.com/game/64baef21-1b1a-474c-99a1-46466b5e714d/assets/cc23df5f-035b-4b31-945a-fd3520fd048a/1612187418577_strikepack_fbx?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAW7MG6ZVSBVKQUPOF%2F20210301%2Feu-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210301T182049Z&X-Amz-Expires=900&X-Amz-Signature=273c9e95c436631c33fe143ecadca7d7d4d28f53c5efa7cf7f2468ff00371169&X-Amz-SignedHeaders=host\"\n        }\n    },\n    {\n        \"_id\": \"6f2afed6-7511-4955-8268-5cdbb21a4a5a\",\n        \"status\": \"DRAFT\",\n        \"information\": {\n            \"category\": [\n                \"Armour\"\n            ],\n            \"description\": \"dsfsdf\",\n            \"gameId\": \"64baef21-1b1a-474c-99a1-46466b5e714d\",\n            \"name\": \"New asset\",\n            \"price\": 12,\n            \"supply\": 1,\n            \"limited\": null,\n            \"status\": \"DRAFT\"\n        },\n        \"media\": {\n            \"images\": \"https://d1udajbuf50cfc.cloudfront.net/game/64baef21-1b1a-474c-99a1-46466b5e714d/assets/6f2afed6-7511-4955-8268-5cdbb21a4a5a/1614381012679_astronaut_png_high_quality_image_png\",\n            \"glb\": \"https://d1udajbuf50cfc.cloudfront.net/game/64baef21-1b1a-474c-99a1-46466b5e714d/assets/6f2afed6-7511-4955-8268-5cdbb21a4a5a/1614381018011_data_glb\",\n            \"fbx\": \"https://d1udajbuf50cfc.cloudfront.net/game/64baef21-1b1a-474c-99a1-46466b5e714d/assets/6f2afed6-7511-4955-8268-5cdbb21a4a5a/1614177835101_poster_3_png\"\n        }\n    },\n    {\n        \"_id\": \"6edc42dc-a6c6-414c-8601-276ed511c0b2\",\n        \"status\": \"DRAFT\",\n        \"information\": {\n            \"category\": [\n                \"Character\"\n            ],\n            \"description\": \"Miner OP\",\n            \"gameId\": \"64baef21-1b1a-474c-99a1-46466b5e714d\",\n            \"name\": \"Miner\",\n            \"price\": 25,\n            \"supply\": 100,\n            \"status\": \"DRAFT\"\n        },\n        \"media\": {\n            \"images\": \"https://d1udajbuf50cfc.cloudfront.net/game/64baef21-1b1a-474c-99a1-46466b5e714d/assets/6edc42dc-a6c6-414c-8601-276ed511c0b2/1614381383872_kisspng_idle_miner_tycoon_scribblenauts_mining_clip_art_miners_5_b_467_be_3492_b_65_0794944315313458912997_png\",\n            \"glb\": \"https://d1udajbuf50cfc.cloudfront.net/game/64baef21-1b1a-474c-99a1-46466b5e714d/assets/6edc42dc-a6c6-414c-8601-276ed511c0b2/1614381389627_data_1_glb\",\n            \"fbx\": \"https://d1udajbuf50cfc.cloudfront.net/game/64baef21-1b1a-474c-99a1-46466b5e714d/assets/6edc42dc-a6c6-414c-8601-276ed511c0b2/1614381393901_data_glb\"\n        }\n    },\n    {\n        \"_id\": \"01115004-ca0b-4b75-af65-b3901b32b27c\",\n        \"status\": \"DRAFT\",\n        \"information\": {\n            \"category\": [\n                \"Weapon\"\n            ],\n            \"description\": \"Power Tool\",\n            \"gameId\": \"e09c6f46-7abd-4608-ba61-c237d16dddcd\",\n            \"name\": \"Test\",\n            \"price\": 2,\n            \"supply\": 5,\n            \"status\": \"DRAFT\"\n        },\n        \"media\": {\n            \"images\": \"https://d1udajbuf50cfc.cloudfront.net/game/e09c6f46-7abd-4608-ba61-c237d16dddcd/assets/01115004-ca0b-4b75-af65-b3901b32b27c/1614584158766_sawed_off_shotgun_png\",\n            \"fbx\": \"https://d1udajbuf50cfc.cloudfront.net/game/e09c6f46-7abd-4608-ba61-c237d16dddcd/assets/01115004-ca0b-4b75-af65-b3901b32b27c/1614585368599_test_fbx\"\n        }\n    },\n    {\n        \"_id\": \"0d2fa261-799e-4b16-aa73-96b9c2289748\",\n        \"status\": \"DRAFT\",\n        \"information\": {\n            \"category\": [\n                \"Character\"\n            ],\n            \"description\": \"From the hell to the heaven of magic!\",\n            \"gameId\": \"b279792c-1bb8-4051-b957-27d42d3eddd1\",\n            \"limited\": true,\n            \"name\": \"Warlock\",\n            \"price\": 2,\n            \"supply\": 500,\n            \"status\": \"DRAFT\"\n        },\n        \"media\": {\n            \"images\": \"https://d1udajbuf50cfc.cloudfront.net/game/b279792c-1bb8-4051-b957-27d42d3eddd1/assets/0d2fa261-799e-4b16-aa73-96b9c2289748/1614616889668_poster_png\",\n            \"glb\": \"https://d1udajbuf50cfc.cloudfront.net/game/b279792c-1bb8-4051-b957-27d42d3eddd1/assets/0d2fa261-799e-4b16-aa73-96b9c2289748/1614616882275_data\",\n            \"fbx\": \"https://d1udajbuf50cfc.cloudfront.net/game/b279792c-1bb8-4051-b957-27d42d3eddd1/assets/0d2fa261-799e-4b16-aa73-96b9c2289748/1614616876227_bull_man_fbx\"\n        }\n    },\n    {\n        \"_id\": \"fe9fb409-b3f4-4b5d-b9b7-d72dc8e8c1d8\",\n        \"status\": \"DRAFT\",\n        \"information\": {\n            \"category\": [\n                \"Character\"\n            ],\n            \"description\": \"Magic is a consumable element\",\n            \"gameId\": \"b279792c-1bb8-4051-b957-27d42d3eddd1\",\n            \"limited\": true,\n            \"name\": \"Magical Man\",\n            \"price\": 50,\n            \"supply\": 100,\n            \"status\": \"DRAFT\"\n        },\n        \"media\": {\n            \"images\": \"https://d1udajbuf50cfc.cloudfront.net/game/b279792c-1bb8-4051-b957-27d42d3eddd1/assets/fe9fb409-b3f4-4b5d-b9b7-d72dc8e8c1d8/1614616935413_poster_png\",\n            \"glb\": \"https://d1udajbuf50cfc.cloudfront.net/game/b279792c-1bb8-4051-b957-27d42d3eddd1/assets/fe9fb409-b3f4-4b5d-b9b7-d72dc8e8c1d8/1614616944566_data\",\n            \"fbx\": \"https://d1udajbuf50cfc.cloudfront.net/game/b279792c-1bb8-4051-b957-27d42d3eddd1/assets/fe9fb409-b3f4-4b5d-b9b7-d72dc8e8c1d8/1614616940089_warlock_fbx\"\n        }\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Disable asset",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "bc7354a1-aa6f-47a8-93a2-fe41c41b7864",
+								"description": "Authorization token from the API key belonging to the user / JWT if the request is coming from the front",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://sandbox.elixir.app/assets/fe9fb409-b3f4-4b5d-b9b7-d72dc8e8c1d8",
+							"protocol": "https",
+							"host": [
+								"sandbox",
+								"elixir",
+								"app"
+							],
+							"path": [
+								"assets",
+								"fe9fb409-b3f4-4b5d-b9b7-d72dc8e8c1d8"
+							]
+						},
+						"description": "This endpoint lets you disable an asset from Elixir. But it will remain tokenised in liquid"
+					},
+					"response": [
+						{
+							"name": "Disable asset",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "bc7354a1-aa6f-47a8-93a2-fe41c41b7864",
+										"description": "Authorization token from the API key belonging to the user / JWT if the request is coming from the front",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://sandbox.elixir.app/assets/fe9fb409-b3f4-4b5d-b9b7-d72dc8e8c1d8",
+									"protocol": "https",
+									"host": [
+										"sandbox",
+										"elixir",
+										"app"
+									],
+									"path": [
+										"assets",
+										"fe9fb409-b3f4-4b5d-b9b7-d72dc8e8c1d8"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Length",
+									"value": "59"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 01 Mar 2021 18:23:07 GMT"
+								},
+								{
+									"key": "Etag",
+									"value": "W/\"3b-hm9uSD3afhLj/qfKQ0K26DkJQts\""
+								},
+								{
+									"key": "Expect-Ct",
+									"value": "max-age=0"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Dns-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "X-Xss-Protection",
+									"value": "0"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"Asset succesfully disabled\"\n}"
+						}
+					]
+				}
+			],
+			"description": "This page will help you get started with the management of your in-game assets from your Elixir games. You'll be up and running real quick!"
+		},
+		{
+			"name": "REWARDS",
+			"item": [
+				{
+					"name": "Get Session",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "bc7354a1-aa6f-47a8-93a2-fe41c41b7864",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://sandbox.elixir.app/rewards/0d3a01eb-73dd-4f7b-a81f-91aa0e7420c6/session/gameInternalId123",
+							"protocol": "https",
+							"host": [
+								"sandbox",
+								"elixir",
+								"app"
+							],
+							"path": [
+								"rewards",
+								"0d3a01eb-73dd-4f7b-a81f-91aa0e7420c6",
+								"session",
+								"gameInternalId123"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Session",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "bc7354a1-aa6f-47a8-93a2-fe41c41b7864",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://sandbox.elixir.app/rewards/0d3a01eb-73dd-4f7b-a81f-91aa0e7420c6/session/gameInternalId123",
+									"protocol": "https",
+									"host": [
+										"sandbox",
+										"elixir",
+										"app"
+									],
+									"path": [
+										"rewards",
+										"0d3a01eb-73dd-4f7b-a81f-91aa0e7420c6",
+										"session",
+										"gameInternalId123"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Length",
+									"value": "52"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 01 Mar 2021 18:24:22 GMT"
+								},
+								{
+									"key": "Etag",
+									"value": "W/\"34-z6J46JGhknp/RCl4EwPRK7sNTsc\""
+								},
+								{
+									"key": "Expect-Ct",
+									"value": "max-age=0"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Dns-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "X-Xss-Protection",
+									"value": "0"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"sessionId\": \"a2f46312-eb37-469a-82b6-093b88d0049a\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Reward Balance To User",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "bc7354a1-aa6f-47a8-93a2-fe41c41b7864",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"amount\":5000\n}"
+						},
+						"url": {
+							"raw": "https://sandbox.elixir.app/rewards/0d3a01eb-73dd-4f7b-a81f-91aa0e7420c6/balance/a2f46312-eb37-469a-82b6-093b88d0049a",
+							"protocol": "https",
+							"host": [
+								"sandbox",
+								"elixir",
+								"app"
+							],
+							"path": [
+								"rewards",
+								"0d3a01eb-73dd-4f7b-a81f-91aa0e7420c6",
+								"balance",
+								"a2f46312-eb37-469a-82b6-093b88d0049a"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Reward Balance To User",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "bc7354a1-aa6f-47a8-93a2-fe41c41b7864",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"amount\":5000\n}"
+								},
+								"url": {
+									"raw": "https://sandbox.elixir.app/rewards/0d3a01eb-73dd-4f7b-a81f-91aa0e7420c6/balance/a2f46312-eb37-469a-82b6-093b88d0049a",
+									"protocol": "https",
+									"host": [
+										"sandbox",
+										"elixir",
+										"app"
+									],
+									"path": [
+										"rewards",
+										"0d3a01eb-73dd-4f7b-a81f-91aa0e7420c6",
+										"balance",
+										"a2f46312-eb37-469a-82b6-093b88d0049a"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Length",
+									"value": "365"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 01 Mar 2021 18:25:50 GMT"
+								},
+								{
+									"key": "Etag",
+									"value": "W/\"16d-HgCEUdZ92zkMetzrWq1GtkiLmhc\""
+								},
+								{
+									"key": "Expect-Ct",
+									"value": "max-age=0"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Dns-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "X-Xss-Protection",
+									"value": "0"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"type\": \"success\",\n    \"userType\": \"session-not-claimed\",\n    \"date\": \"2021-03-01\",\n    \"msg\": \"Balance reward succesfuly applied to non registered user. Send reward URL for user to claim it.\",\n    \"sessionId\": \"a2f46312-eb37-469a-82b6-093b88d0049a\",\n    \"sessionBalance\": 5000,\n    \"reward\": 5000,\n    \"gameBalance\": 37383,\n    \"rewardUrl\": \"https://beta.elixir.app/rewards/a2f46312-eb37-469a-82b6-093b88d0049a\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Reward Balance Multiple Users",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "bc7354a1-aa6f-47a8-93a2-fe41c41b7864",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"sessionsIds\": [\t\n\t\t\"a2f46312-eb37-469a-82b6-093b88d0049a\",\n\t\t\"15981955-3220-48cc-a936-6515abe9dada\"\n\t\t],\n\t\"amount\": 500\n}"
+						},
+						"url": {
+							"raw": "https://sandbox.elixir.app/rewards/0d3a01eb-73dd-4f7b-a81f-91aa0e7420c6/balances",
+							"protocol": "https",
+							"host": [
+								"sandbox",
+								"elixir",
+								"app"
+							],
+							"path": [
+								"rewards",
+								"0d3a01eb-73dd-4f7b-a81f-91aa0e7420c6",
+								"balances"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Reward Balance Multiple Users",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "bc7354a1-aa6f-47a8-93a2-fe41c41b7864",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"sessionsIds\": [\t\n\t\t\"a2f46312-eb37-469a-82b6-093b88d0049a\",\n\t\t\"15981955-3220-48cc-a936-6515abe9dada\"\n\t\t],\n\t\"amount\": 500\n}"
+								},
+								"url": {
+									"raw": "https://sandbox.elixir.app/rewards/0d3a01eb-73dd-4f7b-a81f-91aa0e7420c6/balances",
+									"protocol": "https",
+									"host": [
+										"sandbox",
+										"elixir",
+										"app"
+									],
+									"path": [
+										"rewards",
+										"0d3a01eb-73dd-4f7b-a81f-91aa0e7420c6",
+										"balances"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 01 Mar 2021 18:26:56 GMT"
+								},
+								{
+									"key": "Etag",
+									"value": "W/\"27b-7YF7vEZcsPo3lnuPrwb24N43A5Y\""
+								},
+								{
+									"key": "Expect-Ct",
+									"value": "max-age=0"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Dns-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "X-Xss-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Content-Length",
+									"value": "298"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"type\": \"success\",\n    \"reward\": 500,\n    \"date\": \"2021-03-01\",\n    \"gameBalance\": 32383,\n    \"totalBalanceRewarded\": 1000,\n    \"rewards\": [\n        {\n            \"msg\": \"Balance reward succesfuly applied to non registered user. Send reward URL for user to claim it.\",\n            \"sessionId\": \"a2f46312-eb37-469a-82b6-093b88d0049a\",\n            \"sessionBalance\": 5000,\n            \"rewardUrl\": \"https://beta.elixir.app/rewards/a2f46312-eb37-469a-82b6-093b88d0049a\"\n        },\n        {\n            \"msg\": \"Balance reward succesfuly applied to non registered user. Send reward URL for user to claim it.\",\n            \"sessionId\": \"15981955-3220-48cc-a936-6515abe9dada\",\n            \"sessionBalance\": 2500,\n            \"rewardUrl\": \"https://beta.elixir.app/rewards/15981955-3220-48cc-a936-6515abe9dada\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Reward Asset To User",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-api-key",
+								"value": "bc7354a1-aa6f-47a8-93a2-fe41c41b7864",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"assetsIds\": [\"6cca3f8b-1b21-4fcc-a37e-d686c6e4cedb\",\n    \"bffbf7c5-2bbc-4b83-8ec0-55451ba58a38\"]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://sandbox.elixir.app/rewards/0d3a01eb-73dd-4f7b-a81f-91aa0e7420c6/asset/a2f46312-eb37-469a-82b6-093b88d0049a",
+							"protocol": "https",
+							"host": [
+								"sandbox",
+								"elixir",
+								"app"
+							],
+							"path": [
+								"rewards",
+								"0d3a01eb-73dd-4f7b-a81f-91aa0e7420c6",
+								"asset",
+								"a2f46312-eb37-469a-82b6-093b88d0049a"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Reward Asset To User",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "x-api-key",
+										"value": "bc7354a1-aa6f-47a8-93a2-fe41c41b7864",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"assetsIds\": [\"6cca3f8b-1b21-4fcc-a37e-d686c6e4cedb\",\n    \"bffbf7c5-2bbc-4b83-8ec0-55451ba58a38\"]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://sandbox.elixir.app/rewards/0d3a01eb-73dd-4f7b-a81f-91aa0e7420c6/asset/a2f46312-eb37-469a-82b6-093b88d0049a",
+									"protocol": "https",
+									"host": [
+										"sandbox",
+										"elixir",
+										"app"
+									],
+									"path": [
+										"rewards",
+										"0d3a01eb-73dd-4f7b-a81f-91aa0e7420c6",
+										"asset",
+										"a2f46312-eb37-469a-82b6-093b88d0049a"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 01 Mar 2021 18:35:40 GMT"
+								},
+								{
+									"key": "Etag",
+									"value": "W/\"396-Ut7Bc+YjBR9MZomEP7Z0Y0KqlC4\""
+								},
+								{
+									"key": "Expect-Ct",
+									"value": "max-age=0"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Dns-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "X-Xss-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Content-Length",
+									"value": "489"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"type\": \"success\",\n    \"userType\": \"session-not-claimed\",\n    \"date\": \"2021-03-01\",\n    \"msg\": \"Asset reward succesfuly applied to non registered user. Send reward URL for user to claim it.\",\n    \"sessionId\": \"a2f46312-eb37-469a-82b6-093b88d0049a\",\n    \"assets\": [\n        {\n            \"assetId\": \"6cca3f8b-1b21-4fcc-a37e-d686c6e4cedb\",\n            \"media\": [\n                {\n                    \"url\": \"https://s3.eu-west-2.amazonaws.com/elixir-gaming/media/game/0d3a01eb-73dd-4f7b-a81f-91aa0e7420c6/assets/6cca3f8b-1b21-4fcc-a37e-d686c6e4cedb/1614623676962_kisspng_idle_miner_tycoon_scribblenauts_mining_clip_art_miners_5_b_467_be_3492_b_65_0794944315313458912997_png\"\n                }\n            ]\n        },\n        {\n            \"assetId\": \"bffbf7c5-2bbc-4b83-8ec0-55451ba58a38\",\n            \"media\": [\n                {\n                    \"url\": \"https://s3.eu-west-2.amazonaws.com/elixir-gaming/media/game/0d3a01eb-73dd-4f7b-a81f-91aa0e7420c6/assets/bffbf7c5-2bbc-4b83-8ec0-55451ba58a38/1614623600779_astronaut_png_high_quality_image_png\"\n                }\n            ]\n        }\n    ],\n    \"rewardUrl\": \"https://beta.elixir.app/rewards/a2f46312-eb37-469a-82b6-093b88d0049a\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Reward Assets Multiple Users",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-api-key",
+								"value": "bc7354a1-aa6f-47a8-93a2-fe41c41b7864",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"assetsIds\": [\"bffbf7c5-2bbc-4b83-8ec0-55451ba58a38\"],\n    \"sessionsIds\": [\t\n\t\t\"a2f46312-eb37-469a-82b6-093b88d0049a\",\n\t\t\"SteamUser1234\"\n\t\t]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://sandbox.elixir.app/rewards/0d3a01eb-73dd-4f7b-a81f-91aa0e7420c6/assets",
+							"protocol": "https",
+							"host": [
+								"sandbox",
+								"elixir",
+								"app"
+							],
+							"path": [
+								"rewards",
+								"0d3a01eb-73dd-4f7b-a81f-91aa0e7420c6",
+								"assets"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Reward Assets Multiple Users",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "x-api-key",
+										"value": "bc7354a1-aa6f-47a8-93a2-fe41c41b7864",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"assetsIds\": [\"bffbf7c5-2bbc-4b83-8ec0-55451ba58a38\"],\n    \"sessionsIds\": [\t\n\t\t\"a2f46312-eb37-469a-82b6-093b88d0049a\",\n\t\t\"SteamUser1234\"\n\t\t]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://sandbox.elixir.app/rewards/0d3a01eb-73dd-4f7b-a81f-91aa0e7420c6/assets",
+									"protocol": "https",
+									"host": [
+										"sandbox",
+										"elixir",
+										"app"
+									],
+									"path": [
+										"rewards",
+										"0d3a01eb-73dd-4f7b-a81f-91aa0e7420c6",
+										"assets"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 01 Mar 2021 18:36:03 GMT"
+								},
+								{
+									"key": "Etag",
+									"value": "W/\"320-u0k6qTtioUdH5qEUj1SIFi86C2I\""
+								},
+								{
+									"key": "Expect-Ct",
+									"value": "max-age=0"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15552000; includeSubDomains"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Dns-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "X-Xss-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Content-Length",
+									"value": "402"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"type\": \"success\",\n    \"date\": \"2021-03-01\",\n    \"assets\": [\n        {\n            \"assetId\": \"bffbf7c5-2bbc-4b83-8ec0-55451ba58a38\",\n            \"media\": [\n                {\n                    \"url\": \"https://s3.eu-west-2.amazonaws.com/elixir-gaming/media/game/0d3a01eb-73dd-4f7b-a81f-91aa0e7420c6/assets/bffbf7c5-2bbc-4b83-8ec0-55451ba58a38/1614623600779_astronaut_png_high_quality_image_png\"\n                }\n            ]\n        }\n    ],\n    \"rewards\": [\n        {\n            \"msg\": \"Asset reward succesfuly applied to non registered user. Send reward URL for user to claim it.\",\n            \"sessionId\": \"a2f46312-eb37-469a-82b6-093b88d0049a\",\n            \"rewardUrl\": \"https://beta.elixir.app/rewards/a2f46312-eb37-469a-82b6-093b88d0049a\"\n        },\n        {\n            \"msg\": \"Asset reward succesfuly applied to non registered user. Send reward URL for user to claim it.\",\n            \"sessionId\": \"45a18c79-b981-4ce5-9653-86ec09add2ba\",\n            \"rewardUrl\": \"https://beta.elixir.app/rewards/45a18c79-b981-4ce5-9653-86ec09add2ba\"\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
