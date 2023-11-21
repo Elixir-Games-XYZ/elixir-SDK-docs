@@ -20,13 +20,15 @@ We recommend to upload the Game Build to the TEST branch first in order to check
 
 #### Test Branch
 
-This branch is used for closed beta access using [Beta Codes](beta-codes.md). Publishers will be able to upload every new version of the game to test it internally or with the community before making it public.
+This branch is used for closed beta access using [Beta Codes](beta-codes.md). Publishers can upload every new version of the game to test it internally or with the community before making it public.
 
 This branch is also used for the pre-alpha versions when a game is not released yet.
 
 #### Develop Branch&#x20;
 
-_(Coming Soon)_
+Upload your build for internal testing. Check out the SDK integration and make the last adjustments before releasing the game with your audience.&#x20;
+
+Only whitelisted developer accounts will have access to this build.
 
 
 
