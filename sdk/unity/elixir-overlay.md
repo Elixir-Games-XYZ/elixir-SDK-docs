@@ -58,11 +58,11 @@ Here is a minimal example:
 		switch (message)
 		{
 			// the overlay has opened or closed
-			case OverlayMessage.MOpenStateChange openStateChange:
+			case MOpenStateChange openStateChange:
 				Log($"MOpenStateChange: {openStateChange.IsOpen}");
 				break;
 			// checkout was completed
-			case OverlayMessage.MCheckoutResult checkoutResult:
+			case MCheckoutResult checkoutResult:
 				Log($"MCheckoutResult: {checkoutResult.Success}");
 				break;
 		}
