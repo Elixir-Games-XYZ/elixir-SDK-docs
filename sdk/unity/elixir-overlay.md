@@ -4,6 +4,10 @@ description: Integrating Elixir Overlay with your Unity game
 
 # Elixir Overlay
 
+{% embed url="https://youtu.be/i1cBJNe8Gn0" %}
+Elixir Overlay - Getting Started
+{% endembed %}
+
 ### Overview
 
 <img src="../../.gitbook/assets/file.excalidraw.svg" alt="" class="gitbook-drawing">
