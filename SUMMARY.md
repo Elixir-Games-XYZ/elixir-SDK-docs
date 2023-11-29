@@ -15,6 +15,7 @@
   * [🏆 Tournaments](dashboard/tools/tournaments/README.md)
     * [🔧 Tournament Settings](dashboard/tools/tournaments/tournament-settings.md)
     * [📆 Create Tournament](dashboard/tools/tournaments/create-tournament.md)
+* [🛒 Store](dashboard/store.md)
 
 ## Elixir Gamer Services <a href="#sdk" id="sdk"></a>
 
