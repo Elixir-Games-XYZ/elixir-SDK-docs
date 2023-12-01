@@ -10,9 +10,7 @@
 
 4. Add the Game Backend URL, then click Submit
 
-{% hint style="info" %}
 _The Server URL represents the game backend endpoint where the post-payment webhook from Elixir Store will be sent._
-{% endhint %}
 
 <figure><img src="../../../.gitbook/assets/Add IAP to a new game.png" alt="" width="290"><figcaption></figcaption></figure>
 
