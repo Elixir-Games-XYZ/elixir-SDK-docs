@@ -15,7 +15,7 @@ Elevate your gaming experience with in-app purchases, ensuring a seamless and se
 
 * ✨ [**Effortless Integration**](developer/) **-** With our user-friendly overlay, integrating in-app purchases has never been smoother. Just a few simple steps, and you're ready to roll!
 * ⚙️ [**Developer-Friendly SDK**](../../sdk/unity/) **-** Our SDK is designed with you in mind. Seamlessly blend it into your game, enhancing the user experience without breaking a sweat.
-* :money\_mouth:[**Including FIAT & Crypto**](payment-gateways.md) - Our In-App purchases system allows users to pay using FIAT with [Stripe](https://stripe.com/) or Crypto using their [Elixir Native Wallet](../elixir-invisible-wallet/).
+* :money\_mouth: [**Including FIAT & Crypto**](payment-gateways.md) - Our In-App purchases system allows users to pay using FIAT with [Stripe](https://stripe.com/) or Crypto using their [Elixir Native Wallet](../elixir-invisible-wallet/).
 
 <figure><img src="../../.gitbook/assets/Screenshot_2023-11-30_220016.png" alt=""><figcaption></figcaption></figure>
 
