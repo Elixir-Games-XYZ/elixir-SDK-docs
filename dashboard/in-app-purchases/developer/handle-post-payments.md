@@ -4,7 +4,7 @@
 
 Generating an in-app purchase key enables Elixir to authenticate and validate requests between the client and server or server-to-server, specifically about in-app purchases. This includes authentication for Elixir Store server webhooks designed for post-payment events.
 
-### Modify your server webhook
+### Set your server webhook
 
 1. Go to your Game API Keys section
 2. Scroll to the In-App Purchases Key
@@ -61,19 +61,23 @@ import { createPublicKey, createVerify } from 'crypto'
 
 // Where message its a JSON.stringify from the order object
 function verifySignature(signature: string, message: string): boolean {
-  const publicKey = createPublicKey({
-    key: Buffer.from(
-      process.env['GAME_PUBLIC_KEY'] as string,
-      'hex'
-    ),
-    type: 'spki',
-    format: 'der',
-  })
-  const verifier = createVerify('rsa-sha256')
-  verifier.update(message)
-  verifier.end()
-  const isVerified = verifier.verify(publicKey, signature, 'hex')
-  return isVerified
+  try {
+    const publicKey = createPublicKey({
+      key: Buffer.from(
+        process.env['GAME_PUBLIC_KEY'] as string,
+        'hex'
+      ),
+      type: 'spki',
+      format: 'der',
+    })
+    const verifier = createVerify('rsa-sha256')
+    verifier.update(message)
+    verifier.end()
+    const isVerified = verifier.verify(publicKey, signature, 'hex')
+    return isVerified
+  } catch {
+    return false
+  }
 }
 
 export { verifySignature }
