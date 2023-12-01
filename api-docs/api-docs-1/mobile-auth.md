@@ -6,9 +6,10 @@ description: Authentification request in order to get user credentials
 
 ### OTP Login
 
-The OTP login is based on a single login without a password. This kind of login is based on two steps:\
-&#x20;1\. A request to provide the sign-in code to the user via email\
-&#x20;2\. A second endpoint to verify the code.
+The OTP login is based on a single login without a password. This kind of login is based on two steps:
+
+1. A request to provide the sign-in code to the user via email
+2. A second endpoint to verify the code.
 
 ### Refresh Token
 

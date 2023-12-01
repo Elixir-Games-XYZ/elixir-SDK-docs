@@ -16,7 +16,7 @@ Merge web3 infrastructure with gaming by taking advantage of the Elixir Gamer Se
 
 * [**Access E**](../api-docs/api-docs-1/user.md)[**lixir profile**](../api-docs/api-docs-1/user.md)**.** Get the Elixir user profile; access his wallet, username and profile picture to display it in your game
 * [**NFT Gating**](../api-docs/api-docs-1/nfts.md): Web3 is made simple. Import user NFTs inside your game and convert them to Skins, from native collections to cross-IP in any chain.
-* [**Elixir Tournaments**](../dashboard/tools/tournaments/)**:** Host Elixir tournaments inside your game, making it social and competitive.
+* [**Elixir Tournaments**](../dashboard/tournaments/)**:** Host Elixir tournaments inside your game, making it social and competitive.
 
 ### Elixir Gaming Services SDKs
 

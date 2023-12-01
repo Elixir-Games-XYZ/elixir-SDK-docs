@@ -4,7 +4,7 @@ description: Game implementation of the tournaments tool.
 
 # 🏆 Tournaments API
 
-After completing the [required steps](../../../dashboard/tools/tournaments/); For the implementation on the game side, we tried to make it in the simple but most secure way. Please, make sure to use the Development API key during the development and testing of your integration to work with a private tournament and avoid having test data in production. This key will only work for private tournaments.
+After completing the [required steps](../../../dashboard/tournaments/); For the implementation on the game side, we tried to make it in the simple but most secure way. Please, make sure to use the Development API key during the development and testing of your integration to work with a private tournament and avoid having test data in production. This key will only work for private tournaments.
 
 We have defined two core endpoints: **get tournaments** and **submit scores**.
 
@@ -84,7 +84,7 @@ You can submit multiple scores for each player. The scores will be grouped by th
 {% swagger-description %}
 Saves a user scores for a specific tournament. Either `userId` or `externalUserId` must be provided. `userId` represents the Elixir user Id, and will be linked to the Elixir account of the player to display their preferred username and avatar in the leaderboard, so we encourage you to use the User Info endpoint to retrieve the elixir Id of each player for the best looking tournament page.\
 \
-The format of the scores must follow the scoreTypes defined on [your tournament settings](../../../dashboard/tools/tournaments/tournament-settings.md):\
+The format of the scores must follow the scoreTypes defined on [your tournament settings](../../../dashboard/tournaments/tournament-settings.md):\
 \
 { "scoreType": \<scoreType>, "value": Number}
 {% endswagger-description %}

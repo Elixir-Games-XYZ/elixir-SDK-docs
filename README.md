@@ -32,8 +32,8 @@ More than that, we provide a **development** **key** to allow you to develop the
 
 Once you have your game set up, you can generate your unique API Keys to start with the integration with Elixir Launcher:
 
-{% content-ref url="dashboard/tools/api-keys.md" %}
-[api-keys.md](dashboard/tools/api-keys.md)
+{% content-ref url="dashboard/management/api-keys.md" %}
+[api-keys.md](dashboard/management/api-keys.md)
 {% endcontent-ref %}
 
 To get started with the integration, you will find the following:
@@ -64,6 +64,8 @@ But don't panic. You'll find several options before going public so you can test
 
 Astronauts ready, engines ready... You are ready to launch! We know this is an essential step in a game's life, and we want it to be perfect
 
+
+
 ## :clap: The complete experience
 
 In Elixir, you'll find some extra features that will make the experience for you and the gamers unique:
@@ -88,6 +90,6 @@ Take control of your game distribution. Generate unique access keys and distribu
 
 Activate your community, configure and host custom tournaments for the entire Elixir community to enjoy!
 
-{% content-ref url="dashboard/tools/tournaments/" %}
-[tournaments](dashboard/tools/tournaments/)
+{% content-ref url="dashboard/tournaments/" %}
+[tournaments](dashboard/tournaments/)
 {% endcontent-ref %}
