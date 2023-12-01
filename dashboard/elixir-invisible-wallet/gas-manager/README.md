@@ -1,6 +1,6 @@
 # Gas Manager
 
-### What is a Gas Manager
+## What is a Gas Manager
 
 On the other hand, we have the Gas Managers, a pivotal role in simplifying and enhancing the user experience, particularly concerning transaction fees (gas fees) within the blockchain ecosystem.
 
