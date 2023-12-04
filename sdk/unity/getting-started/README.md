@@ -27,4 +27,8 @@ Elixir.ElixirController.Instance.PrepareElixir("put you public key here")
 
 You can see a working reference by running our integration example. After inputting the public key you should be able to run the initial scene and check that you obtained your Elixir publisher user.
 
+* Understand [how the Overlay works](overview.md) inside your game
+* Discover all the available [actions](overlay-actions.md) you can do with it
+* Use our [Event Simulator](event-simulator/) to develop locally for a smooth integration
+
 \
