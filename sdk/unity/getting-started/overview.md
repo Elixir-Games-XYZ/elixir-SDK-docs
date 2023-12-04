@@ -1,8 +1,4 @@
----
-description: Integrating Elixir Overlay with your Unity game
----
-
-# Elixir Overlay
+# Overview
 
 {% embed url="https://youtu.be/i1cBJNe8Gn0" %}
 Elixir Overlay - Getting Started
@@ -73,43 +69,3 @@ Here is a minimal example:
 	}
 }
 </code></pre>
-
-### Overlay Actions
-
-Once initialized, the following functionality is available:
-
-#### Checkout
-
-You can trigger checkout of an NFT payable with credit card or a crypto wallet by calling `OverlayMessage.Checkout`:&#x20;
-
-```csharp
-OverlayMessage.Checkout("MY_ITEM_SKU")
-```
-
-Once initialized, the result of the checkout will be returned as an incoming message of type `OverlayMessage.MCheckoutResult`.
-
-{% hint style="warning" %}
-Only one checkout process can be started at a given time. Calling `Checkout` a second time before getting the result will interrupt a previous checkout process.
-{% endhint %}
-
-### Event Simulator
-
-In production environments, the overlay is injected into the game by the Elixir Launcher. However, this is difficult to replicate during development. This is why we have created the Event Simulator.
-
-<figure><img src="../../../.gitbook/assets/telegram-cloud-photo-size-4-5997100708882661081-x.jpg" alt=""><figcaption><p>You can simulate connectivity with the Overlay in the Unity Editor</p></figcaption></figure>
-
-The simulator allows you to test your game's integration with the Elixir Overlay event buffer without leaving Unity Editor.
-
-You can access it in the editor's toolbar by clicking on `Elixir -> Overlay Event Simulator`
-
-<figure><img src="../../../.gitbook/assets/telegram-cloud-photo-size-4-5997100708882661097-m.jpg" alt=""><figcaption></figcaption></figure>
-
-The simulator will open and be in the "Stopped" state. If you wish to test your integration, run the game and click on `Simulate`.
-
-<figure><img src="../../../.gitbook/assets/telegram-cloud-photo-size-4-5997100708882661100-m.jpg" alt=""><figcaption></figcaption></figure>
-
-If everything goes well, the status of the simulator will now change from "Stopped" to "Simulating".
-
-<figure><img src="../../../.gitbook/assets/telegram-cloud-photo-size-4-5997100708882661101-x.jpg" alt=""><figcaption></figcaption></figure>
-
-You will now be able to use the event simulator to see incoming [events](sdk-events.md) and send events to the game impersonating the overlay.

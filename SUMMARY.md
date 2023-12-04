@@ -39,12 +39,14 @@
 
 * [🏁 Kick-off](sdk/kick-off.md)
 * [Unity](sdk/unity/README.md)
-  * [Getting Started](sdk/unity/getting-started.md)
+  * [Getting Started](sdk/unity/getting-started/README.md)
+    * [Overview](sdk/unity/getting-started/overview.md)
+    * [Overlay Actions](sdk/unity/getting-started/overlay-actions.md)
+    * [Event Simulator](sdk/unity/getting-started/event-simulator/README.md)
+      * [SDK Events](sdk/unity/getting-started/event-simulator/sdk-events.md)
   * [Authentication](sdk/unity/authentication/README.md)
     * [Desktop](sdk/unity/authentication/desktop.md)
     * [Mobile](sdk/unity/authentication/mobile.md)
-  * [Elixir Overlay](sdk/unity/elixir-overlay/README.md)
-    * [SDK Events](sdk/unity/elixir-overlay/sdk-events.md)
   * [Reference](sdk/unity/reference.md)
 * [Unreal Engine](sdk/unreal-engine.md)
 

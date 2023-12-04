@@ -12,7 +12,7 @@ If you're new to the Elixir SDK, check out the detailed [Integration Example](ht
 ### 2. Obtain your public key
 
 {% hint style="info" %}
-[Click here to read more about Elixir API keys](../../dashboard/management/api-keys.md)
+[Click here to read more about Elixir API keys](../../../dashboard/management/api-keys.md)
 {% endhint %}
 
 Your public key can be obtained in the [Developer Dashboard](https://dashboard.elixir.app/).
