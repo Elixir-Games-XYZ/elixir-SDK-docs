@@ -10,7 +10,7 @@ description: Obtain the user nfts and allow to play with them!
 
 ## NFT Gating
 
-After [importing all NFT collections](../../dashboard/management/import-NFTs/) that the game involves using the Elixir Dashboard, you will be able to use this endpoint, as NFT gating, to obtain all the NFTs that the user owns for these collections.
+After [importing all NFT collections](../../dashboard/import-NFTs/) that the game involves using the Elixir Dashboard, you will be able to use this endpoint, as NFT gating, to obtain all the NFTs that the user owns for these collections.
 
 {% swagger method="get" path="/sdk/v2/nfts/user" baseUrl="https://kend.elixir.app" summary="User NFTs" %}
 {% swagger-description %}

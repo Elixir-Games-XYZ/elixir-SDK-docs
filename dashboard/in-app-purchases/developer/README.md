@@ -14,9 +14,9 @@ Additionally, generate essential [in-app purchase keys](client-integration.md) t
 
 ## 2. Implement Elixir SDK
 
-Incorporate in-app purchase capability seamlessly into your [Unity](../../../sdk/unity/elixir-overlay.md) or [Unreal](../../../sdk/unreal-engine.md) game. Our testing environment within the editor enables you to replicate overlay events, facilitating in-app purchase testing without incurring charges through test accounts. Validate your implementation by thoroughly testing each aspect of your code using your game to initiate in-app purchases.
+Incorporate in-app purchase capability seamlessly into your [Unity](../../../sdk/unity/elixir-overlay/) or [Unreal](../../../sdk/unreal-engine.md) game. Our testing environment within the editor enables you to replicate overlay events, facilitating in-app purchase testing without incurring charges through test accounts. Validate your implementation by thoroughly testing each aspect of your code using your game to initiate in-app purchases.
 
-For additional testing, explore your game and in-app purchases on the internal [Develop branch](../../management/version-control.md).&#x20;
+For additional testing, explore your game and in-app purchases on the internal [Develop branch](../../management/version-control/).&#x20;
 
 ## 3. Handle post-payment event
 

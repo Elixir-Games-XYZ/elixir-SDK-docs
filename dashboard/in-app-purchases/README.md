@@ -19,7 +19,7 @@ Elevate your gaming experience with in-app purchases, ensuring a seamless and se
 
 <figure><img src="../../.gitbook/assets/Screenshot_2023-11-30_220016.png" alt=""><figcaption></figcaption></figure>
 
-Our IAP system introduces an [overlay](../../sdk/unity/elixir-overlay.md) seamlessly integrated into the gaming interface, allowing users to make purchases without leaving the gaming environment and optimizing user engagement by simplifying the purchase process.
+Our IAP system introduces an [overlay](../../sdk/unity/elixir-overlay/) seamlessly integrated into the gaming interface, allowing users to make purchases without leaving the gaming environment and optimizing user engagement by simplifying the purchase process.
 
 
 

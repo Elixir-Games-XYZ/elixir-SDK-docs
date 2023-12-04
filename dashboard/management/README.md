@@ -6,18 +6,18 @@ description: >-
 
 # ⚙ Management
 
-{% content-ref url="publish-your-game.md" %}
-[publish-your-game.md](publish-your-game.md)
+{% content-ref url="publish-your-game/" %}
+[publish-your-game](publish-your-game/)
 {% endcontent-ref %}
 
-{% content-ref url="version-control.md" %}
-[version-control.md](version-control.md)
+{% content-ref url="version-control/" %}
+[version-control](version-control/)
 {% endcontent-ref %}
 
-{% content-ref url="import-NFTs/" %}
-[import-NFTs](import-NFTs/)
+{% content-ref url="../import-NFTs/" %}
+[import-NFTs](../import-NFTs/)
 {% endcontent-ref %}
 
-{% content-ref url="beta-codes.md" %}
-[beta-codes.md](beta-codes.md)
+{% content-ref url="../beta-codes/" %}
+[beta-codes](../beta-codes/)
 {% endcontent-ref %}

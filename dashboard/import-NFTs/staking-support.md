@@ -1,4 +1,4 @@
-# 🥶 Staking Support
+# Staking Support
 
 Elixir can integrate your current staking platform so holders can benefit from their NFT when they stake. To support staking on your NFT Collection, you'll need to provide the support team with an API that provides the wallets and their staked NFTs following the format:
 

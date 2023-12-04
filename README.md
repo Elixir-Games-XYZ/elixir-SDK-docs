@@ -20,8 +20,8 @@ First, you'll need to request access to the [Elixir Dashboard](https://dashboard
 
 From there, you'll be able to start with your game setup:
 
-{% content-ref url="dashboard/management/publish-your-game.md" %}
-[publish-your-game.md](dashboard/management/publish-your-game.md)
+{% content-ref url="dashboard/management/publish-your-game/" %}
+[publish-your-game](dashboard/management/publish-your-game/)
 {% endcontent-ref %}
 
 ## 2. Set up your Keys
@@ -56,8 +56,8 @@ Now that you integrated your game with the Elixir System, you are ready to uploa
 
 But don't panic. You'll find several options before going public so you can test that everything is working fine from the launcher side.  And once everything is ready, you'll be able to handle all your game's releases smoothly:
 
-{% content-ref url="dashboard/management/version-control.md" %}
-[version-control.md](dashboard/management/version-control.md)
+{% content-ref url="dashboard/management/version-control/" %}
+[version-control](dashboard/management/version-control/)
 {% endcontent-ref %}
 
 ## 4. Game Release
@@ -74,16 +74,16 @@ In Elixir, you'll find some extra features that will make the experience for you
 
 Your NFTs are about to be transformed into Elixir **Skins**, but previously, you'll need to tell us where we should look for them:
 
-{% content-ref url="dashboard/management/import-NFTs/" %}
-[import-NFTs](dashboard/management/import-NFTs/)
+{% content-ref url="dashboard/import-NFTs/" %}
+[import-NFTs](dashboard/import-NFTs/)
 {% endcontent-ref %}
 
 ### Access codes distribution
 
 Take control of your game distribution. Generate unique access keys and distribute them as you wish:
 
-{% content-ref url="dashboard/management/beta-codes.md" %}
-[beta-codes.md](dashboard/management/beta-codes.md)
+{% content-ref url="dashboard/beta-codes/" %}
+[beta-codes](dashboard/beta-codes/)
 {% endcontent-ref %}
 
 ### Tournaments

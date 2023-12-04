@@ -84,7 +84,7 @@ You can submit multiple scores for each player. The scores will be grouped by th
 {% swagger-description %}
 Saves a user scores for a specific tournament. Either `userId` or `externalUserId` must be provided. `userId` represents the Elixir user Id, and will be linked to the Elixir account of the player to display their preferred username and avatar in the leaderboard, so we encourage you to use the User Info endpoint to retrieve the elixir Id of each player for the best looking tournament page.\
 \
-The format of the scores must follow the scoreTypes defined on [your tournament settings](../../../dashboard/tournaments/tournament-settings.md):\
+The format of the scores must follow the scoreTypes defined on [your tournament settings](../../../dashboard/tournaments/set-up.md):\
 \
 { "scoreType": \<scoreType>, "value": Number}
 {% endswagger-description %}

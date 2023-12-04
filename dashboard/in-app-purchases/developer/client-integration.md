@@ -12,10 +12,10 @@ Initially, it is imperative to ensure the integration of [Elixir SDK](../../../s
 
 The build uploaded to Elixir needs to disable the option to log out. This measure is crucial to guarantee the security and reliability of the In-App Purchases system.
 
-Once the Elixir SDK, including the account linking, is seamlessly integrated into your game, you are primed to commence the specific [overlay integration following the SDK docs](../../../sdk/unity/elixir-overlay.md#overlay-actions).
+Once the Elixir SDK, including the account linking, is seamlessly integrated into your game, you are primed to commence the specific [overlay integration following the SDK docs](../../../sdk/unity/elixir-overlay/#overlay-actions).
 
 ## Test your in-app purchases
 
-For testing the In-App Purchases system within your game, our [SDK Events simulator ](../../../sdk/unity/elixir-overlay.md#event-simulator)facilitates the replication of overlay communication with the game. This approach enables the game to respond appropriately to each event, enhancing the overall user experience.
+For testing the In-App Purchases system within your game, our [SDK Events simulator ](../../../sdk/unity/elixir-overlay/#event-simulator)facilitates the replication of overlay communication with the game. This approach enables the game to respond appropriately to each event, enhancing the overall user experience.
 
 <figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
