@@ -4,7 +4,7 @@ description: >-
   Elixir Platform, to be used with your game.
 ---
 
-# 🪓 NFTs
+# NFT Collections
 
 ## Overview
 
