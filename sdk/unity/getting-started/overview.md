@@ -14,58 +14,41 @@ While the overlay is provided by Elixir Launcher in-game automatically without a
 
 ### Initialization & Disposal
 
-Communication with the overlay is provided by the `Elixir.OverlayMessage` namespace. The overlay messaging functionality requires both initialization and teardown, and therefore you must make sure that your script calls `Init()` and then `StopListening()` at the beginning and end of the game process respectively.
+The overlay event buffer will be automatically initialized by the SDK upon a call to `PrepareElixir(apiKey)`.
 
-{% hint style="danger" %}
-**IMPORTANT:** It is crucial to ensure that only one message processing callback is active at a given time. This is why for actual game implementation it is recommended to make the controller interacting with the overlay a singleton.
-{% endhint %}
+The event buffer will remain initialized until application shutdown.
+
+### Integration
 
 Here is a minimal example:
 
-<pre class="language-csharp" data-overflow="wrap" data-full-width="false"><code class="lang-csharp"><strong>using Elixir.Overlay;
-</strong><strong>
+<pre class="language-csharp" data-overflow="wrap" data-full-width="false"><code class="lang-csharp"><strong>using Elixir;
+</strong>using Event = Elixir.Overlay.Event;
+<strong>
 </strong><strong>public class TestOverlayController : MonoBehaviour
 </strong>{
 	// ... we will assume that a method Log is implemented that prints
 	// text on-screen.
 
-	// To initialize, call the Init function, giving it a 
-	// callback function that processes incoming messages
-	// this should be done as early as possible, only once
+	// To initialize simply initialize the SDK by calling PrepareElixir
 	public void Init()
 	{
-		OverlayMessage.Init(ProcessMessage);
+		ElixirController.Instance.PrepareElixir("your api public key here");
+		
+		// after the SDK is initialized, you can assign to the delegates
+		Event.OnCheckoutResult += HandleCheckoutResult;
+		Event.OnOpenStateChange += HandleOpenStateChange;
 	}
 	
-	// It is crucial to call the StopListening method in which 
-	// we stop listening to incoming messages from the overlay
-	// this should be done when we quit the game
-	public void OnApplicationQuit()
+	private void HandleOpenStateChange(bool isOpen)
 	{
-		OverlayMessage.StopListening();
+		Log($"MOpenStateChange: {isOpen}");
 	}
-	
-	// The Update() method should be called by the controller to 
-	// ensure that events get processed on the main thread
-	public void Update()
+
+	private void HandleCheckoutResult(bool success, string sku)
 	{
-		OverlayMessage.Update();
+		Log($"MCheckoutResult: {success}");
 	}
-	
-	// This is our callback that processes incoming messages
-	private void ProcessMessage(IMessage message)
-	{
-		switch (message)
-		{
-			// the overlay has opened or closed
-			case MOpenStateChange openStateChange:
-				Log($"MOpenStateChange: {openStateChange.IsOpen}");
-				break;
-			// checkout was completed
-			case MCheckoutResult checkoutResult:
-				Log($"MCheckoutResult: {checkoutResult.Success}");
-				break;
-		}
-	}
+
 }
 </code></pre>
