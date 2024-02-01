@@ -2,11 +2,11 @@
 
 The currently available events are:
 
-#### MTOpenStateChange
+#### OnOpenStateChange
 
 Signals to the game that the overlay was either opened or closed. This is useful if you want to pause the game while the overlay is open.&#x20;
 
-#### MTCheckoutResult
+#### OnCheckoutResult
 
 {% hint style="danger" %}
 Please note there can only be one checkout event happening at the time: Calling a new event will cancel the previous one. So the game should keep track of the latest SKU (product) involved in the checkout.
