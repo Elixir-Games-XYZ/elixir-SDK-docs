@@ -2,7 +2,7 @@
 description: Uploading your Game Build
 ---
 
-# 💻 Version control
+# Version control
 
 {% embed url="https://youtu.be/skj1ViMkKc0" %}
 Update your game

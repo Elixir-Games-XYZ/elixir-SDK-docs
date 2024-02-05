@@ -51,7 +51,10 @@
     * [Desktop](sdk/unity/authentication/desktop.md)
     * [Mobile](sdk/unity/authentication/mobile.md)
   * [Reference](sdk/unity/reference.md)
-* [Unreal Engine](sdk/unreal-engine.md)
+* [Unreal Engine](sdk/unreal-engine/README.md)
+  * [Getting Started](sdk/unreal-engine/getting-started/README.md)
+    * [C++ Project](sdk/unreal-engine/getting-started/c++-project.md)
+    * [Blueprints Project](sdk/unreal-engine/getting-started/blueprints-project.md)
 
 ## API <a href="#api-docs" id="api-docs"></a>
 

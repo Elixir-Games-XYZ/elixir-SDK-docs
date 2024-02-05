@@ -4,7 +4,7 @@ description: >-
   NFTs upload builds and much more!
 ---
 
-# ⚙ Management
+# Management
 
 {% content-ref url="publish-your-game/" %}
 [publish-your-game](publish-your-game/)

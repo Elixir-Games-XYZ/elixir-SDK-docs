@@ -1,4 +1,4 @@
-# 💳 Elixir Invisible Wallet
+# Elixir Invisible Wallet
 
 ## What is the Elixir Invisible Wallet
 

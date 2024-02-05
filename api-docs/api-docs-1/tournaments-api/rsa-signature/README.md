@@ -2,7 +2,7 @@
 
 ## Overview
 
-The [RSA signature](http://127.0.0.1:5000/s/XQoAdG0jQCAL0PFMB1Yu/game/skins) process is based on a pair of keys, mathematically linked, consisting of a private key and a public key.
+The [RSA signature](https://app.gitbook.com/s/XQoAdG0jQCAL0PFMB1Yu/game/skins) process is based on a pair of keys, mathematically linked, consisting of a private key and a public key.
 
 The emitter uses the private key to generate a signature for the message. Then sends the message, the signature and his public key. With this information, the receiver can validate that the message was signed by the emitter identified by his public key and that the content in the message hasn't been modified.
 

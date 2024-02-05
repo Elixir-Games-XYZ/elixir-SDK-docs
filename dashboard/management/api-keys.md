@@ -2,7 +2,7 @@
 description: Interact with the Elixir API with your game credentials
 ---
 
-# 🔐 API Keys
+# API Keys
 
 ## Overview
 

@@ -1,4 +1,4 @@
-# 🏆 Tournaments
+# Tournaments
 
 ## :information\_source: Overview
 

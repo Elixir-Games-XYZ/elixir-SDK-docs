@@ -42,8 +42,8 @@ To get started with the integration, you will find the following:
 [unity](sdk/unity/)
 {% endcontent-ref %}
 
-{% content-ref url="sdk/unreal-engine.md" %}
-[unreal-engine.md](sdk/unreal-engine.md)
+{% content-ref url="sdk/unreal-engine/" %}
+[unreal-engine](sdk/unreal-engine/)
 {% endcontent-ref %}
 
 {% content-ref url="api-docs/api-docs-1/" %}

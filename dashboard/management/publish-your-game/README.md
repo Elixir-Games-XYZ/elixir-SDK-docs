@@ -4,7 +4,7 @@ description: >-
   onboarded.
 ---
 
-# 👾 Add a new Game
+# Add a new Game
 
 ### 1. Register as a Publisher&#x20;
 

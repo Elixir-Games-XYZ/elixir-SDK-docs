@@ -1,5 +1,5 @@
 ---
-description: Get started with your unity project in minutes!
+description: Integrating our Unity SDK into your game takes minutes
 layout:
   title:
     visible: true
@@ -15,5 +15,14 @@ layout:
 
 # Unity
 
-{% embed url="https://github.com/Elixir-Games-XYZ/elixir-unity-sdk/releases" %}
+{% content-ref url="getting-started/" %}
+[getting-started](getting-started/)
+{% endcontent-ref %}
 
+{% content-ref url="authentication/" %}
+[authentication](authentication/)
+{% endcontent-ref %}
+
+{% content-ref url="reference.md" %}
+[reference.md](reference.md)
+{% endcontent-ref %}

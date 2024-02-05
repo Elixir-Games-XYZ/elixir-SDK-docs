@@ -2,7 +2,7 @@
 description: Provide access to you players through our beta code system
 ---
 
-# 🗝 Beta Codes
+# Beta Codes
 
 {% embed url="https://youtu.be/92y48JHe_I8" %}
 Create Beta Codes

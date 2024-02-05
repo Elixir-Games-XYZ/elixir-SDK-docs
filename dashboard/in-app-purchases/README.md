@@ -5,7 +5,7 @@ description: >-
   it's seamless, and it keeps you in the game!
 ---
 
-# 🛒 In-App Purchases
+# In-App Purchases
 
 ## Overview
 
