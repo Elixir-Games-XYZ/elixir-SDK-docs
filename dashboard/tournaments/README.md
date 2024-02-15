@@ -8,7 +8,7 @@ You will be able to retrieve existing or previous tournaments, along with the le
 
 Elixir will keep tournament scores for you. In order to save the scores, each game needs to define which information to save for each player. These are the **score types**. For example, one game may want to track the number of "kills" while other one needs to track "goals". Score types allows you to define which numeric values you want to store in Elixir. You can use multiple score types for your game.&#x20;
 
-Score types are defined in the Dashboard, under [Tournament Setting](set-up.md)s, as they defined the proper request / response messages when using the [Tournament API](../../api-docs/api-docs-1/tournaments-api/).
+Score types are defined in the Dashboard, under [Tournament Setting](set-up.md)s, as they defined the proper request / response messages when using the [Tournament API](../../api-docs/api-docs-1/tournaments-api.md).
 
 With tournament settings defined for your game, you'll be able to create a private (for testing / integration / QA) or public tournament. [Tournaments are created from Elixir Launcher.](create-tournament.md)
 
@@ -32,8 +32,8 @@ We will be display all three score types (kills, deaths, and KD rate) in the lea
 [create-tournament.md](create-tournament.md)
 {% endcontent-ref %}
 
-{% content-ref url="../../api-docs/api-docs-1/tournaments-api/" %}
-[tournaments-api](../../api-docs/api-docs-1/tournaments-api/)
+{% content-ref url="../../api-docs/api-docs-1/tournaments-api.md" %}
+[tournaments-api.md](../../api-docs/api-docs-1/tournaments-api.md)
 {% endcontent-ref %}
 
 ### Go to production

@@ -28,6 +28,6 @@ description: Get started with Elixir in minutes
 [nfts.md](nfts.md)
 {% endcontent-ref %}
 
-{% content-ref url="tournaments-api/" %}
-[tournaments-api](tournaments-api/)
+{% content-ref url="tournaments-api.md" %}
+[tournaments-api.md](tournaments-api.md)
 {% endcontent-ref %}

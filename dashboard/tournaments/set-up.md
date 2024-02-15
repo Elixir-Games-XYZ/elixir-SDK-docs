@@ -7,7 +7,7 @@ description: Create the tournament settings in the Developer Dashboard
 Start setting up the tournament configuration in the **developer dashboard**. You'll be able to find the "**Tournaments**" page in the Tools area.&#x20;
 
 {% hint style="info" %}
-These settings are very much coupled to your game logic and will determine the kind of requests your dev team will be sending[ through the API](../../api-docs/api-docs-1/tournaments-api/).
+These settings are very much coupled to your game logic and will determine the kind of requests your dev team will be sending[ through the API](../../api-docs/api-docs-1/tournaments-api.md).
 {% endhint %}
 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-01-09 at 21.02.42.png" alt=""><figcaption><p>Tournament Settings for the Use Case described</p></figcaption></figure>

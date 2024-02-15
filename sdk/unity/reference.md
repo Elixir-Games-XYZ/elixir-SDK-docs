@@ -20,4 +20,4 @@ Use this endpoint to access NFT collections specified in the Elixir Dashboard. I
 
 Integrating this SDK provides a comprehensive tournament tool. This method enables the game client to access all Elixir tournaments available for the game. Coordination between the game backend and Elixir configuration is necessary.&#x20;
 
-Refer to the [tournaments-api](../../api-docs/api-docs-1/tournaments-api/ "mention") documentation for more information.
+Refer to the [tournaments-api.md](../../api-docs/api-docs-1/tournaments-api.md "mention") documentation for more information.

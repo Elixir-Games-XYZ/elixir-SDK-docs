@@ -34,6 +34,11 @@
   * [Gas Manager](dashboard/elixir-invisible-wallet/gas-manager/README.md)
     * [Create Gas Manager](dashboard/elixir-invisible-wallet/gas-manager/create-gas-manager.md)
     * [Handle Balances](dashboard/elixir-invisible-wallet/gas-manager/handle-balances.md)
+* [Reward Center](dashboard/reward-center/README.md)
+  * [Game Quests](dashboard/reward-center/game-quests/README.md)
+    * [Add a Stat](dashboard/reward-center/game-quests/add-a-stat.md)
+    * [Create a Quest](dashboard/reward-center/game-quests/create-a-quest.md)
+    * [Update Progress](dashboard/reward-center/game-quests/update-progress.md)
 
 ## Elixir Gamer Services <a href="#sdk" id="sdk"></a>
 
@@ -61,11 +66,12 @@
 * [Elixir REST API](api-docs/api-docs-1/README.md)
   * [🖥 Desktop Auth](api-docs/api-docs-1/auth.md)
   * [📱 Mobile Auth](api-docs/api-docs-1/mobile-auth.md)
+  * [🔐 RSA Signature](api-docs/api-docs-1/rsa-signature/README.md)
+    * [🔢 C# Example](api-docs/api-docs-1/rsa-signature/c-example.md)
+    * [🔢 Node.js Example](api-docs/api-docs-1/rsa-signature/node.js-example.md)
   * [🧔 User](api-docs/api-docs-1/user.md)
   * [👾 NFTs](api-docs/api-docs-1/nfts.md)
-  * [🏆 Tournaments API](api-docs/api-docs-1/tournaments-api/README.md)
-    * [🔐 RSA Signature](api-docs/api-docs-1/tournaments-api/rsa-signature/README.md)
-      * [🔢 C# Example](api-docs/api-docs-1/tournaments-api/rsa-signature/c-example.md)
-      * [🔢 Node.js Example](api-docs/api-docs-1/tournaments-api/rsa-signature/node.js-example.md)
+  * [🏆 Tournaments API](api-docs/api-docs-1/tournaments-api.md)
+  * [❓ Game Quests](api-docs/api-docs-1/game-quests.md)
 * [How To](api-docs/how-to/README.md)
   * [Link Elixir account to a game API account](api-docs/how-to/link-elixir-account-to-a-game-api-account.md)
