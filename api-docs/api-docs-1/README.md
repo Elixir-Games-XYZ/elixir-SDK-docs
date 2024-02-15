@@ -2,7 +2,7 @@
 description: Get started with Elixir in minutes
 ---
 
-# 🎖 API DOCs
+# Elixir REST API
 
 ## Postman
 

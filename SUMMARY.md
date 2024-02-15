@@ -58,7 +58,7 @@
 
 ## API <a href="#api-docs" id="api-docs"></a>
 
-* [🎖 API DOCs](api-docs/api-docs-1/README.md)
+* [Elixir REST API](api-docs/api-docs-1/README.md)
   * [🖥 Desktop Auth](api-docs/api-docs-1/auth.md)
   * [📱 Mobile Auth](api-docs/api-docs-1/mobile-auth.md)
   * [🧔 User](api-docs/api-docs-1/user.md)
@@ -67,3 +67,5 @@
     * [🔐 RSA Signature](api-docs/api-docs-1/tournaments-api/rsa-signature/README.md)
       * [🔢 C# Example](api-docs/api-docs-1/tournaments-api/rsa-signature/c-example.md)
       * [🔢 Node.js Example](api-docs/api-docs-1/tournaments-api/rsa-signature/node.js-example.md)
+* [How To](api-docs/how-to/README.md)
+  * [Link Elixir account to a game API account](api-docs/how-to/link-elixir-account-to-a-game-api-account.md)
