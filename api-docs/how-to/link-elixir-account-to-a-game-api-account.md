@@ -20,6 +20,6 @@ The JWT token provided by Elixir Launcher often includes an email which can be u
 
 ### How do I implement it?
 
-Bellow is a sequence diagram of the process of linking an Elixir account to a main game API account.
+Below is a sequence diagram of the process of linking an Elixir account to a main game API account.
 
 <figure><img src="../../.gitbook/assets/Untitled (1).png" alt=""><figcaption></figcaption></figure>
