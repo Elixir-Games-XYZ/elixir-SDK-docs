@@ -36,10 +36,6 @@ Timestamp used in the API Signature
 Elixir ID
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="payload" type="JSON" %}
-
-{% endswagger-parameter %}
-
 {% swagger-parameter in="header" required="true" name="x-api-signature" type="String" %}
 Generated RSA signature
 {% endswagger-parameter %}
