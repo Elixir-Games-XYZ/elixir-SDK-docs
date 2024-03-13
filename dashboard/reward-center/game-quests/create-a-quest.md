@@ -17,7 +17,7 @@ Please get in touch with our support team to create a new game quest. You will n
    * Descriptions provide users with guidance on what they need to do to progress through the quest and earn rewards.
 4. **Image:**
    * Games provide an image to accompany each quest, enhancing visual appeal and recognition.
-   * Images are displayed on the game quest card within the platform's interface, using a resolution of 500px x 250px for optimal display quality.
+   * Images are displayed on the game quest card within the platform's interface, using a resolution of 500px x 400px for optimal display quality.
 
 **Example Quest**
 

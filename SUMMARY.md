@@ -64,7 +64,7 @@
 ## API <a href="#api-docs" id="api-docs"></a>
 
 * [Elixir REST API](api-docs/api-docs-1/README.md)
-  * [🖥 Desktop Auth](api-docs/api-docs-1/auth.md)
+  * [🖥️ Desktop Auth](api-docs/api-docs-1/auth.md)
   * [📱 Mobile Auth](api-docs/api-docs-1/mobile-auth.md)
   * [🔐 RSA Signature](api-docs/api-docs-1/rsa-signature/README.md)
     * [🔢 C# Example](api-docs/api-docs-1/rsa-signature/c-example.md)
