@@ -38,7 +38,10 @@
   * [Game Quests](dashboard/reward-center/game-quests/README.md)
     * [Add a Stat](dashboard/reward-center/game-quests/add-a-stat.md)
     * [Create a Quest](dashboard/reward-center/game-quests/create-a-quest.md)
+    * [Test Your Quest](dashboard/reward-center/game-quests/test-your-quest.md)
+    * [Submit your Quest](dashboard/reward-center/game-quests/submit-your-quest.md)
     * [Update Progress](dashboard/reward-center/game-quests/update-progress.md)
+    * [Review Guidelines](dashboard/reward-center/game-quests/review-guidelines.md)
 
 ## Elixir Gamer Services <a href="#sdk" id="sdk"></a>
 

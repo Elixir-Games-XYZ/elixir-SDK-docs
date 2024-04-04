@@ -1,18 +1,12 @@
----
-description: Coming Soon in the Dashboard
----
-
 # Add a Stat
-
-Please contact our support team to create a new game stat.
-
-
 
 The `stats` are used to track specific user actions or achievements that contribute to quest progression. Stats serve as quantitative measures of user activity or accomplishments within games, allowing for dynamic and personalized quest objectives.
 
 * Games can define custom stats relevant to their gameplay mechanics and quest requirements.
 * Examples include "kills", "collectibles-found", "distance-traveled", etc.
 * Each stat corresponds to a specific user action or milestone that contributes to quest progression.
+
+<figure><img src="../../../.gitbook/assets/Screenshot 2024-04-04 at 01.20.04.png" alt=""><figcaption></figcaption></figure>
 
 **Stat Naming Convention**
 

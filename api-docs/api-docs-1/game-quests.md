@@ -19,40 +19,31 @@ This endpoint is protected with an RSA signature system, adding an extra layer o
 
 This robust security measure mitigates the risk of unauthorized data manipulation and maintains the reliability of the Quest System API, fostering trust and confidence among game developers and platform users alike.
 
-{% swagger method="post" path="/sdk/v2/game-stats" baseUrl="https://kend.elixir.app" summary="Submit Game Stat" %}
-{% swagger-description %}
+## Submit Game Stat
+
+<mark style="color:green;">`POST`</mark> `https://kend.elixir.app/sdk/v2/game-stats`
+
 Submit game stat to progress an Elixir Quests. This endpoint is protected using the Elixir RSA Signature.
-{% endswagger-description %}
 
-{% swagger-parameter in="header" name="Content-Type" type="String" required="true" %}
-'application/json'
-{% endswagger-parameter %}
+#### Headers
 
-{% swagger-parameter in="header" name="x-api-token" required="true" type="String" %}
-Timestamp used in the API Signature
-{% endswagger-parameter %}
+| Name                                              | Type   | Description                                     |
+| ------------------------------------------------- | ------ | ----------------------------------------------- |
+| x-api-key<mark style="color:red;">\*</mark>       | String | Public Key available on the Developer Dashboard |
+| x-api-signature<mark style="color:red;">\*</mark> | String | Generated RSA signature                         |
+| x-api-token<mark style="color:red;">\*</mark>     | String | Timestamp used in the API Signature             |
+| Content-Type<mark style="color:red;">\*</mark>    | String | 'application/json'                              |
 
-{% swagger-parameter in="body" name="userId" type="String" %}
-Elixir ID
-{% endswagger-parameter %}
+#### Request Body
 
-{% swagger-parameter in="header" required="true" name="x-api-signature" type="String" %}
-Generated RSA signature
-{% endswagger-parameter %}
+| Name                                        | Type   | Description |
+| ------------------------------------------- | ------ | ----------- |
+| stat<mark style="color:red;">\*</mark>      | String |             |
+| increment<mark style="color:red;">\*</mark> | Number |             |
+| userId                                      | String | Elixir ID   |
 
-{% swagger-parameter in="body" name="increment" type="Number" required="true" %}
-
-{% endswagger-parameter %}
-
-{% swagger-parameter in="header" name="x-api-key" type="String" required="true" %}
-Public Key available on the Developer Dashboard
-{% endswagger-parameter %}
-
-{% swagger-parameter in="body" name="stat" type="String" required="true" %}
-
-{% endswagger-parameter %}
-
-{% swagger-response status="200: OK" description="" %}
+{% tabs %}
+{% tab title="200: OK " %}
 ```javascript
 {
 "code": 1, 
@@ -60,7 +51,7 @@ Public Key available on the Developer Dashboard
 "data": {}
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
 ###

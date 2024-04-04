@@ -2,7 +2,7 @@
 description: API protocol description and utilities for Desktop integration
 ---
 
-# 🖥 Desktop Auth
+# 🖥️ Desktop Auth
 
 ## Launcher AUTH
 
@@ -27,20 +27,26 @@ You can also log in with different accounts. To do so, you'll need to ask the **
 
 
 
-{% swagger baseUrl="https://kend.elixir.app" path="/sdk/auth/v2/dev/reikey" method="get" summary="Generate Reikey" %}
-{% swagger-description %}
+## Generate Reikey
+
+<mark style="color:blue;">`GET`</mark> `https://kend.elixir.app/sdk/auth/v2/dev/reikey`
+
 Please be aware that this endpoint is only accessible with a **DEVELOPMENT KEY**. The purpose of this endpoint is to ease an agile usage of the API, providing an endpoint that allows generating valid reikeys.
-{% endswagger-description %}
 
-{% swagger-parameter in="header" name="x-api-key" type="String" required="true" %}
-Public Key available on the Developer Dashboard
-{% endswagger-parameter %}
+#### Query Parameters
 
-{% swagger-parameter in="query" name="playerId" type="String" %}
-Player ID of an alternative user
-{% endswagger-parameter %}
+| Name     | Type   | Description                      |
+| -------- | ------ | -------------------------------- |
+| playerId | String | Player ID of an alternative user |
 
-{% swagger-response status="200" description="" %}
+#### Headers
+
+| Name                                        | Type   | Description                                     |
+| ------------------------------------------- | ------ | ----------------------------------------------- |
+| x-api-key<mark style="color:red;">\*</mark> | String | Public Key available on the Developer Dashboard |
+
+{% tabs %}
+{% tab title="200 " %}
 ```javascript
 {
     "code": 1,
@@ -51,9 +57,9 @@ Player ID of an alternative user
     }
 }
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="400" description="A reikey must be generated in a space of 10 seconds if the reikey has not been activated ( get user credential). If the reikey is activated, must wait 5 minutes to generate a new one." %}
+{% tab title="400 A reikey must be generated in a space of 10 seconds if the reikey has not been activated ( get user credential). If the reikey is activated, must wait 5 minutes to generate a new one." %}
 ```javascript
 {
     "code": -1,
@@ -65,28 +71,34 @@ Player ID of an alternative user
     }
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
 ## Auth Endpoints
 
 
 
-{% swagger baseUrl="https://kend.elixir.app" path="/sdk/auth/v2/session/reikey/:reikey" method="get" summary=" Get User Credentials" %}
-{% swagger-description %}
+## &#x20;Get User Credentials
+
+<mark style="color:blue;">`GET`</mark> `https://kend.elixir.app/sdk/auth/v2/session/reikey/:reikey`
+
 The `reikey` param will be sent by the launcher when the game is executed as a `-rei` field.\
 With this endpoint, the reikey will be activated, and the user credentials will be provided. With them, the game will be able to maintain in the background the user session alive, in order to avoid bugs and impersonation.
-{% endswagger-description %}
 
-{% swagger-parameter in="path" name="reikey" type="string" required="true" %}
-Rei key received when the game is started
-{% endswagger-parameter %}
+#### Path Parameters
 
-{% swagger-parameter in="header" name="x-api-key" type="string" required="true" %}
-Public Key available on the Developer Dashboard
-{% endswagger-parameter %}
+| Name                                     | Type   | Description                               |
+| ---------------------------------------- | ------ | ----------------------------------------- |
+| reikey<mark style="color:red;">\*</mark> | string | Rei key received when the game is started |
 
-{% swagger-response status="200" description="" %}
+#### Headers
+
+| Name                                        | Type   | Description                                     |
+| ------------------------------------------- | ------ | ----------------------------------------------- |
+| x-api-key<mark style="color:red;">\*</mark> | string | Public Key available on the Developer Dashboard |
+
+{% tabs %}
+{% tab title="200 " %}
 ```javascript
 {
     "code": 1,
@@ -104,9 +116,9 @@ Public Key available on the Developer Dashboard
     }
 }
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="400: Bad Request" description="" %}
+{% tab title="400: Bad Request " %}
 ```javascript
 {
     "code": -1,
@@ -118,28 +130,31 @@ Public Key available on the Developer Dashboard
     }
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
-{% swagger baseUrl="https://kend.elixir.app" path="/sdk/auth/v2/session/refresh" method="post" summary="Refresh User token" %}
-{% swagger-description %}
+## Refresh User token
+
+<mark style="color:green;">`POST`</mark> `https://kend.elixir.app/sdk/auth/v2/session/refresh`
+
 Each JWT will have an expiration time, to extend the session it will be required to ask for a new token. To do so, it will be needed the `refresh token` and the last active `jwt`. For example, if the game makes 3 times a request to this service, the `jwt` to provide for the third call will be the `jwt` and `refreshToken` received in the second one. If the `refreshToken` is lost, it will be necessary to generate a new reikey.\
 As time expiry may change several times, we recommend requesting a `refreshToken` few seconds after the `tokenExpiry` timestamp is reached.
-{% endswagger-description %}
 
-{% swagger-parameter in="header" name="x-api-key" type="string" required="true" %}
-Public Key available on the Developer Dashboard
-{% endswagger-parameter %}
+#### Headers
 
-{% swagger-parameter in="body" name="refreshToken" type="String" required="true" %}
-Latest refresh token alive
-{% endswagger-parameter %}
+| Name                                        | Type   | Description                                     |
+| ------------------------------------------- | ------ | ----------------------------------------------- |
+| x-api-key<mark style="color:red;">\*</mark> | string | Public Key available on the Developer Dashboard |
 
-{% swagger-parameter in="body" name="reikey" required="false" type="Stirng" %}
-Reikey used to launch the game
-{% endswagger-parameter %}
+#### Request Body
 
-{% swagger-response status="200" description="" %}
+| Name                                           | Type   | Description                    |
+| ---------------------------------------------- | ------ | ------------------------------ |
+| refreshToken<mark style="color:red;">\*</mark> | String | Latest refresh token alive     |
+| reikey                                         | Stirng | Reikey used to launch the game |
+
+{% tabs %}
+{% tab title="200 " %}
 ```javascript
 {
     "code": 1,
@@ -157,9 +172,9 @@ Reikey used to launch the game
     }
 }
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="400: Bad Request" description="" %}
+{% tab title="400: Bad Request " %}
 ```javascript
 {
     "code": -1,
@@ -171,27 +186,30 @@ Reikey used to launch the game
     }
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
-{% swagger baseUrl="https://kend.elixir.app" path="/sdk/auth/v2/session/closerei/:reikey" method="post" summary="Close Session" %}
-{% swagger-description %}
+## Close Session
+
+<mark style="color:green;">`POST`</mark> `https://kend.elixir.app/sdk/auth/v2/session/closerei/:reikey`
+
 This endpoint should be executed when the user closes the game: It will terminate the session credentials (jwt and reikey). The usage of this endpoint is similar to a refresh token endpoint, but jsut requires a valid JWT as an authorization header.
-{% endswagger-description %}
 
-{% swagger-parameter in="header" name="x-api-key" type="string" required="true" %}
-Public Key available on the Developer Dashboard
-{% endswagger-parameter %}
+#### Path Parameters
 
-{% swagger-parameter in="header" name="Authorization" type="string" required="true" %}
-"Bearer + JWT"
-{% endswagger-parameter %}
+| Name                                     | Type   | Description                    |
+| ---------------------------------------- | ------ | ------------------------------ |
+| reikey<mark style="color:red;">\*</mark> | String | Reikey used to launch the game |
 
-{% swagger-parameter in="path" name="reikey" type="String" required="true" %}
-Reikey used to launch the game
-{% endswagger-parameter %}
+#### Headers
 
-{% swagger-response status="200" description="" %}
+| Name                                            | Type   | Description                                     |
+| ----------------------------------------------- | ------ | ----------------------------------------------- |
+| x-api-key<mark style="color:red;">\*</mark>     | string | Public Key available on the Developer Dashboard |
+| Authorization<mark style="color:red;">\*</mark> | string | "Bearer + JWT"                                  |
+
+{% tabs %}
+{% tab title="200 " %}
 ```javascript
 {
     "code": 1,
@@ -201,9 +219,9 @@ Reikey used to launch the game
     }
 }
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="400: Bad Request" description="" %}
+{% tab title="400: Bad Request " %}
 ```javascript
 {
     "code": -1,
@@ -215,6 +233,6 @@ Reikey used to launch the game
     }
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 

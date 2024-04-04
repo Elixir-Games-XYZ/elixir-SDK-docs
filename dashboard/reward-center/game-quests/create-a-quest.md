@@ -1,10 +1,4 @@
----
-description: Coming Soon in the Dashboard
----
-
 # Create a Quest
-
-Please get in touch with our support team to create a new game quest. You will need to provide:
 
 1. **Stat Requirement:**
    * Games specify the stat(s) that users must progress to complete the quest.
@@ -18,6 +12,8 @@ Please get in touch with our support team to create a new game quest. You will n
 4. **Image:**
    * Games provide an image to accompany each quest, enhancing visual appeal and recognition.
    * Images are displayed on the game quest card within the platform's interface, using a resolution of 500px x 400px for optimal display quality.
+
+<figure><img src="../../../.gitbook/assets/Screenshot 2024-04-04 at 01.23.08.png" alt=""><figcaption></figcaption></figure>
 
 **Example Quest**
 
